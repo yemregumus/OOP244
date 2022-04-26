@@ -1,0 +1,55 @@
+Script started on Tue 08 Feb 2022 06:04:30 PM EST
+==188308== Memcheck, a memory error detector
+==188308== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==188308== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==188308== Command: ws
+==188308== 
+                        ------ Robot Control Room -----
+                    ---------------------------------------
+| Robot ID   | Location        | Weight |  Width | Height |  Speed | Deployed |
+|------------+-----------------+--------+--------+--------+--------+----------|
+
+Attention: There is a broken robot! Fixing the problem...
+| C3PO       | Control Room    | 10.0   | 4.0    | 1.0    | 2.1    | NO       |
+Replacement Provided!
+
+                        ------ Robot Control Room -----
+                    ---------------------------------------
+| Robot ID   | Location        | Weight |  Width | Height |  Speed | Deployed |
+|------------+-----------------+--------+--------+--------+--------+----------|
+| C3PO       | Control Room    | 10.0   | 4.0    | 1.0    | 2.1    | NO       |
+| KC1        | kitchen         | 25.3   | 4.5    | 2.0    | 2.2    | NO       |
+| BR1        | bedroom         | 5.2    | 2.5    | 1.0    | 2.2    | YES      |
+
+Attention: There is a broken robot! Fixing the problem...
+| D3PO       | Control Room    | 10.0   | 4.0    | 1.0    | 2.1    | NO       |
+Replacement Provided!
+
+                        ------ Robot Control Room -----
+                    ---------------------------------------
+| Robot ID   | Location        | Weight |  Width | Height |  Speed | Deployed |
+|------------+-----------------+--------+--------+--------+--------+----------|
+| C3PO       | Control Room    | 10.0   | 4.0    | 1.0    | 2.1    | NO       |
+| KC1        | kitchen         | 25.3   | 4.5    | 2.0    | 2.2    | NO       |
+| BR1        | bedroom         | 5.2    | 2.5    | 1.0    | 2.2    | YES      |
+| D3PO       | Control Room    | 10.0   | 4.0    | 1.0    | 2.1    | NO       |
+| KC2        | kitchen         | 20.6   | 5.0    | 2.0    | 3.5    | YES      |
+| BR2        | bedroom         | 25.3   | 6.5    | 2.5    | 3.1    | YES      |
+|=============================================================================|
+| SUMMARY:                                                                    |
+| 3 robots are deployed.                                                      |
+| The fastest robot is:                                                       |
+| Robot ID   | Location        | Weight |  Width | Height |  Speed | Deployed |
+|------------+-----------------+--------+--------+--------+--------+----------|
+| KC2        | kitchen         | 20.6   | 5.0    | 2.0    | 3.5    | YES      |
+|=============================================================================|
+==188308== 
+==188308== HEAP SUMMARY:
+==188308==     in use at exit: 0 bytes in 0 blocks
+==188308==   total heap usage: 13 allocs, 13 frees, 72,788 bytes allocated
+==188308== 
+==188308== All heap blocks were freed -- no leaks are possible
+==188308== 
+==188308== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+Script done on Tue 08 Feb 2022 06:04:31 PM EST
