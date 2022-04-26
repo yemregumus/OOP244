@@ -1,0 +1,14 @@
+/* Workshop #9 Part #2
+Full name			: Yunus Gumus
+Student ID number	: 150331197
+Seneca email address: ygumus@myseneca.ca
+Section code		: NCC
+When I Start to WS  : 2022-03-28
+When I finish P1	: 2022-03-29
+When I finish P2	: 2022-04-03*/
+
+In this workshop we examined and experienced how to apply rule of three both base and derivered class. I used a base class type casting in my copy constructor and assignment operator of my derived class. This way i deep copied the content of m_content, it was a big struggle for me to find out how to fill m_content in the beginning but when i realize i can just cast *this to a base class it was just one line of code.
+
+We also learn about how to read a file into dynamically allocated memory, by our [] operator, reading char by char from file. If it is a character we read it as it is, if it was a less than greater than newline or space character we replace it with html tags to accomplish to build a html page code from a raw text. 
+
+I learned how to apply rule of three to a derived class and how to read a file into dynamically allocated memory in this workshop, it also helped me to finish projects milestone 4. Workload is becoming a bit heavy but i enjoy learning these. 
