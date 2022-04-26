@@ -1,0 +1,19 @@
+/* Workshop #1 Reflection
+Full name		: Yunus Gumus
+Student ID number	: 150331197
+Seneca email address	: ygumus@myseneca.ca
+Section code		: NCC              */
+
+/* 
+->I started working on our first workshop whenever it was available because I like to be ahead of schedule.-> 
+->Lab part of the workshop was easy, we learned modular design last semester with ipc144, and I re-design the->
+-> code as mentioned in the workshop details. I don't recall if there was something that I already don't know->
+-> in the first part. When it comes to the second part, called DIY The Phone Directory, to be honest, this part wasn't->
+-> properly explained. I had a hard time understanding the details and what I needed to do. Because of this reason->
+-> I had a hard time while planning. Because I had a hard time planning, after I finished coding, I realized that I haven't->
+-> really finished part two. I couldn't understand that we had to check if the text file was there. The unsuccessful->
+-> execution, I thought it was an instance of the wrongly coded program. I e-mailed Professor Liu and with his reply->
+-> I finally understand that the unsuccessful execution was a part of our work. I ended up changing my code a bit->
+-> by adding an if statement and used .is_open() function to check if the file is opened or not and wrote an error->
+-> message if the file can not open. That was my struggle, and I couldn't understand the details because the workshop->
+-> wasn't explained in detail, but I managed to finish on time.*/
