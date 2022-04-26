@@ -1,0 +1,10 @@
+/* Workshop #3 Part #2
+Full name			: Yunus Gumus
+Student ID number	: 150331197
+Seneca email address: ygumus@myseneca.ca
+Section code		: NCC
+When I Start to WS  : 2022-01-02
+When I finish P1	: 2022-01-02
+When I finish P2	: 2022-01-02  */
+
+I was working on this lecture from the end of the first semester. That's why I already knew member functions before we started. But to be honest last workshop was more challenging than this workshop. Dealing with member functions were way more manageable than memory allocation/deallocation. I enjoyed this workshop because it was easy to complete, and the descriptions were way better than the workshops before. After rechecking it, my code looks like just a fancy way of coding C programming. It might sound funny, and it is, though! I was ready for the first time for a workshop because I like creating and playing with functions. I love modular design, and object-oriented programming is not similar to me as much as modular design is. I believe we are learning basics slowly everything by digesting everything one by one, and I think I will feel the same about object-oriented programming as I feel about modular design.
