@@ -1,3 +1,0 @@
-﻿  Robot.cpp
-D:\school stuff\2nd Semester\OOP244\ws4\WS04\DIY\Robot.cpp(219,32): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-  DIY.vcxproj -> D:\school stuff\2nd Semester\OOP244\ws4\WS04\DIY\x64\Debug\DIY.exe
