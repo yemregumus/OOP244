@@ -1,0 +1,11 @@
+/* Workshop #5 Part #2
+Full name		: Yunus Gumus
+Student ID number	: 150331197
+Seneca email address	: ygumus@myseneca.ca
+Section code		: NCC
+When I Start to WS  	: 2022-02-17
+When I finish P1	: 2022-02-17
+When I finish P2	: 2022-02-21*/
+
+
+Among the five workshops, this workshop was the one I had the most fun with. I never thought that signs could be used in this way, and it was inspiring to discover them. Instructions explained everything we had to do in the first part, but I must say that I had a little trouble understanding the second part. But not a lot, just a little. It was crucial to read the given amount well since a part of the problem was presented in a solved form. That is, some features came in written form, and we had to replace the missing parts. In this workshop, time was especially limited for me because I was called from my workplace for orientation training. But when I gathered my head and sat down at my homework, I saw that it was actually not that difficult. In particular, conversation operator overloads and operator overloads were the easiest part. The binary helper operators part was a bit difficult until it made sense, but I felt lucky that we didn't start friend functions in this workshop. I hope I will be as excited as this workshop in all workshops, and it would make me very happy.

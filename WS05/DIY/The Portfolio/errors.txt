@@ -1,0 +1,17 @@
+Portfolio.cpp: In constructor ‘sdds::Portfolio::Portfolio(double, const char*, char)’:
+Portfolio.cpp:46:34: error: ‘strcpy’ was not declared in this scope
+             strcpy(m_stock, stock);
+                                  ^
+main_prof.cpp: In function ‘int main()’:
+main_prof.cpp:50:10: error: ambiguous overload for ‘operator+=’ (operand types are ‘double’ and ‘sdds::Portfolio’)
+    total += Portfolios[1];
+          ^
+main_prof.cpp:50:10: note: candidates are:
+main_prof.cpp:50:10: note: operator+=(double&, double) <built-in>
+main_prof.cpp:50:10: note: operator+=(double&, int) <built-in>
+main_prof.cpp:51:10: error: ambiguous overload for ‘operator+=’ (operand types are ‘double’ and ‘sdds::Portfolio’)
+    total += Portfolios[5];
+          ^
+main_prof.cpp:51:10: note: candidates are:
+main_prof.cpp:51:10: note: operator+=(double&, double) <built-in>
+main_prof.cpp:51:10: note: operator+=(double&, int) <built-in>
