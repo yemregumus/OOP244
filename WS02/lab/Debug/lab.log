@@ -1,0 +1,3 @@
+﻿  Car.cpp
+D:\school stuff\2nd Semester\OOP244\ws2\WS02\lab\Car.cpp(47,8): warning C4101: 'timeShow': unreferenced local variable
+  lab.vcxproj -> D:\school stuff\2nd Semester\OOP244\ws2\WS02\lab\Debug\lab.exe

@@ -1,0 +1,390 @@
+Script started on Sun 23 Jan 2022 03:23:06 PM EST
+==123527== Memcheck, a memory error detector
+==123527== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==123527== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==123527== Command: ws
+==123527== 
+1: Toyota C-HR,VYEEDG
+4: Alfa Romeo Giulia,OVQXIQ
+7: Buick Encore GX,ZIQSUF
+10: Jeep Gladiator,YFQOSQ
+13: Chevrolet Impala,MWPBNW
+16: Volkswagen Atlas Cross Sport,ESIJDW
+19: Toyota Prius Prime,AECYJV
+22: Lexus RZ,QONGCT
+25: Tesla Model S,MCGSVD
+28: Buick Envision,UTGBZM
+31: Toyota GR Supra,ASFVCE
+34: Ford Edge,VWMEND
+37: Rolls-Royce Cullinan,HBYRNT
+40: BMW M5,UWTATN
+43: Kia Niro,IQFXBZ
+46: Jeep Grand Cherokee,KRPNJM
+49: MAZDA MX-30,UGXRBJ
+52: Volvo C40 Recharge,CGQTQT
+55: Subaru Impreza,YXTFGV
+58: BMW iX,BBBXZW
+101: Toyota bZ4X,TPWHEP
+104: Genesis G70,LMPYGG
+107: Nissan GT-R,RQRMQX
+110: Jeep Compass,EIEBOQ
+113: Porsche Cayenne,QRTNZT
+116: MINI Hardtop 4 Door,RGMSGB
+119: Ford F350 Super Duty Crew Cab,EFPQTO
+122: Kia K5,JWWQGR
+125: Ford Ranger SuperCrew,AVRZDB
+128: Mercedes-Benz Mercedes-EQ EQE,UWBEJR
+131: Dodge Grand Caravan Passenger,WGJFSI
+134: Hyundai Santa Cruz,HVQTID
+137: Audi e-tron,GATUSY
+140: Audi e-tron Sportback,YYJAXM
+143: Jaguar F-PACE,TTVZXX
+146: Lincoln MKZ,SSYTAU
+149: Jeep Grand Cherokee 4xe,ZACGON
+152: Toyota Corolla Hatchback,FHOAEB
+155: Kia Optima Hybrid,ECIDOR
+158: Jaguar E-PACE,ZTGFLP
+201: Ford Ranger SuperCab,MKGNXJ
+204: Audi RS e-tron GT,SVKEMY
+207: Dodge Journey,VIJNOK
+210: Subaru Legacy,NSWFQK
+213: Tesla Model 3,GMJYPI
+216: Honda Civic Type R,PQYQWT
+219: Hyundai Ioniq Plug-in Hybrid,NQOHKA
+222: Nissan Rogue,DWGXVZ
+225: INFINITI QX50,TWVKND
+228: Mercedes-Benz Mercedes-EQ EQS,PPNPEE
+231: Mercedes-Benz GLC,YYOFBZ
+234: Hyundai Kona Electric,NKDNBP
+237: Audi RS 5,YIASAY
+240: Mitsubishi Mirage,WUQAPU
+243: Toyota Highlander,NKQMUQ
+246: Volvo S90,HFPPRX
+249: Rolls-Royce Ghost,RCQVYG
+252: Audi Q4 e-tron,LQMTIF
+255: Kia Optima Plug-in Hybrid,WQEVMI
+258: Ford Maverick,QFGGET
+301: Cadillac CT4,NHIPJQ
+304: Ferrari Portofino,DQUCOW
+307: Mercedes-Benz G-Class,WTRITF
+310: Chevrolet Colorado Extended Cab,JNWVKM
+313: Mercedes-Benz Mercedes-AMG GLA,KDDDJK
+316: MAZDA CX-30,VIWPNE
+319: Nissan Ariya,ZCEPPB
+322: Honda Odyssey,RJPUPS
+325: INFINITI QX55,ZMZUIW
+328: Lexus LS,PHPIQI
+331: BMW i3,NZHDPX
+334: Honda Accord,MYOJJK
+337: Kia Cadenza,RIECRF
+340: Dodge Challenger,MXKLXW
+343: Ford Expedition MAX,BBMUNG
+346: Maserati Ghibli,CYWVEW
+349: Rolls-Royce Phantom,MTGETG
+352: Buick Encore,UPKYLI
+355: MAZDA CX-50,BVXJMZ
+358: Bentley Flying Spur,VTCGRI
+401: Subaru Ascent,WIBTZS
+404: Nissan NV3500 HD Cargo,HNVVMG
+407: Land Rover Range Rover Evoque,GJZCKJ
+410: Chevrolet Equinox EV,KOZKCE
+413: Mercedes-Benz Mercedes-Maybach S-Class,WBJCPB
+416: Kia Carnival,OKXQMW
+419: MAZDA MX-5 Miata,CLGAZN
+422: Lexus GX,QWMXLO
+425: Ford F250 Super Duty Crew Cab,WBUKIN
+428: Maserati Levante,LPUXYU
+431: Land Rover Defender 90,JWWHGE
+434: Ferrari Roma,CISIHF
+437: MAZDA CX-5,FRVCYH
+440: MAZDA CX-70,NPZQJC
+443: Mercedes-Benz Mercedes-AMG GLC,QUCFOG
+446: Ford F150 Super Cab,DGNKCI
+449: Cadillac Escalade ESV,OXFFGS
+452: Mercedes-Benz E-Class,YKONBH
+455: Honda CR-V Hybrid,FQCSMF
+458: Mercedes-Benz Mercedes-Maybach GLS,NRVZLV
+501: Lexus IS,CWVIQS
+504: Bentley Bentayga,GSGUJJ
+507: Cadillac CT6-V,FEKANR
+510: Ford F250 Super Duty Regular Cab,AFLHRD
+513: Nissan Murano,BFBHQD
+516: Lamborghini Aventador,JRWLCY
+519: Hyundai Santa Fe Plug-in Hybrid,FQCJRD
+522: Chrysler Pacifica Hybrid,ATRVPB
+525: Kia Rio,LZWSMS
+528: GMC Canyon Extended Cab,MSSDWL
+531: Toyota Land Cruiser,YOKBXF
+534: MAZDA MX-5 Miata RF,GJBLAR
+537: Maserati Quattroporte,WEOXTS
+540: Audi Q5,PHJYRY
+543: Chevrolet Colorado Crew Cab,JYPIEB
+546: Nissan Armada,UCNNHY
+549: Nissan Kicks,TZFFTK
+552: Mercedes-Benz Metris Passenger,GSQEVH
+555: Jaguar F-TYPE,NFYMXA
+558: McLaren GT,MKDWBY
+601: Ram ProMaster Cargo Van,BEAVWG
+604: Hyundai Ioniq Hybrid,FKFUIC
+607: Mercedes-Benz C-Class,TUUFRD
+610: Toyota RAV4 Hybrid,YOMHWI
+613: Mercedes-Benz Mercedes-AMG GLB,VXQYWZ
+616: Audi A8,FCVXVX
+619: Volkswagen Jetta,ALRKML
+622: Honda Ridgeline,YRDZIZ
+625: MAZDA CX-9,VDGUDT
+628: Honda Insight,LRUWRA
+631: Mercedes-Benz Mercedes-AMG GLE,XVRKKX
+634: Lexus RX,YGBLFB
+637: BMW i8,TROKSA
+640: Lotus Evora GT,BHBCBM
+643: Acura RDX,MERQCR
+646: Audi e-tron GT,ZRZQMS
+649: Ford F350 Super Duty Regular Cab,OFALOP
+652: Ford Bronco,JEBWYJ
+655: Mercedes-Benz GLA,JFFHLE
+658: Audi A6,SDPINW
+701: Aston Martin DBX,BYFHLY
+704: Lincoln Navigator,XZGTWI
+707: Toyota Avalon,ETWESH
+710: Cadillac CT5,TGZYDM
+713: Chevrolet Bolt EV,UWAEFQ
+716: Ford F450 Super Duty Crew Cab,MBXXDG
+719: Kia Optima,JEWUYO
+722: Mercedes-Benz CLA,WJPEAV
+725: Land Rover Range Rover,DNQETT
+728: BMW M4,YAVUPL
+731: Toyota Corolla,LLWWWB
+734: Porsche Macan,TOQHAQ
+737: Audi S8,GRNIUR
+740: Mitsubishi Eclipse Cross,LBFHDB
+743: Lucid Air,PLMQOY
+746: Mitsubishi Mirage G4,HVUMFT
+749: Genesis Electrified G80,OXRBFB
+752: Audi S3,WCNQQW
+755: Toyota Camry,UILHVR
+758: Chevrolet Blazer EV,JBOOKF
+801: Hyundai Accent,SDQUZP
+804: Lexus GS,VMCIXC
+807: Kia Niro EV,IDNVBK
+810: Jeep Grand Wagoneer,XADJIW
+813: Porsche Panamera,YBBYEU
+816: MAZDA MAZDA3,VZKCYX
+819: Hyundai NEXO,ZLJPSX
+822: Mercedes-Benz Mercedes-AMG A-Class,YTOZZP
+825: Volkswagen Golf,RBMGOB
+828: Mercedes-Benz Mercedes-AMG GT,JVVHUU
+831: Jaguar I-PACE,RFPFHP
+834: Cadillac LYRIQ,LUEMWO
+837: Nissan Pathfinder,TUPIMY
+840: Volkswagen ID.4,KQDMIC
+843: Honda Civic,PUCKGP
+846: Jeep Cherokee,OVASRW
+849: Ford Fusion,CQHRYC
+852: Toyota GR86,BKOWCP
+855: Mercedes-Benz Mercedes-EQ EQB,SYCYVK
+858: GMC Acadia,PSHISN
+901: Toyota Mirai,LJESSD
+904: Subaru Crosstrek,APRDZX
+907: Lexus LX,CYYTMQ
+910: Mercedes-Benz Mercedes-AMG SL,ZRQBXK
+913: Mercedes-Benz Metris WORKER Passenger,NTFJBT
+916: Audi S4,XKYTJZ
+919: Genesis GV60,ENNCHB
+922: Tesla Model Y,TRQFLS
+925: Ford Escape,IZYGEF
+928: Toyota Camry Hybrid,XIQOSV
+931: Audi Q3,TXMYOD
+934: Cadillac CT6,PUNMSA
+937: INFINITI QX60,DOSZMF
+940: Mercedes-Benz S-Class,BSJQKV
+943: Audi R8,SLSCLU
+946: Ford Fusion Plug-in Hybrid,GABHWJ
+949: Subaru BRZ,VEDRDK
+952: Toyota Highlander Hybrid,NKWPME
+955: Audi S7,QGPYLD
+958: Jeep Grand Cherokee L,CJPFUN
+1001: Jeep Renegade,IXLQUY
+1004: Mitsubishi Outlander PHEV,EHAHLM
+1007: Tesla Model X,NGQRBB
+1010: GMC Hummer EV SUV,GIVPET
+1013: Audi A5,PLMENX
+1016: GMC Hummer EV,NSAROC
+1019: Mercedes-Benz Mercedes-AMG C-Class,LTTQPY
+1022: Bentley Mulsanne,AWIDZX
+1025: Toyota Corolla Hybrid,ZONGXG
+1028: Land Rover Range Rover Sport,DILFNK
+1031: Ford F150 SuperCrew Cab,CZNYNX
+1034: Buick Regal TourX,ZBFLGV
+1037: Honda Passport,EUJTLS
+1040: Bentley Continental GT,UZBICX
+1043: Hyundai Elantra Hybrid,XUJRNP
+1046: Audi e-tron S,QUESIF
+1049: Lincoln Continental,OGQXEY
+1052: Audi e-tron S Sportback,WEVOZX
+1055: Audi A7,VMQZQD
+1058: Chevrolet Camaro,PQMQYX
+1101: GMC Canyon Crew Cab,KKVAXB
+1104: Ford F450 Super Duty Regular Cab,ZJVSOW
+1107: Honda Pilot,PKLPRL
+1110: MINI Countryman,GCPTZT
+1113: Rolls-Royce Dawn,KHTXVE
+1116: Volvo S60,HNQWNB
+1119: Nissan NV200,CPHYJT
+1122: Hyundai Elantra GT,PQLZVX
+1125: Honda Clarity Fuel Cell,TNIPFB
+1128: Ford F150 Lightning,KDWQWF
+1131: Nissan Frontier Crew Cab,DATRWH
+1134: Land Rover Discovery,AOOZXU
+1137: Ford F250 Super Duty Super Cab,SMBSWT
+1140: Hyundai IONIQ 5,WSUEYG
+1143: Chevrolet Blazer,ZNFURG
+1146: Honda Clarity Plug-in Hybrid,RHYFYJ
+1149: Honda HR-V,JGHPCV
+1152: Audi A4,KFRLMI
+1155: Genesis GV70,HIABQT
+1158: Nissan Altima,QUJLQB
+1201: Mercedes-Benz Metris Cargo,EMSCTV
+1204: Chevrolet Malibu,ZKHPBK
+1207: Kia K900,QUMTNJ
+1210: Nissan Frontier King Cab,VTOQJZ
+1213: Lexus NX,WKSPXZ
+1216: Buick Enclave,IQIPLU
+1219: Mercedes-Benz Mercedes-AMG S-Class,EBREGY
+1222: Mercedes-Benz Mercedes-AMG CLA,XUQXEP
+1225: Volkswagen Golf R,HYWAXA
+1228: Audi Q5 Sportback,OJNZJU
+1231: Kia Niro Plug-in Hybrid,CMVKYQ
+1234: Hyundai Elantra,TCWRRW
+1237: MAZDA CX-90,ICJFQL
+1240: Subaru Forester,FOPBKS
+1243: Toyota Avalon Hybrid,RDGNWM
+1246: Ferrari F8,XTJODD
+1249: BMW M2,RSOHUR
+1252: Mitsubishi Outlander,JCVOKO
+1255: Audi S5,NOPGAT
+1258: Aston Martin DB11,YGURAW
+1301: INFINITI Q50,ABFEHC
+1304: Nissan NV1500 Cargo,GGOLOT
+1307: Rivian R1S,ITKJAC
+1310: Mercedes-Benz Mercedes-AMG CLS,SHSIJS
+1313: Toyota RAV4,NUVSUA
+1316: Acura Integra,QEPWOC
+1319: Ford Bronco Sport,TQXTFE
+1322: Tesla Cybertruck,LOOTFK
+1325: Kia EV6,MJKVQS
+1328: Lincoln Aviator,OYPSBW
+1331: Lamborghini Huracan,DXVWOH
+1334: Chevrolet Express 3500 Passenger,KCVMNR
+1337: Audi A6 allroad,RIAWMH
+1340: Honda Prologue,JQBDSD
+1343: Volkswagen Atlas,JKFWJL
+1346: Audi A4 allroad,GRZFIV
+1349: Audi Q8,QONMGN
+1352: INFINITI Q60,WKKMVD
+1355: Lexus RC,WPRIDM
+1358: Lexus ES,RVWLYD
+1401: BMW M8,JNSSAZ
+1404: Land Rover Discovery Sport,GYIIIQ
+1407: BMW M3,BOHXMV
+1410: Audi RS Q8,ELPTXO
+1413: Genesis G90,QDVGYI
+1416: Ford Expedition,HDQELY
+1419: Honda Fit,SUZKXP
+1422: Volkswagen Golf GTI,BFLHZF
+1425: Ferrari GTC4Lusso,HZSNWD
+1428: Subaru Outback,CXGCXW
+1431: Acura MDX Sport Hybrid,PXHUUO
+1434: Lincoln Nautilus,RBOGIL
+1437: Mercedes-Benz CLS,TXQLBU
+1444: Volkswagen Passat,JEWRHZ
+1451: Ford Explorer,SXRNYY
+1458: MINI Hardtop 2 Door,IVNOAD
+1505: Lincoln Corsair,GZTGRD
+1512: Ram ProMaster City,JJIZHW
+1519: Ford EcoSport,KFAPAE
+1526: Audi RS 7,GUTMBU
+1533: Ram ProMaster Window Van,NMIZOJ
+1540: Aston Martin DBS Superleggera,NETZTV
+1547: Ford Mustang MACH-E,WMGZGN
+1554: Genesis G80,OSWOKR
+1601: Mercedes-Benz GLC Coupe,LMLOAF
+1608: Hyundai Santa Fe,KDYASF
+1615: Honda Accord Hybrid,NTGUCV
+1622: Nissan NV3500 HD Passenger,QEMHKL
+1629: Buick Regal Sportback,DLXWPR
+1636: Chevrolet Express 3500 Cargo,TKPFOZ
+1643: Audi A3,VGKVQX
+1650: GMC Savana 2500 Cargo,YURQZW
+1657: Toyota Prius,SOCSNH
+1704: Kia Forte,PTGHKZ
+1711: Chevrolet Bolt EUV,TIXGFO
+1718: Mercedes-Benz GLS,PYJBOH
+1725: Mercedes-Benz GLB,YSGGVU
+1732: Hyundai Ioniq Electric,QUDDIZ
+1739: MINI Clubman,IJRVBI
+1746: Toyota Corolla Cross,RAFHUE
+1753: Dodge Charger,LFLNFU
+1800: Nissan NV2500 HD Cargo,NZVFMW
+1807: Volkswagen Jetta GLI,IWIVFC
+1814: Mercedes-Benz Mercedes-AMG G-Class,GFBQAZ
+1821: Mercedes-Benz Mercedes-AMG E-Class,GPEQHI
+1828: Land Rover Defender 110,DBRIHH
+1835: Audi S6,EBCBDW
+1842: Audi RS 3,ROBQWE
+1849: Hyundai Palisade,GFKAPL
+1856: Volkswagen ID.Buzz,RKUNQL
+1903: INFINITI QX80,LZFHMF
+1910: Honda CR-V,FHCJGC
+1917: Chevrolet Equinox,GCATHG
+1924: Ford F150 Regular Cab,DWRNKJ
+1931: Lincoln Navigator L,EKETUO
+1938: Acura MDX,PHSJMA
+1945: Hyundai Kona,PKHVKR
+1952: Dodge Durango,ZMDKSI
+1959: MAZDA MAZDA6,SDNIJF
+2006: Mercedes-Benz Mercedes-AMG GLS,SZZQEO
+2013: Volkswagen Arteon,AIUXRA
+2020: Mercedes-Benz GLE,LBLDUB
+2027: Chevrolet Express 2500 Cargo,XQAUSU
+2034: Lexus LC,VPPDLT
+2041: Audi Q7,TFPWIX
+2048: Acura RLX Sport Hybrid,QHTKOF
+2055: Genesis GV80,HSTWIN
+2102: Nissan LEAF,LEVFEW
+2109: Nissan Maxima,YUXXJM
+2116: Ford Mustang,NGYQNH
+2123: Porsche Cayenne Coupe,ITUONP
+2130: Nissan Rogue Sport,RVSHQP
+2137: Chevrolet Express 2500 Passenger,ULJRCN
+2144: Chrysler Pacifica,UQSFNS
+2151: Chevrolet Corvette,PLKHRV
+2158: Ford F350 Super Duty Super Cab,RGADLT
+2205: Cadillac Escalade,GRZTXQ
+2212: Acura NSX,VDIFYV
+2219: Acura ILX,VARNZG
+2226: Mercedes-Benz Mercedes-AMG SLC,OUOETE
+2233: Land Rover Range Rover Velar,TDGHMG
+2240: Rivian R1T,DSSHYL
+2247: MAZDA CX-3,WNBCKC
+2254: Mercedes-Benz Mercedes-AMG GLC Coupe,MWOQIX
+2301: MINI Convertible,JCYQAH
+2308: Hyundai Santa Fe Hybrid,EJFOCP
+2315: Acura RLX,QCCXNI
+2322: Mercedes-Benz Mercedes-AMG GLE Coupe,NMBHHM
+2329: Mitsubishi Outlander Sport,DHUEXU
+2336: Toyota RAV4 Prime,SXGNGT
+2343: Mercedes-Benz Metris WORKER Cargo,RAMTKQ
+2350: BMW i4,APPLUX
+2357: Audi RS 6,FVXMKC
+==123527== 
+==123527== HEAP SUMMARY:
+==123527==     in use at exit: 0 bytes in 0 blocks
+==123527==   total heap usage: 412 allocs, 412 frees, 316,445 bytes allocated
+==123527== 
+==123527== All heap blocks were freed -- no leaks are possible
+==123527== 
+==123527== For lists of detected and suppressed errors, rerun with: -s
+==123527== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+Script done on Sun 23 Jan 2022 03:23:07 PM EST

@@ -1,0 +1,960 @@
+Script started on Sat 29 Jan 2022 01:53:45 PM EST
+==73752== Memcheck, a memory error detector
+==73752== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==73752== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==73752== Command: ws
+==73752== 
+Enter the following data:
+dna.csv
+gttaacca
+gttaaccaa
+!
+==============================
+Enter DNA data file name: dna.csv
+DNA search program
+Enter a DNA squence (max 100 chars)
+> gttaacca
+==73752== Invalid write of size 4
+==73752==    at 0x401B72: sdds::read(char const*) (DNA.cpp:85)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Address 0x5b23670 is 50,400 bytes inside a block of size 60,480 free'd
+==73752==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==73752==    by 0x401AAB: sdds::read(char const*) (DNA.cpp:76)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Block was alloc'd at
+==73752==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==73752==    by 0x401990: sdds::read(char const*) (DNA.cpp:67)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752== 
+==73752== Invalid write of size 1
+==73752==    at 0x401504: sdds::strCpy(char*, char const*) (cStrTools.cpp:65)
+==73752==    by 0x401BB9: sdds::read(char const*) (DNA.cpp:86)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Address 0x5b23674 is 50,404 bytes inside a block of size 60,480 free'd
+==73752==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==73752==    by 0x401AAB: sdds::read(char const*) (DNA.cpp:76)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Block was alloc'd at
+==73752==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==73752==    by 0x401990: sdds::read(char const*) (DNA.cpp:67)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752== 
+==73752== Invalid write of size 1
+==73752==    at 0x40152B: sdds::strCpy(char*, char const*) (cStrTools.cpp:66)
+==73752==    by 0x401BB9: sdds::read(char const*) (DNA.cpp:86)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Address 0x5b239e3 is 51,283 bytes inside a block of size 60,480 free'd
+==73752==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==73752==    by 0x401AAB: sdds::read(char const*) (DNA.cpp:76)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Block was alloc'd at
+==73752==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==73752==    by 0x401990: sdds::read(char const*) (DNA.cpp:67)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752== 
+==73752== Invalid read of size 8
+==73752==    at 0x401A11: sdds::read(char const*) (DNA.cpp:71)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Address 0x5b17190 is 0 bytes inside a block of size 60,480 free'd
+==73752==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==73752==    by 0x401AAB: sdds::read(char const*) (DNA.cpp:76)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Block was alloc'd at
+==73752==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==73752==    by 0x401990: sdds::read(char const*) (DNA.cpp:67)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752== 
+==73752== Invalid free() / delete / delete[] / realloc()
+==73752==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==73752==    by 0x401A82: sdds::read(char const*) (DNA.cpp:73)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Address 0x5b17190 is 0 bytes inside a block of size 60,480 free'd
+==73752==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==73752==    by 0x401AAB: sdds::read(char const*) (DNA.cpp:76)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Block was alloc'd at
+==73752==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==73752==    by 0x401990: sdds::read(char const*) (DNA.cpp:67)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752== 
+==73752== Invalid read of size 4
+==73752==    at 0x401CFA: sdds::sort() (DNA.cpp:107)
+==73752==    by 0x4022FE: main (main_prof.cpp:38)
+==73752==  Address 0x5be4010 is 0 bytes inside a block of size 141,120 free'd
+==73752==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==73752==    by 0x401AAB: sdds::read(char const*) (DNA.cpp:76)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Block was alloc'd at
+==73752==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==73752==    by 0x401990: sdds::read(char const*) (DNA.cpp:67)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752== 
+==73752== Invalid read of size 4
+==73752==    at 0x401D1C: sdds::sort() (DNA.cpp:107)
+==73752==    by 0x4022FE: main (main_prof.cpp:38)
+==73752==  Address 0x5be4010 is 0 bytes inside a block of size 141,120 free'd
+==73752==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==73752==    by 0x401AAB: sdds::read(char const*) (DNA.cpp:76)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Block was alloc'd at
+==73752==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==73752==    by 0x401990: sdds::read(char const*) (DNA.cpp:67)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752== 
+==73752== Invalid read of size 4
+==73752==    at 0x401D46: sdds::sort() (DNA.cpp:109)
+==73752==    by 0x4022FE: main (main_prof.cpp:38)
+==73752==  Address 0x5be4010 is 0 bytes inside a block of size 141,120 free'd
+==73752==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==73752==    by 0x401AAB: sdds::read(char const*) (DNA.cpp:76)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Block was alloc'd at
+==73752==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==73752==    by 0x401990: sdds::read(char const*) (DNA.cpp:67)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752== 
+==73752== Invalid read of size 1
+==73752==    at 0x401517: sdds::strCpy(char*, char const*) (cStrTools.cpp:65)
+==73752==    by 0x401D80: sdds::sort() (DNA.cpp:110)
+==73752==    by 0x4022FE: main (main_prof.cpp:38)
+==73752==  Address 0x5be4014 is 4 bytes inside a block of size 141,120 free'd
+==73752==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==73752==    by 0x401AAB: sdds::read(char const*) (DNA.cpp:76)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Block was alloc'd at
+==73752==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==73752==    by 0x401990: sdds::read(char const*) (DNA.cpp:67)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752== 
+==73752== Invalid read of size 1
+==73752==    at 0x401501: sdds::strCpy(char*, char const*) (cStrTools.cpp:65)
+==73752==    by 0x401D80: sdds::sort() (DNA.cpp:110)
+==73752==    by 0x4022FE: main (main_prof.cpp:38)
+==73752==  Address 0x5be4014 is 4 bytes inside a block of size 141,120 free'd
+==73752==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==73752==    by 0x401AAB: sdds::read(char const*) (DNA.cpp:76)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Block was alloc'd at
+==73752==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==73752==    by 0x401990: sdds::read(char const*) (DNA.cpp:67)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752== 
+==73752== Invalid read of size 4
+==73752==    at 0x401DC1: sdds::sort() (DNA.cpp:111)
+==73752==    by 0x4022FE: main (main_prof.cpp:38)
+==73752==  Address 0x5be4fd0 is 4,032 bytes inside a block of size 141,120 free'd
+==73752==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==73752==    by 0x401AAB: sdds::read(char const*) (DNA.cpp:76)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Block was alloc'd at
+==73752==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==73752==    by 0x401990: sdds::read(char const*) (DNA.cpp:67)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752== 
+==73752== Invalid write of size 4
+==73752==    at 0x401DC3: sdds::sort() (DNA.cpp:111)
+==73752==    by 0x4022FE: main (main_prof.cpp:38)
+==73752==  Address 0x5be4010 is 0 bytes inside a block of size 141,120 free'd
+==73752==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==73752==    by 0x401AAB: sdds::read(char const*) (DNA.cpp:76)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Block was alloc'd at
+==73752==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==73752==    by 0x401990: sdds::read(char const*) (DNA.cpp:67)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752== 
+==73752== Invalid read of size 1
+==73752==    at 0x401517: sdds::strCpy(char*, char const*) (cStrTools.cpp:65)
+==73752==    by 0x401E17: sdds::sort() (DNA.cpp:112)
+==73752==    by 0x4022FE: main (main_prof.cpp:38)
+==73752==  Address 0x5be4fd4 is 4,036 bytes inside a block of size 141,120 free'd
+==73752==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==73752==    by 0x401AAB: sdds::read(char const*) (DNA.cpp:76)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Block was alloc'd at
+==73752==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==73752==    by 0x401990: sdds::read(char const*) (DNA.cpp:67)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752== 
+==73752== Invalid read of size 1
+==73752==    at 0x401501: sdds::strCpy(char*, char const*) (cStrTools.cpp:65)
+==73752==    by 0x401E17: sdds::sort() (DNA.cpp:112)
+==73752==    by 0x4022FE: main (main_prof.cpp:38)
+==73752==  Address 0x5be4fd4 is 4,036 bytes inside a block of size 141,120 free'd
+==73752==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==73752==    by 0x401AAB: sdds::read(char const*) (DNA.cpp:76)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Block was alloc'd at
+==73752==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==73752==    by 0x401990: sdds::read(char const*) (DNA.cpp:67)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752== 
+==73752== Invalid write of size 1
+==73752==    at 0x401504: sdds::strCpy(char*, char const*) (cStrTools.cpp:65)
+==73752==    by 0x401E17: sdds::sort() (DNA.cpp:112)
+==73752==    by 0x4022FE: main (main_prof.cpp:38)
+==73752==  Address 0x5be4014 is 4 bytes inside a block of size 141,120 free'd
+==73752==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==73752==    by 0x401AAB: sdds::read(char const*) (DNA.cpp:76)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Block was alloc'd at
+==73752==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==73752==    by 0x401990: sdds::read(char const*) (DNA.cpp:67)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752== 
+==73752== Invalid write of size 1
+==73752==    at 0x40152B: sdds::strCpy(char*, char const*) (cStrTools.cpp:66)
+==73752==    by 0x401E17: sdds::sort() (DNA.cpp:112)
+==73752==    by 0x4022FE: main (main_prof.cpp:38)
+==73752==  Address 0x5be429f is 655 bytes inside a block of size 141,120 free'd
+==73752==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==73752==    by 0x401AAB: sdds::read(char const*) (DNA.cpp:76)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Block was alloc'd at
+==73752==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==73752==    by 0x401990: sdds::read(char const*) (DNA.cpp:67)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752== 
+==73752== Invalid write of size 1
+==73752==    at 0x401504: sdds::strCpy(char*, char const*) (cStrTools.cpp:65)
+==73752==    by 0x401E4D: sdds::sort() (DNA.cpp:113)
+==73752==    by 0x4022FE: main (main_prof.cpp:38)
+==73752==  Address 0x5be4fd4 is 4,036 bytes inside a block of size 141,120 free'd
+==73752==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==73752==    by 0x401AAB: sdds::read(char const*) (DNA.cpp:76)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Block was alloc'd at
+==73752==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==73752==    by 0x401990: sdds::read(char const*) (DNA.cpp:67)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752== 
+==73752== Invalid write of size 1
+==73752==    at 0x40152B: sdds::strCpy(char*, char const*) (cStrTools.cpp:66)
+==73752==    by 0x401E4D: sdds::sort() (DNA.cpp:113)
+==73752==    by 0x4022FE: main (main_prof.cpp:38)
+==73752==  Address 0x5be5053 is 4,163 bytes inside a block of size 141,120 free'd
+==73752==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==73752==    by 0x401AAB: sdds::read(char const*) (DNA.cpp:76)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Block was alloc'd at
+==73752==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==73752==    by 0x401990: sdds::read(char const*) (DNA.cpp:67)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752== 
+==73752== Invalid write of size 4
+==73752==    at 0x401E71: sdds::sort() (DNA.cpp:114)
+==73752==    by 0x4022FE: main (main_prof.cpp:38)
+==73752==  Address 0x5be4fd0 is 4,032 bytes inside a block of size 141,120 free'd
+==73752==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==73752==    by 0x401AAB: sdds::read(char const*) (DNA.cpp:76)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Block was alloc'd at
+==73752==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==73752==    by 0x401990: sdds::read(char const*) (DNA.cpp:67)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752== 
+==73752== 
+==73752== More than 10000000 total errors detected.  I'm not reporting any more.
+==73752== Final error counts will be inaccurate.  Go fix your program!
+==73752== Rerun with --error-limit=no to disable this cutoff.  Note
+==73752== that errors may occur in your program without prior warning from
+==73752== Valgrind, because errors are no longer being displayed.
+==73752== 
+132 matches found:
+1) 370996:
+ggccagaactctgaacatactatagatgctcacattattactgcacttacaaaacgcgtcgatgcaaccagatcaagcttggtgtatgccagtattgaagtcccatgattagtgcctccgacgaggcggtgttttgttggtgaacgggacggcgcaccaatattaagaaaggtagatagatgttaaccatcaccatggagtgttcacgcccatgacgacactctgcttgtcccacgacgaaggcatctgatcgcgcaaagtctagaagcccatcgcttcgagctgaacggccctcaactagtcggacatagccaagggcactatcagcctatgtatgcttacgcaaaacgtcttgcggtgagcagcagggagtggccaagtcactgataaaactttccgcgctatgggcggtacgtgatatgcgcagttagctacgatgatcacctgagggaaacctgccaaaaaggtgacgtctactttggtagggaaggacgagctgagcaaggtcagtcgcaagagaggtccgcggtcctttatatatgagtatttggattctacacaggcgagtgtcacatcaccgcaggtgattcctgatacccatttggcatcgcaatctagtccaatccgtggactagctttttgcgccccagaagcccacagcaggcgggtatg
+======================================================================
+2) 376693:
+ttatctctaacacccgggtgcacgcaaatgactgcaagacccgtgtacggtagcgggtgcgtgtactaatcaacttgcttgtccaaggggatcaaggctttgcttttagtggacccccagctcgcatacgagttttactttatattgaaaatttggaagacatagcatccgttgtaggcgaataacgaactgtttctgttcacattctttcattcgatgttcttcgcggacaagataatactggatctatcttaagatccgagcgtgtcactacggtcacggacgagtcagccgcgttaaccacaatgaagaaattgtatggctgctttcctgcaactcctgggaccagttccccccttcgggttcagttcaacacacgcgggcaatggggtagtaacatgatctgcattaagagacagtgttgccttccgggggtaccaaaaacttctgtgtgtactggcattactttgtacccgcgaagaccgtgtctcatagggactacaactccgagggtcatctttgagatcacacgactcacacggagtgtctcgtcaggcgaagcgactccggtggatactggatatccatgcagatcgctcttcgcgggaaattatctccccttctggctgcaattacgtgtagcgccattagccggggcttgcgggaggtcgaccccccgacctggaattgttaggacatctgtttctatgtggctaaggtatagtccgggacatcctccctcgtgagacacatctacggcgaagattctgggagtccggctgcctttcccgagaaccagaaaagactttgatatctatcgtgatatacgacattagggggagttgccagtcgtcctgctggcctttccgataaacaaggtcaggcccttccctccataataatatcgggtaacgacctttgctcacgaccaaagctc
+======================================================================
+3) 379077:
+gccagaaggcgaaccctcgatcccgaggcgaattgggaaattgaaagcccgtagctactttatcgaaagactctgctgacccagcttctcagatgcccttgcgttacatggtactggctctgtaggcaggacggaatttgccaccctcgaggaagactaggggtcacgttcgcgtcgacattttcaccttatcgggagacacgtgggccgaattggtggctcaatcgaagcgcagtcacatacttttggcttaccttaagtcctacgctccgaggttattggtgtccctgtccctctaccgcatatcgtgcctataaggtcaaaagtctatggtcttacggagacagattatgggggtgcagagctcgaatgggcatgagtgctgtccccttgccactgaaaggccgcgccgcttcaagataggagccactcttgcacctgcgactgtgaatagacaactacaccgacgctgttgctgaagatgggagaaatgagagcgccgtgatgttttacttcaggaccgcccatcttcttgataatctgttgcacttttatctctaacacccgggtgcacgcaaatgactgcaagacccgtgtacggtagcgggtgcgtgtactaatcaacttgcttgtccaaggggatcaaggctttgcttttagtggacccccagctcgcatacgagttttactttatattgaaaatttggaagacatagcatccgttgtaggcgaataacgaactgtttctgttcacattctttcattcgatgttcttcgcggacaagataatactggatctatcttaagatccgagcgtgtcactacggtcacggacgagtcagccgcgttaaccacaatgaagaaattgtatggctgctttcctgcaactcctgggaccagttccccccttcgggttcagttcaacacacgcgggcaatggggtagtaacatgatctgcattaa
+======================================================================
+4) 381445:
+actatctcggtatacaacgtccctggaatctagacaagttgacacggcactccgccgtttcagtgatgacattgtacatggtccacgggtccattcagggagtgatttcgaatgtgggcctggtcgcacagttgaaggtgaactccgcacgttagctctaatgggttaaccatgcgtgggctaaagaggaacgaagtgttgtggaacggataggctgggggtcgccgaaagacacaggcgatctcataaggtaggtttctctgataaccactattaattcgacttctcatcaaaatttccggcatagttactagggacaagac
+======================================================================
+5) 382678:
+gggtcactggagatactcgataatttggatcatacgccccggacctcccactgtagcgccgctgcgatttttcagacgctatgcttccgcgcgtagttagcggagattaactgctactatctcggtatacaacgtccctggaatctagacaagttgacacggcactccgccgtttcagtgatgacattgtacatggtccacgggtccattcagggagtgatttcgaatgtgggcctggtcgcacagttgaaggtgaactccgcacgttagctctaatgggttaaccatgcgtgggctaaagaggaacgaagtgttgtggaacggataggctgggggtcgccgaaagacacaggcgatctcataaggtaggtttctctgataaccactattaattcgacttctcatcaaaatttccggcatagttactagggacaagacgtaaagcccaccgtgttaaccggtccaattcttgggtggacataatctccgtccggtatatgacatcccgtgaa
+======================================================================
+6) 393939:
+gaacagcatgaaaaaggccttacgcacggcgcttcaccctcgatggttatgatcgcctccagtgtatgtggacgccgactccgccaccgcttctagttaaccacgccacggcgctgggacctggacactgggatgtcttcgcttttttagaggaatctttgtttatgccctagagttcaatagcaaagcccacgccagtctgccatcggccagcaattggaagttctgatccggctctgactcagaatcggccggccgctcgcttctacttaacgatccataaccccggatattcagatgttgagctatcgcagattctgtaacctgtggcgaacgagaactctgggtacccacggacataacttcttccctttcgcgtaaccgatagtgattaatagatgcgtggggggcag
+======================================================================
+7) 396169:
+ctaacggtgagggccgttattcactagctacctttaaaaaggccagaactctgaacatactatagatgctcacattattactgcacttacaaaacgcgtcgatgcaaccagatcaagcttggtgtatgccagtattgaagtcccatgattagtgcctccgacgaggcggtgttttgttggtgaacgggacggcgcaccaatattaagaaaggtagatagatgttaaccatcaccatggagtgttcacgcccatgacgacactctgcttgtcccacgacgaaggcatctgatcgcgcaaagtctagaagcccatcgcttcgagctgaacggccctcaactagtcggacatagccaagggcactatcagcctatgtatgcttacgcaaaacgtcttgcggtgagcagcagggagtggccaagtcactgataaaactttccgcgctatgggcggtacgtgatatgcgcagttagctacgatgatcacctgagggaaacctgccaaaaaggtgacgtctactttggtagggaaggacgagctgagcaaggtcagtcgcaagagaggtccgcggtcctttatatatgagtatttggattctacacaggcgagtgtcacatcaccgcaggtgattcctgatacccatttggcatcgcaatctagtccaatccgtggactagctttttgcgccccagaagcccacagcaggcgggtatgcatattaagacatttttacaacaacctagtgatgacggtttttttaaggtagctgtagaacagactactagtgtgggtgagagaaaagctggtgagattgctcatagaaagcgcactgcgccgcatattgccagtctggtgttcgaacaatggccgagcttacccacgacattattttgctcatgggaatcctcaattaaccgcatataaacgtcaataatgggtcgggggttgccaatgccaatcggcggcgacctata
+======================================================================
+8) 401300:
+tccgacgaggcggtgttttgttggtgaacgggacggcgcaccaatattaagaaaggtagatagatgttaaccatcaccatggagtgttcacgcccatgacgacactctgcttgtcccacgacgaaggcatctgatcgcgcaaagtctagaagcccatcgcttcgagctgaacggccctcaactagtcggacatagccaagggcactatcagcctatgtatgcttacgcaaaacgtcttgcggtgagcagcagggagtggccaagtcactgataaaactttccgcgctatgggcggtacgtgatatgcgcagttagctacgatgatcacctgagggaaacctgccaaaaaggtgacgtctactttggtagggaaggacgagctgagcaaggtcagtcgcaagagaggtccgcggtcctttatatatgagtatttggattctacacaggcgagtgtcacatcaccgcaggtgattcctgatacccatttggcatcgcaatctagtccaatccgtggactagctttttgcgccccagaagcccacagcaggcgggtatgcatattaagacatttttacaacaacctagtgatgacggtttttttaaggtagctgtagaacagactactagtgtgggtgagagaaaagctggtgagattgctcatagaaagcgcactgcgccgcatattgccagtctggtgttcgaacaatggccgagcttacccacgacattattttgctcatgggaatcctcaattaaccgcatataaacgtcaataatgggtcgggggttgccaatgccaatcggcggcgacctatagctgaacgttaatcatcttcagcaatgtattgaacgttcacataaagcccta
+======================================================================
+9) 404484:
+atccttacccatcatatggtgcgcccacgatcttccttgatgaccggatgacacttatccgtgctcagataagtgccttgtccgtatggtggaattgtcgtacaagcgaggtatcgattggtacggcagacctatccgaatgggccatctagcagcatgagtcaaaagttaaccattcctagagcggtagagtgtttcaaaacgggcaaaggcgtaaggtagagaatctgcgtttgtcgggtccgctcggtatcgcccttaggcctcgtggacattccgacacgggcttccattgcaaacgcaatcagccggtgatacttaatctagcttccagtggctttccgagaacgggggtcacggtggggcatgtgagctggtaacgttcaccgggtggtgtgttcctcgcggtaccctgtaatcgtccttggacaccgtgacctgtttagggttaatactggccttggcggcgctcatgtgtctggttgcagacgaggtcgcacgcctaagcatcggtcccgtgactgctctttaaactggggacatcgagtttgggtccgtcaaatgtcccgctccatcgtgacaagtgtctattcacctggcccctcccctgaccgttgcttaatattggagtggtatacctaacggtcctgtttgaaccgatgctgcaagtgtccggactttaaagcttttcattgataatatcggaacagcgctgtataagtgcatgttcgacagtatgacatgctctgttacggctatcggagcacagctttcagtaactcatcccatctcgctgagcgcggcttcgagcatcgaagttagaacatttgatagattctttcgcgtttatagggactctgcaattgccgtacccaactccattagttgggcgtcgggacgccatagt
+======================================================================
+10) 406788:
+tatgccagtattgaagtcccatgattagtgcctccgacgaggcggtgttttgttggtgaacgggacggcgcaccaatattaagaaaggtagatagatgttaaccatcaccatggagtgttcacgcccatgacgacactctgcttgtcccacgacgaaggcatctgatcgcgcaaagtctagaagcccatcgcttcgagctgaacggccctcaactagtcggacatagccaagggcactatcagcctatgtatgcttacgcaaaacgtcttgcggtgagcagcagggagtggccaagtcactgataaaactttccgcgctatgggcggtacgtgatatgcgcagttagctacgatgatcacctgagggaaacctgccaaaaaggtgacgtctactttggtagggaaggacgagctgagcaaggtcagtcgcaagagaggtccgcggtcctttatatatgagtatttggattctacacaggcgagtgtcacatcaccgcaggtgattcctgatacccatttggcatcgcaatctagtccaatccgtggactagctttttgcgccccagaagcccacagcaggcgggtatgcatattaagacatttttacaacaacctagtgatgacggtttttttaaggtagctgtagaacagactactagtgtgggtgagagaaaagctggtgagattgctcatagaaagcgcactgcgccgcatattgccagtctggtgttcgaacaatggccgagcttacccacgacattattttgctcatgggaatcctcaattaaccgcatataaacgtcaataatgggtcgggggttgccaatgccaatcggcggcgacctatagctg
+======================================================================
+11) 411084:
+tattgaagtcccatgattagtgcctccgacgaggcggtgttttgttggtgaacgggacggcgcaccaatattaagaaaggtagatagatgttaaccatcaccatggagtgttcacgcccatgacgacactctgcttgtcccacgacgaaggcatctgatcgcgcaaagtctagaagcccatcgcttcgagctgaacggccctcaactagtcggacatagccaagggcactatcagcctatgtatgcttacgcaaaacgtcttgcggtgagcagcagggagtggccaagtcactgataaaactttccgcgctatgggcggtacgtgatatgcgcagttagctacgatgatcacctgagggaaacctgccaaaaaggtgacgtctactttggtagggaaggacgagctgagcaaggtcagtcgcaagagaggtccgcggtcctttatatatgagtatttggattctacacaggcgagtgtcacatcaccgcaggtgattcctgatacccatttggcatcgcaatctagtccaatccgtggactagctttttgcgccccagaagcccacagcaggcgggtatg
+======================================================================
+12) 412318:
+tagagaaacgaatgcactgttgagcaccgttaacaccgacttttttcatttttaacatccacaacattggttgtgggagaagtccaaccccacgatgtcgttgagcgataccggcaacaatgggcgagggcgcgagcggaatccttctttgaacttatggggtatgctccgatgggaaaattatgtaactccgtagtacgttttcccgcgcgaccagtgtggccgatctacttaacctctgcacgagtagaccctccgagaccgctcgccgtgaccacgaatttttcacaatgtttcaggtgcagtcgtactctcaacgaatggcacggcacctcctttaaaaacgattttatgggccgtctgtctggtaatccctgttggagaggcgccgggccattctgctagcgacgtatcgactgagggtcctcctaagtacccttcctatcaatactaacggtgagggccgttattcactagctacctttaaaaaggccagaactctgaacatactatagatgctcacattattactgcacttacaaaacgcgtcgatgcaaccagatcaagcttggtgtatgccagtattgaagtcccatgattagtgcctccgacgaggcggtgttttgttggtgaacgggacggcgcaccaatattaagaaaggtagatagatgttaaccatcaccatggag
+======================================================================
+13) 417788:
+gagtttgaatgtagattcttttgccgcgtcaacgtgaaagattactgtctcgctgcttaaccctccagaaatctggaacagcatgaaaaaggccttacgcacggcgcttcaccctcgatggttatgatcgcctccagtgtatgtggacgccgactccgccaccgcttctagttaaccacgccacggcgctgggacctggacactgggatgtcttcgcttttttagaggaatctttgtttatgccctagagttcaatagcaaagcccacgccagtctgccatcggccagcaattggaagttctgatccggctctgactcagaatcggccggccgctcgcttctacttaacgatccataaccccggatattcagatgttgagctatcgcagattctgtaacctgtggcgaacgagaa
+======================================================================
+14) 418626:
+aggctctaactgtaagcgcctgtcgaatttagtaagattcatttcaaaggtgctgtccgcgtactgacagtcacatagcgattacgaaaattgccactgcggcatccattacagccaactttcatgtcctgatctgttcatgtcccctctccaatcacggggaatcttccgattacattacgagggcggtgaacagcgtgtctaagggactgtcggtgttatagatggcggacgaagaccgcgcactcttcttcgggagactacgcctacaaccgtacagtctagcctcccagacctaggttcagcatggtttacagagagccctgaaagtcgatacacagggggctatctgacaagatcaaaagtggcgttcttactcaaagcatactgggtagtgcgattaatcaaatttcgcagctatatctctgtattgagttgtactgtaggccttcgtttctaaaggtttttgaggtcaggaaggtgttggtatgggtcactggagatactcgataatttggatcatacgccccggacctcccactgtagcgccgctgcgatttttcagacgctatgcttccgcgcgtagttagcggagattaactgctactatctcggtatacaacgtccctggaatctagacaagttgacacggcactccgccgtttcagtgatgacattgtacatggtccacgggtccattcagggagtgatttcgaatgtgggcctggtcgcacagttgaaggtgaactccgcacgttagctctaatgggttaaccatgcgtgggctaaagaggaacgaagtgttgtggaacggataggctgggggtcgccgaaagacacaggcgat
+======================================================================
+15) 424285:
+tcgccgctaagatttcacctggagaaaccgatagccccgaagcggctatcttttaatgaacattggctattcacaagctatatcccaacaaggaacggttcgtaactcgtccagccttgaacactgcttataccgcgtgggaatttggtctgcgatctttgggatcagcgctagagaaacgaatgcactgttgagcaccgttaacaccgacttttttcatttttaacatccacaacattggttgtgggagaagtccaaccccacgatgtcgttgagcgataccggcaacaatgggcgagggcgcgagcggaatccttctttgaacttatggggtatgctccgatgggaaaattatgtaactccgtagtacgttttcccgcgcgaccagtgtggccgatctacttaacctctgcacgagtagaccctccgagaccgctcgccgtgaccacgaatttttcacaatgtttcaggtgcagtcgtactctcaacgaatggcacggcacctcctttaaaaacgattttatgggccgtctgtctggtaatccctgttggagaggcgccgggccattctgctagcgacgtatcgactgagggtcctcctaagtacccttcctatcaatactaacggtgagggccgttattcactagctacctttaaaaaggccagaactctgaacatactatagatgctcacattattactgcacttacaaaacgcgtcgatgcaaccagatcaagcttggtgtatgccagtattgaagtcccatgattagtgcctccgacgaggcggtgttttgttggtgaacgggacggcgcaccaatattaagaaaggtagatagatgttaaccatcaccatggagtgttcacgccc
+======================================================================
+16) 424785:
+attcctgagctgatacatttcaatacactccatggctaaggtagaattgcaagacccacttaaagctgttcgccgctaagatttcacctggagaaaccgatagccccgaagcggctatcttttaatgaacattggctattcacaagctatatcccaacaaggaacggttcgtaactcgtccagccttgaacactgcttataccgcgtgggaatttggtctgcgatctttgggatcagcgctagagaaacgaatgcactgttgagcaccgttaacaccgacttttttcatttttaacatccacaacattggttgtgggagaagtccaaccccacgatgtcgttgagcgataccggcaacaatgggcgagggcgcgagcggaatccttctttgaacttatggggtatgctccgatgggaaaattatgtaactccgtagtacgttttcccgcgcgaccagtgtggccgatctacttaacctctgcacgagtagaccctccgagaccgctcgccgtgaccacgaatttttcacaatgtttcaggtgcagtcgtactctcaacgaatggcacggcacctcctttaaaaacgattttatgggccgtctgtctggtaatccctgttggagaggcgccgggccattctgctagcgacgtatcgactgagggtcctcctaagtacccttcctatcaatactaacggtgagggccgttattcactagctacctttaaaaaggccagaactctgaacatactatagatgctcacattattactgcacttacaaaacgcgtcgatgcaaccagatcaagcttggtgtatgccagtattgaagtcccatgattagtgcctccgacgaggcggtgttttgttggtgaacgggacggcgcaccaatattaagaaaggtagatagatgttaaccatcaccatgga
+======================================================================
+17) 426691:
+ctctaatgggttaaccatgcgtgggctaaagaggaacgaagtgttgtggaacggataggctgggggtcgccgaaagacacaggcgatctcataaggtaggtttctctgataaccactattaattcgacttctcatcaaaatttccggcatagttactagggacaagacgtaaagcccaccgtgttaaccggtccaattcttgggtggacataatctccgtccggtatatgacatcccgtgaagttagccccgtccacctctaaatatgggggtgagtatagcttaatctggaaacaactcctagggtctgctaatgtaacacgacgtcgacgtagaagctagctagctgaaacggattgggtccacgccaagcccagaccgctcctctgcgcactcttgcgttatgtgcatggccccgcgcttat
+======================================================================
+18) 429252:
+gaggcagctctattcattcgcttcaacaacgacaggagtgtacgttgattgcgaccccatggcaatcgcgacacatgtcctccgatggacacatcatagaggattcgaatcggtgttagcctagatgaccctactgtactaggtccccggggtaacttcaattttcctgcccaaaacatcggcgatcaatcagcgagtttgaatgtagattcttttgccgcgtcaacgtgaaagattactgtctcgctgcttaaccctccagaaatctggaacagcatgaaaaaggccttacgcacggcgcttcaccctcgatggttatgatcgcctccagtgtatgtggacgccgactccgccaccgcttctagttaaccacgccacggcgctgggacctggacactgggatgtcttcgcttttttagaggaatctttgtttatgccctagagttcaatagcaaagcccacgccagtctgccatcggccagcaattggaagttctgatccggctctgactcagaatcggccggccgctcgcttctacttaacgatccataaccccggatattcagatgttgagctatcgcagattctgtaacctgtggcgaacgagaactctgggtacccacggacataacttcttccctttcgcgtaaccgatagtgattaatagatgcgtggggggcagccgagtgtaacaaaactagggtgcgatccgcggtgttcgacgtgagaactttaaccgtactaagtctgctgccacggtcctctgagtcttttaactacaaccgggacaagtcggtcctggtaggctaagca
+======================================================================
+19) 433653:
+aggtccccggggtaacttcaattttcctgcccaaaacatcggcgatcaatcagcgagtttgaatgtagattcttttgccgcgtcaacgtgaaagattactgtctcgctgcttaaccctccagaaatctggaacagcatgaaaaaggccttacgcacggcgcttcaccctcgatggttatgatcgcctccagtgtatgtggacgccgactccgccaccgcttctagttaaccacgccacggcgctgggacctggacactgggatgtcttcgcttttttagaggaatctttgtttatgccctagagttcaatagcaaagcccacgccagtctgccatcggccagcaattggaagttctgatccggctctgactcagaatcggccggccgctcgcttctacttaacgatccataaccccggatattcagatgttgagctatcgcagattctgtaacctgtggcgaacgagaactctgggtacccacggacataacttcttccctttcgcgtaaccgatagtgattaatagatgcgtggggggcagccgagtgtaacaaaactagggtgcgatccgcggtgttcgacgtgagaactttaaccgtactaagtctgctgccacggtcctctgagtcttttaactacaaccgggacaagtcggtcctggtaggctaagcagcaccgagtggaacgaataatcggtaacgaagatgatagttgcgcagcgtggcccgcagtagctctcttccccggtctacaataaagacgttaagtcttgtacaccacttctcgcgtctgtagcgtggccgctcgataccatgagggatcgcgctcagctccatacaacgagtt
+======================================================================
+20) 433693:
+actcttcttcgggagactacgcctacaaccgtacagtctagcctcccagacctaggttcagcatggtttacagagagccctgaaagtcgatacacagggggctatctgacaagatcaaaagtggcgttcttactcaaagcatactgggtagtgcgattaatcaaatttcgcagctatatctctgtattgagttgtactgtaggccttcgtttctaaaggtttttgaggtcaggaaggtgttggtatgggtcactggagatactcgataatttggatcatacgccccggacctcccactgtagcgccgctgcgatttttcagacgctatgcttccgcgcgtagttagcggagattaactgctactatctcggtatacaacgtccctggaatctagacaagttgacacggcactccgccgtttcagtgatgacattgtacatggtccacgggtccattcagggagtgatttcgaatgtgggcctggtcgcacagttgaaggtgaactccgcacgttagctctaatgggttaaccatgcgtgggctaaagaggaacgaagtgttgtggaacggataggctgggggtcgccgaaagacacaggcgatctcataaggtaggtttctctgataaccactattaattcgacttctcatcaaaatttccggcatagttactagggacaagacgtaaagcccaccgtgttaacc
+======================================================================
+21) 435150:
+cgatcaatcagcgagtttgaatgtagattcttttgccgcgtcaacgtgaaagattactgtctcgctgcttaaccctccagaaatctggaacagcatgaaaaaggccttacgcacggcgcttcaccctcgatggttatgatcgcctccagtgtatgtggacgccgactccgccaccgcttctagttaaccacgccacggcgctgggacctggacactgggatgtcttcgcttttttagaggaatctttgtttatgccctagagttcaatagcaaagcccacgccagtctgccatcggccagcaattggaagttctgatccggctctgactcagaatcggccggccgctcgcttctacttaacgatccataaccccggatattcagatgttgagctatcgcagattctgtaacctgtggcgaacgagaactctgggtacccacggacataacttcttccctttcgcgtaaccgatagtgattaatagatgcgtggggggcagccgagtgtaacaaaactagggtgcgatccgcggtgttcgacgtgagaactttaaccgtactaagtctgctgccacggtcctctgagtctt
+======================================================================
+22) 439930:
+acattttcaccttatcgggagacacgtgggccgaattggtggctcaatcgaagcgcagtcacatacttttggcttaccttaagtcctacgctccgaggttattggtgtccctgtccctctaccgcatatcgtgcctataaggtcaaaagtctatggtcttacggagacagattatgggggtgcagagctcgaatgggcatgagtgctgtccccttgccactgaaaggccgcgccgcttcaagataggagccactcttgcacctgcgactgtgaatagacaactacaccgacgctgttgctgaagatgggagaaatgagagcgccgtgatgttttacttcaggaccgcccatcttcttgataatctgttgcacttttatctctaacacccgggtgcacgcaaatgactgcaagacccgtgtacggtagcgggtgcgtgtactaatcaacttgcttgtccaaggggatcaaggctttgcttttagtggacccccagctcgcatacgagttttactttatattgaaaatttggaagacatagcatccgttgtaggcgaataacgaactgtttctgttcacattctttcattcgatgttcttcgcggacaagataatactggatctatcttaagatccgagcgtgtcactacggtcacggacgagtcagccgcgttaaccacaatgaagaaattgtatggctgctttcctgcaactcctgggaccagttccccccttcgggttcagttcaacacacgcgggcaatggggtagtaa
+======================================================================
+23) 440908:
+cttgcacctgcgactgtgaatagacaactacaccgacgctgttgctgaagatgggagaaatgagagcgccgtgatgttttacttcaggaccgcccatcttcttgataatctgttgcacttttatctctaacacccgggtgcacgcaaatgactgcaagacccgtgtacggtagcgggtgcgtgtactaatcaacttgcttgtccaaggggatcaaggctttgcttttagtggacccccagctcgcatacgagttttactttatattgaaaatttggaagacatagcatccgttgtaggcgaataacgaactgtttctgttcacattctttcattcgatgttcttcgcggacaagataatactggatctatcttaagatccgagcgtgtcactacggtcacggacgagtcagccgcgttaaccacaatgaagaaattgtatggctgctttcctgcaactcctgggaccagttccccccttcgggt
+======================================================================
+24) 444343:
+ttccaattcgcttgataagcgagaaacggatttcctgtgtggtgcttctattgagtaactatcgggctgtgatgtgcgggttaaacagaatattgtgcctcgtaaaggcgacccccgatgaaagtctcctggtcgccgtagacgcctagatgactgtatgcataatccgagtttgatactgtccatagaggcgtacactggtttgacctgtaacactcatgacggcccggcttttactcaaggcatacgaggcagctctattcattcgcttcaacaacgacaggagtgtacgttgattgcgaccccatggcaatcgcgacacatgtcctccgatggacacatcatagaggattcgaatcggtgttagcctagatgaccctactgtactaggtccccggggtaacttcaattttcctgcccaaaacatcggcgatcaatcagcgagtttgaatgtagattcttttgccgcgtcaacgtgaaagattactgtctcgctgcttaaccctccagaaatctggaacagcatgaaaaaggccttacgcacggcgcttcaccctcgatggttatgatcgcctccagtgtatgtggacgccgactccgccaccgcttctagttaaccacgccacggcgctgggacctggacactgggatgtcttcgcttttttagaggaatctttgtttatgccctagagttcaatagcaaagcccacgccagtctgccatcggccagcaattggaagttctgatccggctctgactcagaatcggccggccgctcgcttctacttaacgatccataaccccggatattcagatgttgagctatcgcagattctgtaacctgtggcgaacgagaactctgggtacccacggacataa
+======================================================================
+25) 444497:
+ctatgcttccgcgcgtagttagcggagattaactgctactatctcggtatacaacgtccctggaatctagacaagttgacacggcactccgccgtttcagtgatgacattgtacatggtccacgggtccattcagggagtgatttcgaatgtgggcctggtcgcacagttgaaggtgaactccgcacgttagctctaatgggttaaccatgcgtgggctaaagaggaacgaagtgttgtggaacggataggctgggggtcgccgaaagacacaggcgatctcataaggtaggtttctctgataaccactattaattcgacttctcatcaaaatttccggcatagttactagggacaagacgtaaagcccaccgtgttaaccggtccaattcttgggtggacataatctccgtccggtatatgacatcccgtgaagttagccccgtccacctctaaatatgggggtgagtatagcttaatctggaaacaactcctagggtctgctaatgtaacacgacgtcgacgtagaagctagctagctgaaacggattgggtccacgccaagcccagaccgctcctctgcgcactcttgcgttatgtgcatggccccgcgcttatttaacattaggccgagctattgacgcccgcattcaatgctgaaatcaaacaaaggaacacaacctcgtgtctctgaggaatcgtgctgtcggaagcttgactagggtacacgcagaaagatcctggcggataaggctcaccttcgatagcagactctaacagtgtatagccgatcctggtcggttccagaagcgattcggtagacactttaaaccatctttacagctgtcatcttgcgctgcgataaacgagtgttgcaaaagaagactcgacgtgtcgatgggcccacagccgccagaatcattcgttggatgttcaatactagtacgcaacttaacggtgctctacacat
+======================================================================
+26) 445288:
+ccgccgtttcagtgatgacattgtacatggtccacgggtccattcagggagtgatttcgaatgtgggcctggtcgcacagttgaaggtgaactccgcacgttagctctaatgggttaaccatgcgtgggctaaagaggaacgaagtgttgtggaacggataggctgggggtcgccgaaagacacaggcgatctcataaggtaggtttctctgataaccactattaattcgacttctcatcaaaatttccggcatagttactagggacaagacgtaaagcccaccgtgttaaccggtccaattcttgggtggacataatctccgtccggtatatgacatcccgtgaagttagccccgtccacctctaaatatgggggtgagtatagcttaatctggaaacaactcctagggtctgctaatgtaacacgacgtcgacgtagaagctagctagctgaaacggattgggtccacgccaagcccagaccgctcctctgcgcactcttgcgttatgtgcatggccccgcgcttatttaacattaggccgagctattgacgcccgcattcaatgctgaaatcaaacaaaggaacacaacctcgtgtctctgaggaatcgtgctgtcggaagcttgactagggtacacgcagaaagatcctggcggataaggctcaccttcgatagcagactctaacagtgtatagccgatcctggtcggttccagaagcgattcggtagacactttaaaccatctttacagctgtcatcttgcgctgcgataaacgagtgttgcaaaagaagactcgacgtgtcgatgggcccacagccgccagaatcattcgt
+======================================================================
+27) 447119:
+cacgttcgcgtcgacattttcaccttatcgggagacacgtgggccgaattggtggctcaatcgaagcgcagtcacatacttttggcttaccttaagtcctacgctccgaggttattggtgtccctgtccctctaccgcatatcgtgcctataaggtcaaaagtctatggtcttacggagacagattatgggggtgcagagctcgaatgggcatgagtgctgtccccttgccactgaaaggccgcgccgcttcaagataggagccactcttgcacctgcgactgtgaatagacaactacaccgacgctgttgctgaagatgggagaaatgagagcgccgtgatgttttacttcaggaccgcccatcttcttgataatctgttgcacttttatctctaacacccgggtgcacgcaaatgactgcaagacccgtgtacggtagcgggtgcgtgtactaatcaacttgcttgtccaaggggatcaaggctttgcttttagtggacccccagctcgcatacgagttttactttatattgaaaatttggaagacatagcatccgttgtaggcgaataacgaactgtttctgttcacattctttcattcgatgttcttcgcggacaagataatactggatctatcttaagatccgagcgtgtcactacggtcacggacgagtcagccgcgttaaccacaatgaagaaattgtatggctgctttcctgcaactcctgggaccagttccccccttcgggttcagttcaacacacgcgggcaatggggtagtaacatgatctgcattaagagacagtgttgccttccgggggtaccaaaaacttctgtgtgtactggcattactttgtacccgcgaagaccgtgtctcatagggactacaactccgagggtcatct
+======================================================================
+28) 451089:
+cgctcaagataaacacacacgagtgcgggatcttactcaacagaactgagaacttgctcaacctggtcgcacagctatgaaaaggcattcgttcggtggggtactgcttcgtgaggaccaatacctatattgcaaaatttgtctaccacattaataaaccctaactcgctgtgtgatagatgcgtaatgtatatacacgtagggagcgtctgtgtaaccgtggttgttacaagctgtgtgatttcacacaccccgatggtgactgagggttggtgccgaaaacatcacataccgtcggggacgtaacctcttctttagcaggggtggtataggtggatttgatcgcggctaactgagaatccttacccatcatatggtgcgcccacgatcttccttgatgaccggatgacacttatccgtgctcagataagtgccttgtccgtatggtggaattgtcgtacaagcgaggtatcgattggtacggcagacctatccgaatgggccatctagcagcatgagtcaaaagttaaccattcctagagcggtagagtgtttcaaaacgggcaaaggcgtaaggtagagaatctgcgtttgtcgggtccgctcggtatcgcccttaggcctcgtggacattccgacacgggcttccattgcaaacgcaatcagccggtgatacttaatctagcttccagtggctttccgagaacgggggtcacggtggggcatgtgagctggtaacgttcaccgggtggtgtgttcctcgcggtaccctgtaatcgtccttggacaccgtgacctgtttagggttaatactggccttggcggcgctcatgtgtctggttgcagacgaggtcgcacgcctaagcatcggtcccgtgactgctctttaaactggggacatcgagtttgggtccgtcaaatgtcccgctccatcgtgacaagtgtctattcacctggcccctcccctgaccgttgcttaatat
+======================================================================
+29) 451110:
+cgtttcagtgatgacattgtacatggtccacgggtccattcagggagtgatttcgaatgtgggcctggtcgcacagttgaaggtgaactccgcacgttagctctaatgggttaaccatgcgtgggctaaagaggaacgaagtgttgtggaacggataggctgggggtcgccgaaagacacaggcgatctcataaggtaggtttctctgataaccactattaattcgacttctcatcaaaatttccggcatagttactagggacaagacgtaaagcccaccgtgttaaccggtccaattcttgggtggacataatctccgtccggtatatgacatcccg
+======================================================================
+30) 451221:
+cttgatgaccggatgacacttatccgtgctcagataagtgccttgtccgtatggtggaattgtcgtacaagcgaggtatcgattggtacggcagacctatccgaatgggccatctagcagcatgagtcaaaagttaaccattcctagagcggtagagtgtttcaaaacgggcaaaggcgtaaggtagagaatctgcgtttgtcgggtccgctcggtatcgcccttaggcctcgtggacattccgacacgggcttccattgcaaacgcaatcagccggtgatacttaatctagcttccagtggctttccgagaacgggggtcacggtggggcatgtgagctggtaacgttcaccgggtggtgtgttcctcgcggtaccctgtaatcgtccttggacaccgtgacctgtttagggttaatactggccttggcggcgctcatgtgtctggttgcagacgaggtcgcacgcctaagcatcggtcccgtgactgctctttaaactggggacatcgagtttgggtccgtcaaatgtcccgctccatcgtgacaagtgtctattcacctggcccctcccctgaccgttgcttaatattggagtggtatacctaacggtcctgtttgaaccgatgctgcaagtgtccggactttaaagcttttcattgataatatcggaacagcgctgtataagtgcatgttcgacagtat
+======================================================================
+31) 453936:
+tcaacgtgaaagattactgtctcgctgcttaaccctccagaaatctggaacagcatgaaaaaggccttacgcacggcgcttcaccctcgatggttatgatcgcctccagtgtatgtggacgccgactccgccaccgcttctagttaaccacgccacggcgctgggacctggacactgggatgtcttcgcttttttagaggaatctttgtttatgccctagagttcaatagcaaagcccacgccagtctgccatcggccagcaattggaagttctgatccggctctgac
+======================================================================
+32) 454449:
+ggcgttcttactcaaagcatactgggtagtgcgattaatcaaatttcgcagctatatctctgtattgagttgtactgtaggccttcgtttctaaaggtttttgaggtcaggaaggtgttggtatgggtcactggagatactcgataatttggatcatacgccccggacctcccactgtagcgccgctgcgatttttcagacgctatgcttccgcgcgtagttagcggagattaactgctactatctcggtatacaacgtccctggaatctagacaagttgacacggcactccgccgtttcagtgatgacattgtacatggtccacgggtccattcagggagtgatttcgaatgtgggcctggtcgcacagttgaaggtgaactccgcacgttagctctaatgggttaaccatgcgtgggctaaagaggaacgaagtgttgtggaacggataggctgggggtcgccgaaagacacaggcgatctcataaggtaggtttctctgataaccactattaattcgacttctcatcaaaatttccggcatagttactagggacaagacgtaaagcccaccgtgtta
+======================================================================
+33) 456376:
+tccattcagggagtgatttcgaatgtgggcctggtcgcacagttgaaggtgaactccgcacgttagctctaatgggttaaccatgcgtgggctaaagaggaacgaagtgttgtggaacggataggctgggggtcgccgaaagacacaggcgatctcataaggtaggtttctctgataaccactattaattcgacttctcatcaaaatttccggcatagttactagggacaagacgtaaagcccaccgtgttaaccggtccaattcttgggtggacataatctccgtccggtatatgacatcccgtgaagttagccccgtccacctctaaatatgggggtgagtatagcttaatctggaaacaactcctagggtctgctaatgt
+======================================================================
+34) 459482:
+ttgatcgcggctaactgagaatccttacccatcatatggtgcgcccacgatcttccttgatgaccggatgacacttatccgtgctcagataagtgccttgtccgtatggtggaattgtcgtacaagcgaggtatcgattggtacggcagacctatccgaatgggccatctagcagcatgagtcaaaagttaaccattccta
+======================================================================
+35) 459893:
+acggtagcgggtgcgtgtactaatcaacttgcttgtccaaggggatcaaggctttgcttttagtggacccccagctcgcatacgagttttactttatattgaaaatttggaagacatagcatccgttgtaggcgaataacgaactgtttctgttcacattctttcattcgatgttcttcgcggacaagataatactggatctatcttaagatccgagcgtgtcactacggtcacggacgagtcagccgcgttaaccacaatg
+======================================================================
+36) 461269:
+cttgatgaccggatgacacttatccgtgctcagataagtgccttgtccgtatggtggaattgtcgtacaagcgaggtatcgattggtacggcagacctatccgaatgggccatctagcagcatgagtcaaaagttaaccattcctagagcggtagagtgtttcaaaacgggcaaaggcgtaaggtagagaatctgcgtttgtcgggtccgctcggtatcgcccttaggcctcgtggacattccgacacgggcttccattgcaaacgcaatcagccggtgatacttaatctagcttccagtggctttccgagaacgggggtcacggtggggcatgtgagctggtaacgttca
+======================================================================
+37) 461381:
+ccaatcacggggaatcttccgattacattacgagggcggtgaacagcgtgtctaagggactgtcggtgttatagatggcggacgaagaccgcgcactcttcttcgggagactacgcctacaaccgtacagtctagcctcccagacctaggttcagcatggtttacagagagccctgaaagtcgatacacagggggctatctgacaagatcaaaagtggcgttcttactcaaagcatactgggtagtgcgattaatcaaatttcgcagctatatctctgtattgagttgtactgtaggccttcgtttctaaaggtttttgaggtcaggaaggtgttggtatgggtcactggagatactcgataatttggatcatacgccccggacctcccactgtagcgccgctgcgatttttcagacgctatgcttccgcgcgtagttagcggagattaactgctactatctcggtatacaacgtccctggaatctagacaagttgacacggcactccgccgtttcagtgatgacattgtacatggtccacgggtccattcagggagtgatttcgaatgtgggcctggtcgcacagttgaaggtgaactccgcacgttagctctaatgggttaaccatgcgtgggctaaagaggaacgaagtgttgtggaacggataggctgggggtcgccgaaagacacaggcgatctcataaggtaggtttctctgataaccactattaattcgacttctcatcaaaatttccggcatagttactagggacaagacgtaaagcccaccgtgttaaccggtccaattcttgggtggacataatctccgtccggtatatgacatcccgtgaagttagccccgtccacctctaaatatgggggtgagtatagcttaatctggaaacaactcctagggtctgctaatgtaacacgacgtcgacgtagaa
+======================================================================
+38) 462396:
+cataatccgagtttgatactgtccatagaggcgtacactggtttgacctgtaacactcatgacggcccggcttttactcaaggcatacgaggcagctctattcattcgcttcaacaacgacaggagtgtacgttgattgcgaccccatggcaatcgcgacacatgtcctccgatggacacatcatagaggattcgaatcggtgttagcctagatgaccctactgtactaggtccccggggtaacttcaattttcctgcccaaaacatcggcgatcaatcagcgagtttgaatgtagattcttttgccgcgtcaacgtgaaagattactgtctcgctgcttaaccctccagaaatctggaacagcatgaaaaaggccttacgcacggcgcttcaccctcgatggttatgatcgcctccagtgtatgtggacgccgactccgccaccgcttctagttaaccacgccacggcgctgggacctggacactgggatgtcttcgcttttttagaggaatctttgtttatgccctagagttcaatagcaaagcccacgccagtctgccatcggccagcaattggaagttctgatccggctctgactcagaatcggccggccgctcgcttctacttaacgatccataaccccggatattcagatgttgagctatcgcagattctgtaacctgtggcgaacgagaactctgggtacccacggacataacttcttccctttcgcgtaaccgatagtgattaatagatgcgtggggggcagccgagtgtaacaaaactagggtgcgatccgcggtgttcgacgtgagaactttaaccg
+======================================================================
+39) 464046:
+ttggtgtatgccagtattgaagtcccatgattagtgcctccgacgaggcggtgttttgttggtgaacgggacggcgcaccaatattaagaaaggtagatagatgttaaccatcaccatggagtgttcacgcccatgacgacactctgcttgtcccacgacgaaggcatctgatcgcgcaaagtctagaagcccatcgcttcgagctgaacggccctcaactagtcggacatagccaagggcactatcagcctatgtatgcttacgcaaaacgtcttgcggtga
+======================================================================
+40) 464075:
+aaacagaatattgtgcctcgtaaaggcgacccccgatgaaagtctcctggtcgccgtagacgcctagatgactgtatgcataatccgagtttgatactgtccatagaggcgtacactggtttgacctgtaacactcatgacggcccggcttttactcaaggcatacgaggcagctctattcattcgcttcaacaacgacaggagtgtacgttgattgcgaccccatggcaatcgcgacacatgtcctccgatggacacatcatagaggattcgaatcggtgttagcctagatgaccctactgtactaggtccccggggtaacttcaattttcctgcccaaaacatcggcgatcaatcagcgagtttgaatgtagattcttttgccgcgtcaacgtgaaagattactgtctcgctgcttaaccctccagaaatctggaacagcatgaaaaaggccttacgcacggcgcttcaccctcgatggttatgatcgcctccagtgtatgtggacgccgactccgccaccgcttctagttaaccacgccacggcgctgggacctggacactgggatgtcttcgcttttttagaggaatctttgtttatgccctagagttcaatagcaaagcccacgccagtctgccatcggccagcaattggaagttctgatccggctctgactcagaatcggccggccgctcgcttctacttaacgatccataaccccggatattcagatgttgagctatcgcagattctgtaacctgtggcgaacgagaactctgggtacccacggacataact
+======================================================================
+41) 466392:
+gcttcaacaacgacaggagtgtacgttgattgcgaccccatggcaatcgcgacacatgtcctccgatggacacatcatagaggattcgaatcggtgttagcctagatgaccctactgtactaggtccccggggtaacttcaattttcctgcccaaaacatcggcgatcaatcagcgagtttgaatgtagattcttttgccgcgtcaacgtgaaagattactgtctcgctgcttaaccctccagaaatctggaacagcatgaaaaaggccttacgcacggcgcttcaccctcgatggttatgatcgcctccagtgtatgtggacgccgactccgccaccgcttctagttaaccacgccacggcgctgggacctggacactgggatgtcttcgcttttttagaggaatctttgtttatgccctagagttcaatagcaaagcccacgccagtctgccatcggccagcaattggaagttctgatccggctctgactcagaatcggccggccgctcgcttctacttaacgatccataaccccggatattcagatgttgagctatcgcagattctgtaacctgtggcgaacgagaactctgggtacccacggacataacttcttccctttcgcgtaaccgatagtgattaatagatgcgtggggggcagccgagtgtaacaaaactagggtgcgatccg
+======================================================================
+42) 466481:
+ccctggaatctagacaagttgacacggcactccgccgtttcagtgatgacattgtacatggtccacgggtccattcagggagtgatttcgaatgtgggcctggtcgcacagttgaaggtgaactccgcacgttagctctaatgggttaaccatgcgtgggctaaagaggaacgaagtgttgtggaacggataggctgggggtcgccgaaagacacaggcgatctcataaggtaggtttctctgataaccactattaattcgacttctcatcaaaatttccggcatagttactagggacaagacgtaaagcccaccgtgttaaccggtccaattcttgggtggacat
+======================================================================
+43) 467160:
+ctcgctgtgtgatagatgcgtaatgtatatacacgtagggagcgtctgtgtaaccgtggttgttacaagctgtgtgatttcacacaccccgatggtgactgagggttggtgccgaaaacatcacataccgtcggggacgtaacctcttctttagcaggggtggtataggtggatttgatcgcggctaactgagaatccttacccatcatatggtgcgcccacgatcttccttgatgaccggatgacacttatccgtgctcagataagtgccttgtccgtatggtggaattgtcgtacaagcgaggtatcgattggtacggcagacctatccgaatgggccatctagcagcatgagtcaaaagttaaccattcctagagcggtagagtgtttcaaaacgggcaaaggcgtaaggtagagaatctgcgtttgtcgggtccgctcggtatcgcccttaggcctcgtggacattccgacacgggcttccattgcaaacgcaatcagccggtgatacttaatctagcttccagtggctttccgagaacgggggtcacggtggggcatgtgagctggtaacgttcaccgggtggtgtgttcctcgcggtaccctgtaatcgtccttggacaccgtgacctgtttagggttaatactggccttggcggcgctcatgtgtctggttgcagacgaggtcgcacgcctaagcatcggtcccgtgactgctctttaaactggggacatcgagtttgggtccgtcaaatgtcccgctccatcgtgacaagtgtctattcacctggcccctcccctgaccgttgcttaatattggagtggtatacctaacggtcctgtttgaaccgatgctgcaagtgtccggactttaaagcttttcattgataatat
+======================================================================
+44) 468003:
+ggggacgtcaggttagttctgagtcaacatatccagcctttatcgccatcctggtccaaacacagactcgccaccgagccgtctacaccctgttcaatgctcacaaggtgtgcgcaactgaatgcgaatttttaacagaagcctgaccgggcggccttgttgtcgccatgtcgtctagattagcagaggaggccaattgactcccaattctggtttctggcagcacaagccgttatcacgattcttcgctcaagataaacacacacgagtgcgggatcttactcaacagaactgagaacttgctcaacctggtcgcacagctatgaaaaggcattcgttcggtggggtactgcttcgtgaggaccaatacctatattgcaaaatttgtctaccacattaataaaccctaactcgctgtgtgatagatgcgtaatgtatatacacgtagggagcgtctgtgtaaccgtggttgttacaagctgtgtgatttcacacaccccgatggtgactgagggttggtgccgaaaacatcacataccgtcggggacgtaacctcttctttagcaggggtggtataggtggatttgatcgcggctaactgagaatccttacccatcatatggtgcgcccacgatcttccttgatgaccggatgacacttatccgtgctcagataagtgccttgtccgtatggtggaattgtcgtacaagcgaggtatcgattggtacggcagacctatccgaatgggccatctagcagcatgagtcaaaagttaaccattcctagagcggtagagtgtttcaaaacgggcaaaggcgtaaggtagagaatctgcgtttgtcgggtccgctcggtatcgcccttaggcctcgtggacattccgacacgggcttccattgcaaacgcaatcagccggtgatacttaatctagcttc
+======================================================================
+45) 468405:
+cactggtttgacctgtaacactcatgacggcccggcttttactcaaggcatacgaggcagctctattcattcgcttcaacaacgacaggagtgtacgttgattgcgaccccatggcaatcgcgacacatgtcctccgatggacacatcatagaggattcgaatcggtgttagcctagatgaccctactgtactaggtccccggggtaacttcaattttcctgcccaaaacatcggcgatcaatcagcgagtttgaatgtagattcttttgccgcgtcaacgtgaaagattactgtctcgctgcttaaccctccagaaatctggaacagcatgaaaaaggccttacgcacggcgcttcaccctcgatggttatgatcgcctccagtgtatgtggacgccgactccgccaccgcttctagttaaccacgccacggcgctgggacctggacactgggatgtcttcgcttttttagaggaatctttgtttatgccctagagttcaatagcaaagcccacgccagtctgccatcggccagcaattggaagttctgatccggctctgactcagaatcggccggccgctcgcttctacttaacgatccataaccccggatattcagatgttgagctatcgcagattctgtaacctgtggcgaacgagaactctgggtacccacggacataacttcttccctttcgcgtaaccgatagtgattaatagatgcgtggggggcagccgagtgtaacaaaactagggtgcgatccgcggtgttcgacgtgagaactttaaccgtactaagtctgc
+======================================================================
+46) 468510:
+tcttttgccgcgtcaacgtgaaagattactgtctcgctgcttaaccctccagaaatctggaacagcatgaaaaaggccttacgcacggcgcttcaccctcgatggttatgatcgcctccagtgtatgtggacgccgactccgccaccgcttctagttaaccacgccacggcgctgggacctggacactgggatgtcttcgcttttttagaggaatctttgtttatgccctagagttcaatagcaaagcccacgccagtctgccatcggccagcaattggaagttctgatccggctctgactcagaatcggccggccgctcgcttctacttaacgatccataaccccggatattcagatgttgagctatcgcagattctgtaacctgtggcgaacgagaactctgggtacccacggacataacttcttccctttcgcgtaaccgatagtgattaatagatgcgtggggggcagccgagtgtaacaaaactagggtgcgatccgcggtgttcgacgtgagaactttaaccgtactaagtctgctgccacggtcctctgagtcttttaactacaaccgggacaagtcggtcctggtaggctaagcagcaccgagtggaacgaataatcggtaacgaagatgatagttgcgcagcgtggcccgcagtagctctcttccccggtctacaataaagacgttaagtcttgtacaccacttctcgcgtctgtagcgtggccgctcgataccatgagggatcgcgctcagctccatacaacgagttcattactgccggggtgtacctgggtcgtcgcaattcggagggcgtgcgatttgaattaatatgccctcatcataacgtggacggcggc
+======================================================================
+47) 469992:
+gccgtctgtctggtaatccctgttggagaggcgccgggccattctgctagcgacgtatcgactgagggtcctcctaagtacccttcctatcaatactaacggtgagggccgttattcactagctacctttaaaaaggccagaactctgaacatactatagatgctcacattattactgcacttacaaaacgcgtcgatgcaaccagatcaagcttggtgtatgccagtattgaagtcccatgattagtgcctccgacgaggcggtgttttgttggtgaacgggacggcgcaccaatattaagaaaggtagatagatgttaaccatcaccatggagtgttcacgcccatgacgacactctgcttgtcccacgacgaaggcatctgatcgcgcaaagtctagaagcccatcgcttcgagctgaacggccctcaactagtcggacatagccaagggcactatcagcctatgtatgcttacgcaaaacgtcttgcggtgagcagcagggagtggccaagtcactgataaaactttccgcgctatgggcggtacgtgatatgcgcagttagctacgatgatcacctgagggaaacctgccaaaaaggtgacgtctactttggtagggaaggacgagctgagcaaggtcagtcgcaagagaggtccgcggtcctttatatatgagtatttggattctacacaggcgagtgtcacatcaccgcaggtgattcctgatacccatttggcatcgcaatctagtccaatccgtgg
+======================================================================
+48) 470709:
+ctacaccgacgctgttgctgaagatgggagaaatgagagcgccgtgatgttttacttcaggaccgcccatcttcttgataatctgttgcacttttatctctaacacccgggtgcacgcaaatgactgcaagacccgtgtacggtagcgggtgcgtgtactaatcaacttgcttgtccaaggggatcaaggctttgcttttagtggacccccagctcgcatacgagttttactttatattgaaaatttggaagacatagcatccgttgtaggcgaataacgaactgtttctgttcacattctttcattcgatgttcttcgcggacaagataatactggatctatcttaagatccgagcgtgtcactacggtcacggacgagtcagccgcgttaaccacaatgaagaaattgtatggctgctttcctgcaactcctgggaccagttccccccttcgggttcagttcaacacacgcgggcaatggggtagtaacatgatctgcattaagagacagtgttgccttccgggggtaccaaaaacttctgtgtgtactggcattactttgtacccgcgaagaccgtgtctcatagggactacaactccgagggtcatctttgagatcacacgactcacacggagtgtctcgtcaggcgaagcgactccggtggatactggatatccatgcagatcgctcttcgcgggaaattatctccccttctggctgcaattacgtgtagcgccattagccggggcttgcgggaggtcgaccccccgacctggaattgttaggacatctgtttctatgtggctaaggtatagtccgggacatcctccctcgtgagacacatctacggcgaagattctgggagtccggctgcctttcccgagaaccagaaaagactttgatatctatcgtgatatacgacattagggggagttgccagtcgtcctgctggcctttccgataaacaaggtcaggcccttccctccataataata
+======================================================================
+49) 471861:
+catggtccacgggtccattcagggagtgatttcgaatgtgggcctggtcgcacagttgaaggtgaactccgcacgttagctctaatgggttaaccatgcgtgggctaaagaggaacgaagtgttgtggaacggataggctgggggtcgccgaaagacacaggcgatctcataaggtaggtttctctgataaccactattaattcgacttctcatcaaaatttccggcatagttactagggacaagacgtaaagcccaccgtgttaaccggtccaattcttgggtggacataatctccgtccggtatatgacatcccgtgaagttagccccgtccacctctaaatatgggggtgagtatagcttaat
+======================================================================
+50) 471967:
+tcgtgaggaccaatacctatattgcaaaatttgtctaccacattaataaaccctaactcgctgtgtgatagatgcgtaatgtatatacacgtagggagcgtctgtgtaaccgtggttgttacaagctgtgtgatttcacacaccccgatggtgactgagggttggtgccgaaaacatcacataccgtcggggacgtaacctcttctttagcaggggtggtataggtggatttgatcgcggctaactgagaatccttacccatcatatggtgcgcccacgatcttccttgatgaccggatgacacttatccgtgctcagataagtgccttgtccgtatggtggaattgtcgtacaagcgaggtatcgattggtacggcagacctatccgaatgggccatctagcagcatgagtcaaaagttaaccattcctagagcggtagagtgtttcaaaacgggcaaaggcgtaaggtagagaatctgcgtttgtcgggtccgctcggtatcgcccttaggcctcgtggacattccgacacgggcttccattgcaaacgcaatcagccggtgatacttaatctagcttccagtggctttccgagaacgggggtcacggtggggcatgtgagctggtaacgttcaccgggtggtgtgttc
+======================================================================
+51) 474165:
+cagatcaagcttggtgtatgccagtattgaagtcccatgattagtgcctccgacgaggcggtgttttgttggtgaacgggacggcgcaccaatattaagaaaggtagatagatgttaaccatcacca
+======================================================================
+52) 476716:
+tcaggtgcagtcgtactctcaacgaatggcacggcacctcctttaaaaacgattttatgggccgtctgtctggtaatccctgttggagaggcgccgggccattctgctagcgacgtatcgactgagggtcctcctaagtacccttcctatcaatactaacggtgagggccgttattcactagctacctttaaaaaggccagaactctgaacatactatagatgctcacattattactgcacttacaaaacgcgtcgatgcaaccagatcaagcttggtgtatgccagtattgaagtcccatgattagtgcctccgacgaggcggtgttttgttggtgaacgggacggcgcaccaatattaagaaaggtagatagatgttaaccatcaccatggagtgttcacgcccatgacgacactctgcttgtcccacgacgaaggcatctgatcgcgcaaagtctagaagcccatcgcttcgagctgaacggccctcaactagtcggacatagccaagggcactatcagcctatgtatgcttacgcaaaacgtcttgcggtgagcagcagggagtggccaagtcactgataaaactttccgcgctatgggcggtacgtgatatgcgcagttagctacgatgatcacctgagggaaacctgccaaaaaggtgacgtctactttggtagggaaggacgagctgagcaaggtcagtcgcaagagaggtccg
+======================================================================
+53) 477100:
+tacggtcacggacgagtcagccgcgttaaccacaatgaagaaattgtatggctgctttcctgcaactcctgggaccagttccccccttcgggttcagttcaacacacgc
+======================================================================
+54) 477179:
+gaatggcacggcacctcctttaaaaacgattttatgggccgtctgtctggtaatccctgttggagaggcgccgggccattctgctagcgacgtatcgactgagggtcctcctaagtacccttcctatcaatactaacggtgagggccgttattcactagctacctttaaaaaggccagaactctgaacatactatagatgctcacattattactgcacttacaaaacgcgtcgatgcaaccagatcaagcttggtgtatgccagtattgaagtcccatgattagtgcctccgacgaggcggtgttttgttggtgaacgggacggcgcaccaatattaagaaaggtagatagatgttaaccatcaccatggagtgttcacgcccatgacgacactctgcttgtcccacgacgaaggcatctgatcgcgcaaagtctagaagcccatcgcttcgagctgaacggccctcaactagtcggacatagccaagggcactatcagcctatgtatgcttacgcaaaacgtcttgcggtgagcagcagggagtggccaagtcactgataaaactttccgcgctatgggcggtacgtgatatgcgcagttagctacgatgatcacctgaggga
+======================================================================
+55) 477378:
+ctcgtaaaggcgacccccgatgaaagtctcctggtcgccgtagacgcctagatgactgtatgcataatccgagtttgatactgtccatagaggcgtacactggtttgacctgtaacactcatgacggcccggcttttactcaaggcatacgaggcagctctattcattcgcttcaacaacgacaggagtgtacgttgattgcgaccccatggcaatcgcgacacatgtcctccgatggacacatcatagaggattcgaatcggtgttagcctagatgaccctactgtactaggtccccggggtaacttcaattttcctgcccaaaacatcggcgatcaatcagcgagtttgaatgtagattcttttgccgcgtcaacgtgaaagattactgtctcgctgcttaaccctccagaaatctggaacagcatgaaaaaggccttacgcacggcgcttcaccctcgatggttatgatcgcctccagtgtatgtggacgccgactccgccaccgcttctagttaaccacgccacggcgctgggacctggacactgggatgtcttcgcttttttagaggaatctttgtttatgccctagagttcaatagcaaagcccacgccagtctgccatcggccagcaattggaagt
+======================================================================
+56) 477450:
+tagcaggggtggtataggtggatttgatcgcggctaactgagaatccttacccatcatatggtgcgcccacgatcttccttgatgaccggatgacacttatccgtgctcagataagtgccttgtccgtatggtggaattgtcgtacaagcgaggtatcgattggtacggcagacctatccgaatgggccatctagcagcatgagtcaaaagttaaccattcctagagcggtagagtgtttcaaaacgggcaaaggcgtaaggtagagaatctgcgtttgtcgggtccgctcggtatcgcccttaggcctcgtggacattccgacacgggcttccattgcaaacgcaatcagccggtgatacttaatctagcttccagtggctttccgagaacgggggtcacggtggggcatgtgagctggtaacgttcaccgggtggtgtgttcctcgcggtaccctgtaatcgtccttggacaccgtgacctgtttagggttaatactggccttggcggcgctcatgtgtctggttgcagacgaggtcgcacgcctaagcatcggtcccgtgactgctctttaaactggggacatcgagtttgggtccgtcaaatgtcccgctccatcgtgacaagtgtctattcacctggcccctcccctgaccgttgcttaatattggagtggtatacctaacggtcctgtttgaaccgatgctgcaagtgtccggactttaaagcttttcattgataatatcggaacagcgctgtataagtgcatgttcgacagtatgacatgctctgttacggctatcggagcacagctttcagtaactcatcccatctcgctgagcgcggcttcgagcatcgaagttagaacatttgatagattctttcgcgtttatagggactctgcaattgccgtacccaactccattagttgggcgtcgggacgccatagtatccgcgcg
+======================================================================
+57) 479569:
+ctgttgctgaagatgggagaaatgagagcgccgtgatgttttacttcaggaccgcccatcttcttgataatctgttgcacttttatctctaacacccgggtgcacgcaaatgactgcaagacccgtgtacggtagcgggtgcgtgtactaatcaacttgcttgtccaaggggatcaaggctttgcttttagtggacccccagctcgcatacgagttttactttatattgaaaatttggaagacatagcatccgttgtaggcgaataacgaactgtttctgttcacattctttcattcgatgttcttcgcggacaagataatactggatctatcttaagatccgagcgtgtcactacggtcacggacgagtcagccgcgttaaccacaatgaagaaattgtatggctgctttcctgcaactcctgggaccagttccccccttcgggttcagttcaacacacgcgggcaatggggtagtaacatgatctgcattaagagacagtgttgccttccgggggtaccaaaaactt
+======================================================================
+58) 481664:
+tacgaaaattgccactgcggcatccattacagccaactttcatgtcctgatctgttcatgtcccctctccaatcacggggaatcttccgattacattacgagggcggtgaacagcgtgtctaagggactgtcggtgttatagatggcggacgaagaccgcgcactcttcttcgggagactacgcctacaaccgtacagtctagcctcccagacctaggttcagcatggtttacagagagccctgaaagtcgatacacagggggctatctgacaagatcaaaagtggcgttcttactcaaagcatactgggtagtgcgattaatcaaatttcgcagctatatctctgtattgagttgtactgtaggccttcgtttctaaaggtttttgaggtcaggaaggtgttggtatgggtcactggagatactcgataatttggatcatacgccccggacctcccactgtagcgccgctgcgatttttcagacgctatgcttccgcgcgtagttagcggagattaactgctactatctcggtatacaacgtccctggaatctagacaagttgacacggcactccgccgtttcagtgatgacattgtacatggtccacgggtccattcagggagtgatttcgaatgtgggcctggtcgcacagttgaaggtgaactccgcacgttagctctaatgggttaaccatgcgtgggctaaagaggaacgaagtgttgtggaacggataggctgggggtcgccgaaagacacaggcgatctcataaggtaggtttctctgataaccactattaattcgacttctcatcaaaatttc
+======================================================================
+59) 481716:
+tctttagcaggggtggtataggtggatttgatcgcggctaactgagaatccttacccatcatatggtgcgcccacgatcttccttgatgaccggatgacacttatccgtgctcagataagtgccttgtccgtatggtggaattgtcgtacaagcgaggtatcgattggtacggcagacctatccgaatgggccatctagcagcatgagtcaaaagttaaccattcctagagcggtagagtgtttcaaaacgggcaaaggcgtaaggtagagaatctgcgtttgtcgggtccgctcggtatcgcccttaggcctcgtggacattccgacacgggcttccattgcaaacgcaatcagccggtgatacttaatctagcttccagtggctttccgagaacgggggtcacggtggggcatgtgagctggtaacgttcaccgggtggtgtgttcctcgcggtaccctgtaatcgtccttggacaccgtgacctgtttagggttaatactggccttggcggcgctcatgtgtctggttgcagacgaggtcgcacgcctaagcatcggtcccgtgactgctctttaaactggggacatcgagtttgggtccgtcaaatgtcccgctccatcgtgacaagtgtctattcacctggcccctcccctgaccgttgcttaatattggagtggtatacctaacggtcctgtttgaaccgatgctgcaagtgtccgga
+======================================================================
+60) 481734:
+gtcaacgtgaaagattactgtctcgctgcttaaccctccagaaatctggaacagcatgaaaaaggccttacgcacggcgcttcaccctcgatggttatgatcgcctccagtgtatgtggacgccgactccgccaccgcttctagttaaccacgccacggcgctgggacctggacactgggatgtcttcgcttttttagaggaatctttgtttatgccctagagttcaatagcaaagcccacgccagtctgccatcggccagcaattggaagttctgatccggctctgactcagaatcggccggccgctcgcttctacttaacgatccataaccccggatattcagatgttgagctatcgcagattctgtaacctgtggcgaacgagaactctgggtacccacggacataacttcttccctttcgcgtaaccgatagtgattaatagatgcgtggggggcagccgagtgtaacaaaactagggtgcgatccgcggtgttcgacgtgagaactttaaccgtactaagtctgctgccacggtcctctgagtcttttaactacaaccgggacaagtcggtcctggtaggctaagcagcaccgagtggaacgaataatcggtaacgaagatgatagttgcgcagcgtggcccgcagtagctctcttccccggtctacaataaagacgttaagtcttgtacaccacttctcgcgtctgtagcgtggccgctcgataccatgagggatcgcgctcagctccatacaacgagttcattactgccggggtgtacctgggtcgtcgcaatt
+======================================================================
+61) 482107:
+tgcgaccccatggcaatcgcgacacatgtcctccgatggacacatcatagaggattcgaatcggtgttagcctagatgaccctactgtactaggtccccggggtaacttcaattttcctgcccaaaacatcggcgatcaatcagcgagtttgaatgtagattcttttgccgcgtcaacgtgaaagattactgtctcgctgcttaaccctccagaaatctggaacagcatgaaaaaggccttacgcacggcgcttcaccctcgatggttatgatcgcctccagtgtatgtggacgccgactccgccaccgcttctagttaaccacgccacggcgctgggacctggacactgggatgtcttcgcttttttagaggaatctttgtttatgccctagagttcaatagcaaagcccacgccagtctgccatcggccagcaattggaagttctgatccggctctgactcagaatcggccggccgctcgcttctacttaacgatccataaccccggatattcagatgttgagctatcgcagattctgtaacctgtggcgaacgagaactctgggtacccacggacataacttcttccctttcgcgtaaccgatagtgattaatagatgcgtggggggcagccgagtgtaacaaaactagggtgcgatccgcggtgttcgacgtgagaactttaaccgtactaagtctgctgccacggtcctctgagtcttttaactacaaccgggacaagtcggtcctggtaggctaagcagcaccgagtggaacgaataatcggtaacgaagatgatagttgcgcagcgtggcccgcagtagctctcttccccggtctacaataaagacgttaagtcttgtacaccacttctc
+======================================================================
+62) 483611:
+actctgaacatactatagatgctcacattattactgcacttacaaaacgcgtcgatgcaaccagatcaagcttggtgtatgccagtattgaagtcccatgattagtgcctccgacgaggcggtgttttgttggtgaacgggacggcgcaccaatattaagaaaggtagatagatgttaaccatcaccatggagtgttcacgcccatgacgacactctgcttgtcccacgacgaaggcatctgatcgcgcaaagtc
+======================================================================
+63) 484024:
+tcgccgtagacgcctagatgactgtatgcataatccgagtttgatactgtccatagaggcgtacactggtttgacctgtaacactcatgacggcccggcttttactcaaggcatacgaggcagctctattcattcgcttcaacaacgacaggagtgtacgttgattgcgaccccatggcaatcgcgacacatgtcctccgatggacacatcatagaggattcgaatcggtgttagcctagatgaccctactgtactaggtccccggggtaacttcaattttcctgcccaaaacatcggcgatcaatcagcgagtttgaatgtagattcttttgccgcgtcaacgtgaaagattactgtctcgctgcttaaccctccagaaatctggaacagcatgaaaaaggccttacgcacggcgcttcaccctcgatggttatgatcgcctccagtgtatgtggacgccgactccgccaccgcttctagttaaccacgccacggcgctgggacctggacactgggatgtcttcgcttttttagaggaatctttgtttatgccctagagttcaatagcaaagcccacgccagtctgccatcggccagcaattggaagttctgatccggctctgactcagaatcggccggccgctcgcttctacttaacgatccataaccccggatattcagatgttgagctatcgcagattctgtaacctgtggcgaacgagaactctgggtacccacggacataacttcttccctttcgcgtaaccgatagtgattaatagatgcgtggggggcagccgagtgtaacaaaactagggtgcgatccgcggtgttcgacgtgagaactttaaccgtactaagtctgctgccacggtcctctgagtcttttaact
+======================================================================
+64) 486026:
+cacttacaaaacgcgtcgatgcaaccagatcaagcttggtgtatgccagtattgaagtcccatgattagtgcctccgacgaggcggtgttttgttggtgaacgggacggcgcaccaatattaagaaaggtagatagatgttaaccatcaccatggagtgttcacgcccatgacgacactctgcttgtcccacgacgaaggcatctgatcgcgcaaagtctagaagcccatcgcttcgagctgaacggccctcaactagtcggacatagccaagggcactatcagcctatgtatgcttacgcaaaacgtcttgcggtgagcagcagggagtggccaagtcactgataaaactttccgcgctatgggcggtacgtgatatgcgcagttagctacgatgatcacctgagggaaacctgccaaaaaggtgacgtctactttggtagggaaggacgagctgagcaaggtcagtcgcaagagaggtccgcggtcctttatatatgagtatttggattctacacaggcgagtgtcacatcaccgcaggtgattcctgatacccatttggcatcgcaatctagtccaatccgtggactagctttttgcgccccagaagccca
+======================================================================
+65) 486485:
+tcgacattttcaccttatcgggagacacgtgggccgaattggtggctcaatcgaagcgcagtcacatacttttggcttaccttaagtcctacgctccgaggttattggtgtccctgtccctctaccgcatatcgtgcctataaggtcaaaagtctatggtcttacggagacagattatgggggtgcagagctcgaatgggcatgagtgctgtccccttgccactgaaaggccgcgccgcttcaagataggagccactcttgcacctgcgactgtgaatagacaactacaccgacgctgttgctgaagatgggagaaatgagagcgccgtgatgttttacttcaggaccgcccatcttcttgataatctgttgcacttttatctctaacacccgggtgcacgcaaatgactgcaagacccgtgtacggtagcgggtgcgtgtactaatcaacttgcttgtccaaggggatcaaggctttgcttttagtggacccccagctcgcatacgagttttactttatattgaaaatttggaagacatagcatccgttgtaggcgaataacgaactgtttctgttcacattctttcattcgatgttcttcgcggacaagataatactggatctatcttaagatccgagcgtgtcactacggtcacggacgagtcagccgcgttaaccacaatgaagaaattgtatggctgctttcctgcaactcctgggaccagttccccccttcgggttcagttcaacacacgcgggcaatggggtagta
+======================================================================
+66) 486592:
+gggaaattgaaagcccgtagctactttatcgaaagactctgctgacccagcttctcagatgcccttgcgttacatggtactggctctgtaggcaggacggaatttgccaccctcgaggaagactaggggtcacgttcgcgtcgacattttcaccttatcgggagacacgtgggccgaattggtggctcaatcgaagcgcagtcacatacttttggcttaccttaagtcctacgctccgaggttattggtgtccctgtccctctaccgcatatcgtgcctataaggtcaaaagtctatggtcttacggagacagattatgggggtgcagagctcgaatgggcatgagtgctgtccccttgccactgaaaggccgcgccgcttcaagataggagccactcttgcacctgcgactgtgaatagacaactacaccgacgctgttgctgaagatgggagaaatgagagcgccgtgatgttttacttcaggaccgcccatcttcttgataatctgttgcacttttatctctaacacccgggtgcacgcaaatgactgcaagacccgtgtacggtagcgggtgcgtgtactaatcaacttgcttgtccaaggggatcaaggctttgcttttagtggacccccagctcgcatacgagttttactttatattgaaaatttggaagacatagcatccgttgtaggcgaataacgaactgtttctgttcacattctttcattcgatgttcttcgcggacaagataatactggatctatcttaagatccgagcgtgtcactacggtcacggacgagtcagccgcgttaaccacaat
+======================================================================
+67) 486810:
+caagccgttatcacgattcttcgctcaagataaacacacacgagtgcgggatcttactcaacagaactgagaacttgctcaacctggtcgcacagctatgaaaaggcattcgttcggtggggtactgcttcgtgaggaccaatacctatattgcaaaatttgtctaccacattaataaaccctaactcgctgtgtgatagatgcgtaatgtatatacacgtagggagcgtctgtgtaaccgtggttgttacaagctgtgtgatttcacacaccccgatggtgactgagggttggtgccgaaaacatcacataccgtcggggacgtaacctcttctttagcaggggtggtataggtggatttgatcgcggctaactgagaatccttacccatcatatggtgcgcccacgatcttccttgatgaccggatgacacttatccgtgctcagataagtgccttgtccgtatggtggaattgtcgtacaagcgaggtatcgattggtacggcagacctatccgaatgggccatctagcagcatgagtcaaaagttaaccattcctagagcggtagagtgtttcaaaacgggcaaaggcgtaa
+======================================================================
+68) 488119:
+gattactgtctcgctgcttaaccctccagaaatctggaacagcatgaaaaaggccttacgcacggcgcttcaccctcgatggttatgatcgcctccagtgtatgtggacgccgactccgccaccgcttctagttaaccacgccacggcgctgggacctggacactgggatgtcttcgcttttttagaggaatctttgtttatgccctagagttcaatagcaaagcccacgccagtctgccatcggccagcaattggaagttctgatccggctctgactcagaatcggccggccgctcgcttctacttaacgatccataaccccggatattcagatgttgagctatcgcagattctgtaacctgtggcgaacgagaactctgggtacccacggacataacttcttccctttcgcgtaaccgatagtgat
+======================================================================
+69) 488143:
+cgcgatcgacttgtgagtcatataacttagcctgtaccacgttcgcttcggcgagccatgttggcgctacactaaggggcccttacctcaatgggtcttgcgctagtgggcgtatcttcgctttccaattcgcttgataagcgagaaacggatttcctgtgtggtgcttctattgagtaactatcgggctgtgatgtgcgggttaaacagaatattgtgcctcgtaaaggcgacccccgatgaaagtctcctggtcgccgtagacgcctagatgactgtatgcataatccgagtttgatactgtccatagaggcgtacactggtttgacctgtaacactcatgacggcccggcttttactcaaggcatacgaggcagctctattcattcgcttcaacaacgacaggagtgtacgttgattgcgaccccatggcaatcgcgacacatgtcctccgatggacacatcatagaggattcgaatcggtgttagcctagatgaccctactgtactaggtccccggggtaacttcaattttcctgcccaaaacatcggcgatcaatcagcgagtttgaatgtagattcttttgccgcgtcaacgtgaaagattactgtctcgctgcttaaccctccagaaatctggaacagcatgaaaaaggccttacgcacggcgcttcaccctcgatggttatgatcgcctccagtgtatgtggacgccgactccgccaccgcttctagttaaccacgccacggcgctgggacctg
+======================================================================
+70) 488784:
+caaaagttaaccattcctagagcggtagagtgtttcaaaacgggcaaaggcgtaaggtagagaatctgcgtttgtcgggtccgctcggtatcgcccttaggcctcgtggacattccgacacgggcttccattgcaaacgcaatcagccggtgatacttaatctagcttccagtggctttccgagaacgggggtcacggtggggcatgtgagctggtaacgttcaccgggtggtgtgttcctcgcggtaccctgtaatcgtccttggacaccgtgacctgtttagggttaatactggccttggcggcgctcatgtgtctggttgcagacgaggtcgcacgcctaagcatcggtcccgtgactgctctttaaactggggacatcgagtttgggtccgtcaaatgtcccgctccatcgtgacaagtgtctattcacctggcccctcccctgaccgttgcttaatattggagtggtatacctaacggtcctgtttgaaccgatgctgcaagtgtccggactttaaagcttttcattgataatatcggaacagcgctgtataagtgcatgttcgacagtatgacatgctctgttacggctatcggagcacagctttcagtaactcatcccatctcgctgagcgcggcttcgagcatcgaagttagaacatttgatagattctttcgcgtttatagggactctgcaattgccgtacccaactccattagttgggcgtcgggacgccatagtatccgcgcgtattactaatgtgcaggtcggcggcgtcgtgtgctcacgtataggccgaccgtatcgagttagagggatggatctagcggatcggaaggaatcaccttctaagtggacttccaccgtggacttggtgcccatttataaaaactattctgacaatatcctacgttatgccccgcctgggcctaagggtttggtgtcaaacagttgtctataa
+======================================================================
+71) 490099:
+taactatcgggctgtgatgtgcgggttaaacagaatattgtgcctcgtaaaggcgacccccgatgaaagtctcctggtcgccgtagacgcctagatgactgtatgcataatccgagtttgatactgtccatagaggcgtacactggtttgacctgtaacactcatgacggcccggcttttactcaaggcatacgaggcagctctattcattcgcttcaacaacgacaggagtgtacgttgattgcgaccccatggcaatcgcgacacatgtcctccgatggacacatcatagaggattcgaatcggtgttagcctagatgaccctactgtactaggtccccggggtaacttcaattttcctgcccaaaacatcggcgatcaatcagcgagtttgaatgtagattcttttgccgcgtcaacgtgaaagattactgtctcgctgcttaaccctccagaaatctggaacagcatgaaaaaggccttacgcacggcgcttcaccctcgatggttatgatcgcctccagtgtatgtggacgccgactccgccaccgcttctagttaaccacgccacggcgctgggacctggacactgggatgtcttcgcttttttagaggaatctttgtttatgccctagagttcaatagcaaagcccacgccagtctgccatcggccagcaattggaagttctgatccggctctgactcagaatcggccggccgctcgcttctacttaacgatccataaccccggatattcagatgttgagctatcgcagattctgtaacctgtggcgaacgagaactctgggtacccacggacataacttcttccctttcgcgtaac
+======================================================================
+72) 490236:
+cttgcacctgcgactgtgaatagacaactacaccgacgctgttgctgaagatgggagaaatgagagcgccgtgatgttttacttcaggaccgcccatcttcttgataatctgttgcacttttatctctaacacccgggtgcacgcaaatgactgcaagacccgtgtacggtagcgggtgcgtgtactaatcaacttgcttgtccaaggggatcaaggctttgcttttagtggacccccagctcgcatacgagttttactttatattgaaaatttggaagacatagcatccgttgtaggcgaataacgaactgtttctgttcacattctttcattcgatgttcttcgcggacaagataatactggatctatcttaagatccgagcgtgtcactacggtcacggacgagtcagccgcgttaaccacaatgaagaaattgtatggctgctt
+======================================================================
+73) 490470:
+cgtaatgtatatacacgtagggagcgtctgtgtaaccgtggttgttacaagctgtgtgatttcacacaccccgatggtgactgagggttggtgccgaaaacatcacataccgtcggggacgtaacctcttctttagcaggggtggtataggtggatttgatcgcggctaactgagaatccttacccatcatatggtgcgcccacgatcttccttgatgaccggatgacacttatccgtgctcagataagtgccttgtccgtatggtggaattgtcgtacaagcgaggtatcgattggtacggcagacctatccgaatgggccatctagcagcatgagtcaaaagttaaccattcctagagcggtagagtgtttcaaaacgggcaaaggcgtaaggtagagaatctgcgtttgtcgggtccgctcggtatcgcccttaggcctcgtggacattccgacacgggcttccattgcaaacgcaatcagccggtgatacttaatctagcttccagtggctttccgagaacgggggtcacggtggggcatgtgagctggtaacgttcaccgggtggtgtgt
+======================================================================
+74) 491647:
+cctgcccaaaacatcggcgatcaatcagcgagtttgaatgtagattcttttgccgcgtcaacgtgaaagattactgtctcgctgcttaaccctccagaaatctggaacagcatgaaaaaggccttacgcacggcgcttcaccctcgatggttatgatcgcctccagtgtatgtggacgccgactccgccaccgcttctagttaaccacgccacggcgctgggacctggacactgggatgtcttcgcttttttagaggaatctttgtttatgccctagagttcaatagcaaagcccacgccagtctgccatcggccagcaattggaagttctgatccggctctgactcagaatcggccggccgctcgcttctacttaacgatccataaccccggatattcagatgttgagctatcgcagattctgtaacctgtggcgaacgagaactctgggtacccacggacataacttcttccctttcgcgtaaccgatagtgattaataga
+======================================================================
+75) 495096:
+ctcggtatacaacgtccctggaatctagacaagttgacacggcactccgccgtttcagtgatgacattgtacatggtccacgggtccattcagggagtgatttcgaatgtgggcctggtcgcacagttgaaggtgaactccgcacgttagctctaatgggttaaccatgcgtgggctaaag
+======================================================================
+76) 496131:
+gaatccttacccatcatatggtgcgcccacgatcttccttgatgaccggatgacacttatccgtgctcagataagtgccttgtccgtatggtggaattgtcgtacaagcgaggtatcgattggtacggcagacctatccgaatgggccatctagcagcatgagtcaaaagttaaccattcctagagcggtagagtgtttcaaaacgggcaaaggcgtaaggtagagaatctgcgtttgtcgggtccgctcggtatcgcccttaggcctcgtggacattccgacacgggcttccattgcaaacgcaatcagccggtgatacttaatctagcttccagtggctttccgagaacgggggtcacggtggggcatgtgagctggtaacgttcaccgggt
+======================================================================
+77) 498882:
+cttcgcggacaagataatactggatctatcttaagatccgagcgtgtcactacggtcacggacgagtcagccgcgttaaccacaatgaagaaattgtatggctgctttcctgcaactcctgggaccagttccccccttcgggttcagttcaacacacgcgggcaatggggtagtaacatgatctgcattaagagacagtgttgccttccgggggtaccaaaaacttctgtgtgtactggcattactttgtacccgcgaagaccgtgtctcatagggactacaactccgagggtcatctttgagatcacacgactcacacggagtgtctcgtcaggcgaagcgactccggtggatactggatatccatgcagatcgctcttcgcgggaaattatctccccttct
+======================================================================
+78) 504868:
+gaatcttccgattacattacgagggcggtgaacagcgtgtctaagggactgtcggtgttatagatggcggacgaagaccgcgcactcttcttcgggagactacgcctacaaccgtacagtctagcctcccagacctaggttcagcatggtttacagagagccctgaaagtcgatacacagggggctatctgacaagatcaaaagtggcgttcttactcaaagcatactgggtagtgcgattaatcaaatttcgcagctatatctctgtattgagttgtactgtaggccttcgtttctaaaggtttttgaggtcaggaaggtgttggtatgggtcactggagatactcgataatttggatcatacgccccggacctcccactgtagcgccgctgcgatttttcagacgctatgcttccgcgcgtagttagcggagattaactgctactatctcggtatacaacgtccctggaatctagacaagttgacacggcactccgccgtttcagtgatgacattgtacatggtccacgggtccattcagggagtgatttcgaatgtgggcctggtcgcacagttgaaggtgaactccgcacgttagctctaatgggttaaccatgcgtgggctaaagaggaacgaagtgttgtggaacggataggctgg
+======================================================================
+79) 505000:
+caagttgacacggcactccgccgtttcagtgatgacattgtacatggtccacgggtccattcagggagtgatttcgaatgtgggcctggtcgcacagttgaaggtgaactccgcacgttagctctaatgggttaaccatgcgtgggctaaagaggaacgaagtgttgtggaacggataggctgggggtcgccgaaagacacaggcgatctcataaggtaggtttctctgataaccactattaattcgacttctcatcaaaatttccggcatagttactagggacaagacgtaaagcccaccgtgttaaccggtccaattcttgggtggacataatctccgtccggtatatgacatcccgtgaagttagccccgtccacctctaaatatgggggtgagtatagcttaatctggaaacaactcctagggtctgctaatgtaacacgacgtcgacgtagaagctagctagctgaaacggattgggtccacgccaagcccagaccgctcctctgcgcactcttgcgttatgtgcatggccccgcgcttatttaacattaggccgagctattgacgcccgcattcaatgctgaaatcaaacaaaggaacacaacctcgtgtctctgaggaatcgtgctgtcggaagcttgactagggtaca
+======================================================================
+80) 505332:
+atttcgcagctatatctctgtattgagttgtactgtaggccttcgtttctaaaggtttttgaggtcaggaaggtgttggtatgggtcactggagatactcgataatttggatcatacgccccggacctcccactgtagcgccgctgcgatttttcagacgctatgcttccgcgcgtagttagcggagattaactgctactatctcggtatacaacgtccctggaatctagacaagttgacacggcactccgccgtttcagtgatgacattgtacatggtccacgggtccattcagggagtgatttcgaatgtgggcctggtcgcacagttgaaggtgaactccgcacgttagctctaatgggttaaccatgcgtgggctaaagaggaacgaagtgttgtggaacggataggctgggggtcgccgaaagacacaggcgatctca
+======================================================================
+81) 507101:
+tgagaatccttacccatcatatggtgcgcccacgatcttccttgatgaccggatgacacttatccgtgctcagataagtgccttgtccgtatggtggaattgtcgtacaagcgaggtatcgattggtacggcagacctatccgaatgggccatctagcagcatgagtcaaaagttaaccattcctagagcggtagagtgtttcaaaacgggcaaaggcgtaaggtagagaatctgcgtttgtcgggtccgctcggtatcgcccttaggcctcgtggacattccgacacgggcttccattgcaaacgcaatcagccggtgatacttaatctagcttccagtggctttccgagaacgggggtcacggtggggcatgtgagctggtaacgttcaccgggtggtgtgttcctcgcggtaccctgtaatcgtccttggacaccgtgacctgtttagggttaatactggccttggcggcgctcatgtgtctggttgcagacgaggtcgcacgcctaagcatcggtcccgtgactgctctttaaactggggacatcgagtttgggtccgtcaaatgtcccgctccatcgtgacaagtgtctattcacctggcccctcccctgaccgttgcttaatattggagtggtatacctaacggtcctgtttgaaccgatgctgcaagtgtccggactttaaagcttttcattgataatatcggaacagcgctgtataagtgcatgttcgacagtatgacatgctctgttacggctatcggagcacagctttcagtaactcatcccatctcgctgagcgcggcttcgagcatcgaagttagaacatttgatagattctttcgcgtttatagggactctgcaattgccgtacccaactccattagttgggcgtcgggacgccatagtatccgcgcgtattactaatgtgcaggtcggcggcgtcgtgtgctcacgtataggccgaccgtatcgagttagagggatggat
+======================================================================
+82) 507257:
+tcgtgcctataaggtcaaaagtctatggtcttacggagacagattatgggggtgcagagctcgaatgggcatgagtgctgtccccttgccactgaaaggccgcgccgcttcaagataggagccactcttgcacctgcgactgtgaatagacaactacaccgacgctgttgctgaagatgggagaaatgagagcgccgtgatgttttacttcaggaccgcccatcttcttgataatctgttgcacttttatctctaacacccgggtgcacgcaaatgactgcaagacccgtgtacggtagcgggtgcgtgtactaatcaacttgcttgtccaaggggatcaaggctttgcttttagtggacccccagctcgcatacgagttttactttatattgaaaatttggaagacatagcatccgttgtaggcgaataacgaactgtttctgttcacattctttcattcgatgttcttcgcggacaagataatactggatctatcttaagatccgagcgtgtcactacggtcacggacgagtcagccgcgttaaccacaatgaagaaattgtatggctgctttcctgcaactcctgggaccagttccccccttcgggttcagttcaacacacgcgggcaatggggtagtaacatgatctgcattaagagacagtgttgccttccgggggtaccaaaaacttctgtgtgtactggcattactttgtacccgcgaagaccgtgtctcatagggactacaactccgagggtcatctttgagatcacacgactcacacggagtgtctcgtcaggcgaagcgactccggtggatactggatatccatgcagatcgctcttcgcgggaaattatctccccttctggctgcaattacgtgtagcgccattagccggggcttgcgggaggtcgaccccccgacctggaattgttaggacatc
+======================================================================
+83) 508970:
+acgcacggcgcttcaccctcgatggttatgatcgcctccagtgtatgtggacgccgactccgccaccgcttctagttaaccacgccacggcgctgggacctggacactgggatgtcttcgcttttttagaggaatctttgtttatgccctagagttcaatagcaaagcccacgccagtctgccatcggccagcaattggaagttctgatccggctctgactcagaatcggccggccgctcgcttctacttaacgatccataaccccggatattcagatgttgagctatcgcagattctgtaacctgtggcgaacgagaactctgggtacccacggacataacttcttccctttcgcgtaaccgatagtgattaatagatgcgtggggggcagccgagtgtaacaaaactagggtgcgatccgcggtgttcgacgtgagaactttaaccgtactaagtctgctgccacggtcctctgagtcttttaactacaaccgggacaagtcggtcctggtaggctaagcagcaccgagtggaacgaataatcggtaacgaagatgatagttgcgcagcgtggcccgcagtagctctcttccccggtctacaataaagacgttaagtcttgtacaccacttctcgcgtctgtagcgtggccgctcgataccatgagggatcgcgctcagctccatacaacgagttcattactg
+======================================================================
+84) 509019:
+caaccccacgatgtcgttgagcgataccggcaacaatgggcgagggcgcgagcggaatccttctttgaacttatggggtatgctccgatgggaaaattatgtaactccgtagtacgttttcccgcgcgaccagtgtggccgatctacttaacctctgcacgagtagaccctccgagaccgctcgccgtgaccacgaatttttcacaatgtttcaggtgcagtcgtactctcaacgaatggcacggcacctcctttaaaaacgattttatgggccgtctgtctggtaatccctgttggagaggcgccgggccattctgctagcgacgtatcgactgagggtcctcctaagtacccttcctatcaatactaacggtgagggccgttattcactagctacctttaaaaaggccagaactctgaacatactatagatgctcacattattactgcacttacaaaacgcgtcgatgcaaccagatcaagcttggtgtatgccagtattgaagtcccatgattagtgcctccgacgaggcggtgttttgttggtgaacgggacggcgcaccaatattaagaaaggtagatagatgttaaccatcaccatggagtgttcacgcccatgacgacactctgcttgtcccacgacgaaggcatctgatcgcgcaaagtctagaagcccatcgcttcgagctgaacggccctcaactagtcggacatagccaagggcactatcagcctatgtatgcttacgcaaaacgtcttgcggtgagcagcagggagtggccaagtcactgataaaactttccgcgctatgggcggtacgtga
+======================================================================
+85) 509289:
+acaagataatactggatctatcttaagatccgagcgtgtcactacggtcacggacgagtcagccgcgttaaccacaatgaagaaattgtatggctgctttcctgcaactcctgggaccagttccccccttcgggttcagttcaacacacgcgggcaatggggtagtaacatgatctgcattaagagacagtgttgccttccgggggtaccaaaaacttctgtgtgtactggcattactttgtacccgcgaagaccgtgtctcatagggactacaactccgagggtcatctttgagatcacacgactcacacggagtgtctcgtcaggcgaagcgactccggtggatactggatatccatgcagatcgctcttcgcgggaaattatctccccttctggctgcaattacgtgtagcgccattagccggggcttgcgggaggtcgaccccccgacctggaattgttaggacatctgtttctatgtggctaaggtatagtccgggacatcctccctcgtgagacacatctacggcgaagattctgggagtccggctgcctttcccgagaaccagaaaagactttgatatctatcgtgatatacgacattagggggagttgccagtcgtcctgctggcctttccgataaacaaggtcaggcccttccctccataataatatcgggtaacgacctttgctcacgaccaaagctcctgatgatcattttactcgcaagatgctggtgatggacgccgaactctatagaggaggctagttcacaaatacccgaagaatattccagtactatgctagaaccggcggctagacagaggtctgcaacatcaacggacaccactaaagcaccaccaaacggctgaggctctcgctcaattaagcgtgcccg
+======================================================================
+86) 512033:
+atcacgattcttcgctcaagataaacacacacgagtgcgggatcttactcaacagaactgagaacttgctcaacctggtcgcacagctatgaaaaggcattcgttcggtggggtactgcttcgtgaggaccaatacctatattgcaaaatttgtctaccacattaataaaccctaactcgctgtgtgatagatgcgtaatgtatatacacgtagggagcgtctgtgtaaccgtggttgttacaagctgtgtgatttcacacaccccgatggtgactgagggttggtgccgaaaacatcacataccgtcggggacgtaacctcttctttagcaggggtggtataggtggatttgatcgcggctaactgagaatccttacccatcatatggtgcgcccacgatcttccttgatgaccggatgacacttatccgtgctcagataagtgccttgtccgtatggtggaattgtcgtacaagcgaggtatcgattggtacggcagacctatccgaatgggccatctagcagcatgagtcaaaagttaaccattcctagagcggtagagtgtttcaaaacgggcaaaggcgtaaggtagagaatctgcgtttgtcgggtccgctcggtatcgcccttaggcctcgtggacattccgacacgggcttccattg
+======================================================================
+87) 512176:
+ccatgtcggaccaaggctctaactgtaagcgcctgtcgaatttagtaagattcatttcaaaggtgctgtccgcgtactgacagtcacatagcgattacgaaaattgccactgcggcatccattacagccaactttcatgtcctgatctgttcatgtcccctctccaatcacggggaatcttccgattacattacgagggcggtgaacagcgtgtctaagggactgtcggtgttatagatggcggacgaagaccgcgcactcttcttcgggagactacgcctacaaccgtacagtctagcctcccagacctaggttcagcatggtttacagagagccctgaaagtcgatacacagggggctatctgacaagatcaaaagtggcgttcttactcaaagcatactgggtagtgcgattaatcaaatttcgcagctatatctctgtattgagttgtactgtaggccttcgtttctaaaggtttttgaggtcaggaaggtgttggtatgggtcactggagatactcgataatttggatcatacgccccggacctcccactgtagcgccgctgcgatttttcagacgctatgcttccgcgcgtagttagcggagattaactgctactatctcggtatacaacgtccctggaatctagacaagttgacacggcactccgccgtttcagtgatgacattgtacatggtccacgggtccattcagggagtgatttcgaatgtgggcctggtcgcacagttgaaggtgaactccgcacgttagctctaatgggttaaccatgcgtgggctaaagaggaacgaagtgttgtggaacggataggctgggggtcgccgaaagacacaggcgatctcataaggtaggtttctctgataaccactattaattcgacttctcatcaaaatttccggcatagttactagggacaagacgtaaagcccaccgtgttaaccggtccaattcttgg
+======================================================================
+88) 512227:
+aatattgtgcctcgtaaaggcgacccccgatgaaagtctcctggtcgccgtagacgcctagatgactgtatgcataatccgagtttgatactgtccatagaggcgtacactggtttgacctgtaacactcatgacggcccggcttttactcaaggcatacgaggcagctctattcattcgcttcaacaacgacaggagtgtacgttgattgcgaccccatggcaatcgcgacacatgtcctccgatggacacatcatagaggattcgaatcggtgttagcctagatgaccctactgtactaggtccccggggtaacttcaattttcctgcccaaaacatcggcgatcaatcagcgagtttgaatgtagattcttttgccgcgtcaacgtgaaagattactgtctcgctgcttaaccctccagaaatctggaacagcatgaaaaaggccttacgcacggcgcttcaccctcgatggttatgatcgcctccagtgtatgtggacgccgactccgccaccgcttctagttaaccacgccacggcgctgggacctggacactgggatgtcttcgcttttttagaggaatctttgtttatgccctagagttcaatagcaaagcccacgccagtctgccatcggccagcaattggaagttctgatccggctctgactcagaatcggccggccgctcgcttctacttaacgatccataaccccggatattcagatgttgagctatcgcagattctgtaacctg
+======================================================================
+89) 512553:
+ccgtggttgttacaagctgtgtgatttcacacaccccgatggtgactgagggttggtgccgaaaacatcacataccgtcggggacgtaacctcttctttagcaggggtggtataggtggatttgatcgcggctaactgagaatccttacccatcatatggtgcgcccacgatcttccttgatgaccggatgacacttatccgtgctcagataagtgccttgtccgtatggtggaattgtcgtacaagcgaggtatcgattggtacggcagacctatccgaatgggccatctagcagcatgagtcaaaagttaaccattcctagagcggtagagtgtttcaaaacgggcaaaggcgtaaggtagagaatctgcgtttgtcgggtccgctcggtatcgcccttaggcctcgtggacattccgacacgggcttccattgcaaacgcaatcagccggtgatacttaatctagcttccagtggctttccgagaacgggggtcacggtggggcatgtgagctggtaacgttcaccgggtggtgtgttcctcgcggtaccctgtaatcgtccttggacaccgtgacctgtttagggttaatactggccttggcggcgctcatgtgtctggttgcagacgaggtcgcacgcctaagcatcggtcccgtgactgctc
+======================================================================
+90) 513624:
+aacgaactgtttctgttcacattctttcattcgatgttcttcgcggacaagataatactggatctatcttaagatccgagcgtgtcactacggtcacggacgagtcagccgcgttaaccacaatgaagaaattgtatggctgctttcctgcaactcctgggaccagttccccccttcgggttcagttcaacacacgcgggcaatggggtagtaacatgatctgcattaagagacagtgttgccttccgggggtaccaaaaacttctgtgtgtactggcattactttgtacccgcgaagaccgtgtctcatagggactacaactccgagggtcatctttgagatcacacgactcacacggagtgtctcgtcaggcgaagcgactccggtggatactggatatccatgcagatcgctcttcgcgggaaattatctccccttctggctgcaattacgtgtagcgccattagccggggcttgcgggaggtcgaccccccgacctggaattgttaggacatctgtttctatgtggctaaggtatagtccgggacatcctccctcgtgagacacatctacggcgaagattctgggagtccggctgcctttcccgagaaccagaaaagactttgatatctatcgtgatatacgacattagggggagttgccagtcgtcctgctggcctttccgataaacaaggtcaggcccttccctccataataatatcgggtaacgacctttgctcacgaccaaagctcctgatgatcattttactcgcaagatgctggtgatggacgccgaactctatagaggaggctagttcacaaatacccgaagaatattccagtactatgctagaaccggcggctagacagaggtctgcaacatcaacggacaccactaaagcaccaccaaacggctgaggctctcgctcaattaagcgtgcccgttagaattatgcaccggttaagcgtggtttgatt
+======================================================================
+91) 513943:
+tgttcacattctttcattcgatgttcttcgcggacaagataatactggatctatcttaagatccgagcgtgtcactacggtcacggacgagtcagccgcgttaaccacaatgaagaaattgtatggctgctttcctgcaactcctgggaccagttccccccttcgggttcagttcaacacacgcgggcaatggggtagtaacatgatctgcattaagagacagtgttgccttccgggggtaccaaaaacttctgtgtgtactggcattactttgtacccgcgaagaccgtgtctcatagggactacaactccgagggtcatctttgagatcacacgactcacacggagtgtctcgtcaggcgaagcgactccggtggatactggatatccatgcagatcgctcttcgcgggaaattatctccccttctggctgcaattacgtgtagcgccattagccggggcttgcgggaggtcgaccccccgacctggaattgttaggacatctgtttctatgtggctaaggtatagtccgggacatcctccctcgtgagacacatctacggcgaagattctgggagtccggctgcctttcccgagaaccagaaaagactttgatatctatcgtgatatacgacattagggggagttgccagtcgtcctgctggcctttccgataaacaaggtcaggcccttccctccataata
+======================================================================
+92) 514074:
+gtctacaccctgttcaatgctcacaaggtgtgcgcaactgaatgcgaatttttaacagaagcctgaccgggcggccttgttgtcgccatgtcgtctagattagcagaggaggccaattgactcccaattctggtttctggcagcacaagccgttatcacgattcttcgctcaagataaacacacacgagtgcgggatcttactcaacagaactgagaacttgctcaacctggtcgcacagctatgaaaaggcattcgttcggtggggtactgcttcgtgaggaccaatacctatattgcaaaatttgtctaccacattaataaaccctaactcgctgtgtgatagatgcgtaatgtatatacacgtagggagcgtctgtgtaaccgtggttgttacaagctgtgtgatttcacacaccccgatggtgactgagggttggtgccgaaaacatcacataccgtcggggacgtaacctcttctttagcaggggtggtataggtggatttgatcgcggctaactgagaatccttacccatcatatggtgcgcccacgatcttccttgatgaccggatgacacttatccgtgctcagataagtgccttgtccgtatggtggaattgtcgtacaagcgaggtatcgattggtacggcagacctatccgaatgggccatctagcagcatgagtcaaaagttaaccattcctagagcggtagagtgtttcaaaacgggcaaaggcgtaaggtagagaatctgcgtttgtcgggtccgctcggtatcgcccttaggcctcgtggacattccgacacgggcttccattgcaaacgcaatcagccggtgatacttaatctagcttccagtggctttccgagaacgggggtcacggtggggcatgtgagctggtaacgttcaccgggtggtgtgttcctcgcggtaccctgtaatcgtccttggacaccgtgacctgtttagggttaatactggcct
+======================================================================
+93) 514386:
+acgtagggagcgtctgtgtaaccgtggttgttacaagctgtgtgatttcacacaccccgatggtgactgagggttggtgccgaaaacatcacataccgtcggggacgtaacctcttctttagcaggggtggtataggtggatttgatcgcggctaactgagaatccttacccatcatatggtgcgcccacgatcttccttgatgaccggatgacacttatccgtgctcagataagtgccttgtccgtatggtggaattgtcgtacaagcgaggtatcgattggtacggcagacctatccgaatgggccatctagcagcatgagtcaaaagttaaccattcctagagcggtagagtgtttcaaaacgggcaaaggcgtaaggtagagaatctgcgtttgtcgggtccgctcggtatcgcccttaggcctcgtggacattccgacacgggcttccattgcaaacgcaatcagccggtgatacttaatctagcttccagtggctttccgagaacgggggtcacggtggggcatgtgagctggtaacgttcaccgggtggtgtgttcctcgcggtaccctgtaatcgtccttggacaccgtgacctgtttagggttaatactggccttggcggcgctcatgtgtctggttgcagacgaggtcgcacgcctaagcatcggtcccgtgactgctctttaaa
+======================================================================
+94) 516226:
+gtgcgggttaaacagaatattgtgcctcgtaaaggcgacccccgatgaaagtctcctggtcgccgtagacgcctagatgactgtatgcataatccgagtttgatactgtccatagaggcgtacactggtttgacctgtaacactcatgacggcccggcttttactcaaggcatacgaggcagctctattcattcgcttcaacaacgacaggagtgtacgttgattgcgaccccatggcaatcgcgacacatgtcctccgatggacacatcatagaggattcgaatcggtgttagcctagatgaccctactgtactaggtccccggggtaacttcaattttcctgcccaaaacatcggcgatcaatcagcgagtttgaatgtagattcttttgccgcgtcaacgtgaaagattactgtctcgctgcttaaccctccagaaatctggaacagcatgaaaaaggccttacgcacggcgcttcaccctcgatggttatgatcgcctccagtgtatgtggacgccgactccgccaccgcttctagttaaccacgccacggcgctgggacctggacactgggatgtcttcgcttttttagaggaatctttgtttatgccctagagttcaatagcaaagcccacgccagtctgccatcggccagcaattggaagttctgatccggctctgactcagaatcggccggccgctcgcttctacttaacgatccataaccccggatattcagatgttgagctatcgcagattctgtaacctgtggc
+======================================================================
+95) 518081:
+gatttcgaatgtgggcctggtcgcacagttgaaggtgaactccgcacgttagctctaatgggttaaccatgcgtgggctaaagaggaacgaagtgttgtggaacggataggctgggggtcgccgaaagacacaggcgatctcataaggtaggtttctctgataaccactattaattcgacttctcatcaaaatttccggcatagttactagggacaagacgtaaagcccaccgtgttaaccggtccaattcttgggtggacataatctccgtccggtatatgacatcccgtgaagttagccccgtccacctctaaatatgggggtgagtatagcttaatctggaaacaactcctagggtctgctaatgtaacacgacgtcgacgtagaagctagctagctgaaacggattgggtccacgccaagcccagaccgctcctctgcgcactcttgcgttatgtgcatggccccgcgcttatttaacattaggccgagctattgacgcccgcattcaatgctgaaatcaaacaaaggaacacaacctcgtgtctctgaggaatcgtgctgtcggaagcttgactagggtacacgcagaaagatcctggcggataaggctcaccttcgatagcagactctaacagtgtatagccgatcctggtcggttccagaagcgattcggtagacactttaaaccatctttacagctgtcatcttgcgctgcgataaacgagtgttgcaaaagaagactcgacgtgtcgatgggcccacagccgccagaatcattcgttggatgttcaatactagtacgcaacttaacggtgctctacacatctcgtagcccacgcggcaaatctcttcgatcctacgctgacaagcatcccacataatagcagtatttctccttatagcagaagagatcccgacggctatgcttggatggggcgcggtagttcgtctctgtagataagtgcacacaatgcttttgtatcctca
+======================================================================
+96) 518937:
+aaaagtctatggtcttacggagacagattatgggggtgcagagctcgaatgggcatgagtgctgtccccttgccactgaaaggccgcgccgcttcaagataggagccactcttgcacctgcgactgtgaatagacaactacaccgacgctgttgctgaagatgggagaaatgagagcgccgtgatgttttacttcaggaccgcccatcttcttgataatctgttgcacttttatctctaacacccgggtgcacgcaaatgactgcaagacccgtgtacggtagcgggtgcgtgtactaatcaacttgcttgtccaaggggatcaaggctttgcttttagtggacccccagctcgcatacgagttttactttatattgaaaatttggaagacatagcatccgttgtaggcgaataacgaactgtttctgttcacattctttcattcgatgttcttcgcggacaagataatactggatctatcttaagatccgagcgtgtcactacggtcacggacgagtcagccgcgttaaccacaatgaagaaattgtatggctgctttcctgcaactcctgggaccagttccccccttcgggttcagttcaacacacgcgggcaatggggtagtaacatgatctgcattaagagacagtgttgccttc
+======================================================================
+97) 520804:
+ggttatgatcgcctccagtgtatgtggacgccgactccgccaccgcttctagttaaccacgccacggcgctgggacctggacactgggatgtcttcgcttttttagaggaatctttgtttatgccctagagttcaatagcaaagcccacgccagtctgccatcggccagcaattggaagttctgatccggctctgactcagaatcggccggccgctcgcttctacttaacgatccataaccccggatattcagatgttgagctatcgcagattctgtaacctgtggcgaacgagaactctgggtacccacggacataacttcttccctttcgcgtaaccgatagtgattaatagatgcgtggggggcagccgagtgtaacaaaactagggtgcgatccgcggtgttcgacgtgagaactttaaccgtactaagtctgctgccacggtcctctgagtcttttaactacaaccgggacaagtcggtcctggtaggctaagcagcaccgagtggaacgaataatcggtaac
+======================================================================
+98) 521696:
+attggctattcacaagctatatcccaacaaggaacggttcgtaactcgtccagccttgaacactgcttataccgcgtgggaatttggtctgcgatctttgggatcagcgctagagaaacgaatgcactgttgagcaccgttaacaccgacttttttcatttttaacatccacaacattggttgtgggagaagtccaaccccacgatgtcgttgagcgataccggcaacaatgggcgagggcgcgagcggaatccttctttgaacttatggggtatgctccgatgggaaaattatgtaactccgtagtacgttttcccgcgcgaccagtgtggccgatctacttaacctctgcacgagtagaccctccgagaccgctcgccgtgaccacgaatttttcacaatgtttcaggtgcagtcgtactctcaacgaatggcacggcacctcctttaaaaacgattttatgggccgtctgtctggtaatccctgttggagaggcgccgggccattctgctagcgacgtatcgactgagggtcctcctaagtacccttcctatcaatactaacggtgagggccgttattcactagctacctttaaaaaggccagaactctgaacatactatagatgctcacattattactgcacttacaaaacgcgtcgatgcaaccagatcaagcttggtgtatgccagtattgaagtcccatgattagtgcctccgacgaggcggtgttttgttggtgaacgggacggcgcaccaatattaagaaaggtagatagatgttaaccatcaccatggagtgttcacgcccatgacgacactctgcttgtcccacgacgaaggcatctgatcgcgcaaagtctagaagcccatcgcttcgagctgaacggcc
+======================================================================
+99) 522150:
+acatactatagatgctcacattattactgcacttacaaaacgcgtcgatgcaaccagatcaagcttggtgtatgccagtattgaagtcccatgattagtgcctccgacgaggcggtgttttgttggtgaacgggacggcgcaccaatattaagaaaggtagatagatgttaaccatcaccatggagtgttcacgcccatgacgacactctgcttgtcccacgacgaaggcatctgatcgcgcaaagtctagaagcccatcgcttcgagctgaacggccctcaactagtcggacatagccaagggcactatcagcctatgtatgcttacgcaaaacgtcttgcggtgagcagcagggagtggccaagtcactgataaaactttccgcgctatgggcggtacgtgatatgcgcagttagctacgatgatcacctgagggaaacctgccaaaaaggtgacgtctactttggtagggaaggacgagctgagcaaggtcagtcgcaagagaggtccgcggtcctttatatatgagtatttggattctacacaggcgagtgtcacatcaccgcaggtgattcctgatacccatttggcatcgcaatctagtccaatccgtggactagctttttgc
+======================================================================
+100) 522809:
+gtccccttgccactgaaaggccgcgccgcttcaagataggagccactcttgcacctgcgactgtgaatagacaactacaccgacgctgttgctgaagatgggagaaatgagagcgccgtgatgttttacttcaggaccgcccatcttcttgataatctgttgcacttttatctctaacacccgggtgcacgcaaatgactgcaagacccgtgtacggtagcgggtgcgtgtactaatcaacttgcttgtccaaggggatcaaggctttgcttttagtggacccccagctcgcatacgagttttactttatattgaaaatttggaagacatagcatccgttgtaggcgaataacgaactgtttctgttcacattctttcattcgatgttcttcgcggacaagataatactggatctatcttaagatccgagcgtgtcactacggtcacggacgagtcagccgcgttaaccacaatgaagaaattgtatggctgctttcctgcaactcctgggaccagttccccccttcgggttcagttcaacacacgcgggcaatggggtagtaacatgatctgcattaagagacagtgttgccttccgggggtaccaaaaacttctgtgtgtactggcattact
+======================================================================
+101) 523472:
+aacagaagcctgaccgggcggccttgttgtcgccatgtcgtctagattagcagaggaggccaattgactcccaattctggtttctggcagcacaagccgttatcacgattcttcgctcaagataaacacacacgagtgcgggatcttactcaacagaactgagaacttgctcaacctggtcgcacagctatgaaaaggcattcgttcggtggggtactgcttcgtgaggaccaatacctatattgcaaaatttgtctaccacattaataaaccctaactcgctgtgtgatagatgcgtaatgtatatacacgtagggagcgtctgtgtaaccgtggttgttacaagctgtgtgatttcacacaccccgatggtgactgagggttggtgccgaaaacatcacataccgtcggggacgtaacctcttctttagcaggggtggtataggtggatttgatcgcggctaactgagaatccttacccatcatatggtgcgcccacgatcttccttgatgaccggatgacacttatccgtgctcagataagtgccttgtccgtatggtggaattgtcgtacaagcgaggtatcgattggtacggcagacctatccgaatgggccatctagcagcatgagtcaaaagttaaccattcctagagcggtagagtgtttcaaaacgggcaaaggcgtaaggtagagaatctgcgtttgtcgggtccgctcggtatcgcccttaggcctcgtggacattccgacacgggcttccat
+======================================================================
+102) 525457:
+gtgagggccgttattcactagctacctttaaaaaggccagaactctgaacatactatagatgctcacattattactgcacttacaaaacgcgtcgatgcaaccagatcaagcttggtgtatgccagtattgaagtcccatgattagtgcctccgacgaggcggtgttttgttggtgaacgggacggcgcaccaatattaagaaaggtagatagatgttaaccatcaccatggagtgttcacgcccatgacgacactctgcttgtcccacgacgaaggcatctgatcgcgcaaagtctagaagcccatcgcttcgagctgaacggccctcaactagtcggacatagccaagggcactatcagcctatgtatgcttacgcaaaacgtcttgcggtgagcagcagggagtggccaagtcactgataaaactttccgcgctatgggcggtacgtgatatgcgcagttagctacgatgatcacctgagggaaacctgccaaaaaggtgacgtctactttggtagggaaggacgagctgagcaaggtcagtcgcaagagaggtccgcggtcctttatatatgagtatttggattctacacaggcgagtgtcacatcaccgcaggtgattcctgatacccatttggcatcgcaatctagtccaatccgtggactagctttttgcgccccagaagcccacagcaggcgggtatgcatattaagacatttttacaacaacctagtgatgacggtttttttaaggtagctgtagaacagactactagtgtgggtgagagaaaagctggtgagattgctcatagaaagcgcactgcgccgcatattgccagtctggtgttcgaacaatggccgagcttacccacgacattattttgctcatgggaatcctcaattaaccgcatataaa
+======================================================================
+103) 526010:
+ccctccgagaccgctcgccgtgaccacgaatttttcacaatgtttcaggtgcagtcgtactctcaacgaatggcacggcacctcctttaaaaacgattttatgggccgtctgtctggtaatccctgttggagaggcgccgggccattctgctagcgacgtatcgactgagggtcctcctaagtacccttcctatcaatactaacggtgagggccgttattcactagctacctttaaaaaggccagaactctgaacatactatagatgctcacattattactgcacttacaaaacgcgtcgatgcaaccagatcaagcttggtgtatgccagtattgaagtcccatgattagtgcctccgacgaggcggtgttttgttggtgaacgggacggcgcaccaatattaagaaaggtagatagatgttaaccatcaccatggagtgttcacgcccatgacgacactctgcttgtcccacgacgaaggcatctgatcgcgcaaagtctagaagcccatcgcttcgagctgaacggccctcaactagtcggacatagccaagggcactatcagcctatgtatgcttacgcaaaacgtcttgcggtgagcagcagggagtggccaagtcactgataaaactttccgcgctatgggcggtacgtgatatgcgcagttagctacgatgatcacctgagggaaacctgccaaaaaggtgacgtctactttggtagggaaggacgagctgagcaaggtcagtcgcaagagaggtccgcggtcctttatatatgagtatttggattctacacaggcgagtgtcacatcaccgcaggtgattcctgatacccatttggcatcgcaatctagtccaatccgtggactagctttttgcgccccagaagcccacagcaggcgggtatgcatattaagac
+======================================================================
+104) 528121:
+tttttcacaatgtttcaggtgcagtcgtactctcaacgaatggcacggcacctcctttaaaaacgattttatgggccgtctgtctggtaatccctgttggagaggcgccgggccattctgctagcgacgtatcgactgagggtcctcctaagtacccttcctatcaatactaacggtgagggccgttattcactagctacctttaaaaaggccagaactctgaacatactatagatgctcacattattactgcacttacaaaacgcgtcgatgcaaccagatcaagcttggtgtatgccagtattgaagtcccatgattagtgcctccgacgaggcggtgttttgttggtgaacgggacggcgcaccaatattaagaaaggtagatagatgttaaccatcaccatggagtgttcacgcccatgacgacactctgcttgtcccacgacgaaggcatctgatcgcgcaaagtctagaagcccatcgcttcgagctgaacggccctcaactagtcggacatagccaagggcactatcagcctatgtatgcttacgcaaaacgtcttgcggtgagcagcagggagtggccaagtcactgataaaactttccgcgctatgggcggtacgtgatatgcgcagttagctacgatgatcacctgagggaaacctgccaaaaaggtgacgtctactttggtagggaaggacgagctgagcaaggtcagtcgcaagagaggtccgcggtcctttatatatgagtatttggattctacacaggcgagtgtcacatcaccgcaggtgattcctgatacccatttggcatcgcaatctagtccaatccgtggactagctttttgcgccccagaagcccacagcaggcgggtatgcatattaagacatttttacaacaacctagtgatgacggtttttttaaggtagctgtagaacagactactagtgtgggtgagagaaaagctggtgagattgctcatagaaag
+======================================================================
+105) 529794:
+tgatgacattgtacatggtccacgggtccattcagggagtgatttcgaatgtgggcctggtcgcacagttgaaggtgaactccgcacgttagctctaatgggttaaccatgcgtgggctaaagaggaacgaagtgttgtggaacggataggctgggggtcgccgaaagacacaggcgatctcataaggtaggtttctctgataaccactattaattcgacttctcatcaaaatttccggcatagttactagggacaagacgtaaagcccaccgtgttaaccggtccaattcttgggtggacataatctccgtccggtatatgacatcccgtgaagttagccccgtccacctctaaatatgggggtgagtatagcttaatctggaaacaactcctagggtctgctaatgtaacacgacgtcgacgtagaagctagctagctgaaacggattgggtccacgccaagcccagaccgctcctctgc
+======================================================================
+106) 535078:
+tcttcttcgggagactacgcctacaaccgtacagtctagcctcccagacctaggttcagcatggtttacagagagccctgaaagtcgatacacagggggctatctgacaagatcaaaagtggcgttcttactcaaagcatactgggtagtgcgattaatcaaatttcgcagctatatctctgtattgagttgtactgtaggccttcgtttctaaaggtttttgaggtcaggaaggtgttggtatgggtcactggagatactcgataatttggatcatacgccccggacctcccactgtagcgccgctgcgatttttcagacgctatgcttccgcgcgtagttagcggagattaactgctactatctcggtatacaacgtccctggaatctagacaagttgacacggcactccgccgtttcagtgatgacattgtacatggtccacgggtccattcagggagtgatttcgaatgtgggcctggtcgcacagttgaaggtgaactccgcacgttagctctaatgggttaaccatgcgtgggctaaagaggaacgaagtgttgtggaacggataggctgggggtcgccgaaagacacaggcgatctcataaggtaggtttctctgataaccactattaattcgacttctcatcaaaatttccggcatagttactagggacaagacgtaaagcccaccgtgttaaccggtccaattcttgggtggacataatctccgtccggtatatgacatcccgtgaagttagccccgtccacctctaaatatgggggtgagtatagcttaatctggaaacaactcctagggtctgctaatgtaacacgacgtcgacgtagaagctagctagctgaaacggattgggtccacgccaagcccagaccgctcctctgcgcactcttgcgttatgtgcatggccccgcgcttatttaacattagg
+======================================================================
+107) 536061:
+ctctaacacccgggtgcacgcaaatgactgcaagacccgtgtacggtagcgggtgcgtgtactaatcaacttgcttgtccaaggggatcaaggctttgcttttagtggacccccagctcgcatacgagttttactttatattgaaaatttggaagacatagcatccgttgtaggcgaataacgaactgtttctgttcacattctttcattcgatgttcttcgcggacaagataatactggatctatcttaagatccgagcgtgtcactacggtcacggacgagtcagccgcgttaaccacaatgaagaaattgtatggctgctttcctgcaactcctgggaccagttccccccttcgggttcagttcaacacacgcgggcaatggggtagtaacatgatctgcattaagagacagtgttgccttccgggggtaccaaaaacttctgtgtgtactggcattactttgtacccgcgaagaccgtgtctcataggg
+======================================================================
+108) 536760:
+gggagactacgcctacaaccgtacagtctagcctcccagacctaggttcagcatggtttacagagagccctgaaagtcgatacacagggggctatctgacaagatcaaaagtggcgttcttactcaaagcatactgggtagtgcgattaatcaaatttcgcagctatatctctgtattgagttgtactgtaggccttcgtttctaaaggtttttgaggtcaggaaggtgttggtatgggtcactggagatactcgataatttggatcatacgccccggacctcccactgtagcgccgctgcgatttttcagacgctatgcttccgcgcgtagttagcggagattaactgctactatctcggtatacaacgtccctggaatctagacaagttgacacggcactccgccgtttcagtgatgacattgtacatggtccacgggtccattcagggagtgatttcgaatgtgggcctggtcgcacagttgaaggtgaactccgcacgttagctctaatgggttaaccatgcgtgggctaaagaggaacgaagtgttgtggaacggataggctgggggtcgccgaaagacacaggcgatctcataaggtaggtttctctgataaccactattaattcgacttctcatcaaaatttccggcatagttactagggacaagacgtaaagcccaccgtgttaaccggtccaattcttgggtggacataatctccgtccggtatatgacatcccgtgaagttagccccgtccacctctaaatatgggggtgagtatagcttaatctggaaacaactcctagggtctgctaatgtaacacgacgtcgacgtagaagctagctagctgaaacggattgggtccacgccaagcccagaccgctcctctgcgcactcttgcgttatgtgcatggccccgcgcttatttaacattaggccgagctattgacgcccgcattcaatgctgaaatcaaacaaagg
+======================================================================
+109) 537443:
+aaaattatgtaactccgtagtacgttttcccgcgcgaccagtgtggccgatctacttaacctctgcacgagtagaccctccgagaccgctcgccgtgaccacgaatttttcacaatgtttcaggtgcagtcgtactctcaacgaatggcacggcacctcctttaaaaacgattttatgggccgtctgtctggtaatccctgttggagaggcgccgggccattctgctagcgacgtatcgactgagggtcctcctaagtacccttcctatcaatactaacggtgagggccgttattcactagctacctttaaaaaggccagaactctgaacatactatagatgctcacattattactgcacttacaaaacgcgtcgatgcaaccagatcaagcttggtgtatgccagtattgaagtcccatgattagtgcctccgacgaggcggtgttttgttggtgaacgggacggcgcaccaatattaagaaaggtagatagatgttaaccatcaccatg
+======================================================================
+110) 540184:
+attatgggggtgcagagctcgaatgggcatgagtgctgtccccttgccactgaaaggccgcgccgcttcaagataggagccactcttgcacctgcgactgtgaatagacaactacaccgacgctgttgctgaagatgggagaaatgagagcgccgtgatgttttacttcaggaccgcccatcttcttgataatctgttgcacttttatctctaacacccgggtgcacgcaaatgactgcaagacccgtgtacggtagcgggtgcgtgtactaatcaacttgcttgtccaaggggatcaaggctttgcttttagtggacccccagctcgcatacgagttttactttatattgaaaatttggaagacatagcatccgttgtaggcgaataacgaactgtttctgttcacattctttcattcgatgttcttcgcggacaagataatactggatctatcttaagatccgagcgtgtcactacggtcacggacgagtcagccgcgttaaccacaatgaagaaattgtatggctgctttcctgcaactcctgggaccagttccccccttcgggttcagttcaacacacgcgggcaatggggtagtaacatgatctgcattaagagacagtgttgccttccgggggtaccaaaaacttctgtgtgtactggcattactttgtacccgcgaagaccgtgtctcatagggactacaactccgagggtcatctttgagatcacacgactcacacggag
+======================================================================
+111) 541394:
+ctacctttaaaaaggccagaactctgaacatactatagatgctcacattattactgcacttacaaaacgcgtcgatgcaaccagatcaagcttggtgtatgccagtattgaagtcccatgattagtgcctccgacgaggcggtgttttgttggtgaacgggacggcgcaccaatattaagaaaggtagatagatgttaaccatcaccatggagtgttcacgcccatgacgacactctgcttgtcccacgacgaaggcatctgatcgcgcaaagtctagaagcccatcgcttcgagctgaacggccctcaactagtcggacatagccaagggcactatcagcctatgtatgcttacgcaaaacgtcttgcggtgagcagcagggagtggccaagtcactgataaaactttccgcgctatgggcggtacgtgatatgcgcagttagctacgatgatcacctgagggaaacctgccaaaaaggtgacgtctactttggtagggaaggacgagctgagcaaggtcagtcgcaagagaggtccgcggtcctttatatatgagtatttggattctacacaggcgagtgtcacatcaccgcaggtgattcctgatacccatttggcatcgcaatctagtccaatccgtggactagctttttgcgccccagaagcccacagcaggcgggtatgcatattaagacatttttacaacaacctagtgatgacggtttttttaaggtagctgtagaacagactactagtgtgggtgagagaaaagctggtgagattgctcatagaaagcgcactgcgccgcatattgccagtctggtgttcgaacaatggcc
+======================================================================
+112) 542258:
+tctgtgtaaccgtggttgttacaagctgtgtgatttcacacaccccgatggtgactgagggttggtgccgaaaacatcacataccgtcggggacgtaacctcttctttagcaggggtggtataggtggatttgatcgcggctaactgagaatccttacccatcatatggtgcgcccacgatcttccttgatgaccggatgacacttatccgtgctcagataagtgccttgtccgtatggtggaattgtcgtacaagcgaggtatcgattggtacggcagacctatccgaatgggccatctagcagcatgagtcaaaagttaaccattcctagagcggtagagtgtttcaaaacgggcaaaggcgtaaggtagagaatctgcgtttgtcgggtccgctcggtatcgcccttaggcctcgtggacattccgacacgggcttccattgcaaacgcaatcagccggtgatacttaatctagcttccagtggctttccgagaacgggggtcacggtggggcatgtgagctggtaacgttcaccgggtggtgtgttcctcgcggtaccctgtaatcgtccttggacaccgtgacctgtttagggttaatactggccttggcggcgctcatgtgtctggttgcagacgaggtcgcacgcctaagcatcggtcccgtgactgctctttaaactggggacatcgagtttgggtccgtcaaatgtcccgctccatcgtgacaagtgtctattcacctggcccctcccctgaccgttgcttaatattggag
+======================================================================
+113) 547572:
+ctcgccaccgagccgtctacaccctgttcaatgctcacaaggtgtgcgcaactgaatgcgaatttttaacagaagcctgaccgggcggccttgttgtcgccatgtcgtctagattagcagaggaggccaattgactcccaattctggtttctggcagcacaagccgttatcacgattcttcgctcaagataaacacacacgagtgcgggatcttactcaacagaactgagaacttgctcaacctggtcgcacagctatgaaaaggcattcgttcggtggggtactgcttcgtgaggaccaatacctatattgcaaaatttgtctaccacattaataaaccctaactcgctgtgtgatagatgcgtaatgtatatacacgtagggagcgtctgtgtaaccgtggttgttacaagctgtgtgatttcacacaccccgatggtgactgagggttggtgccgaaaacatcacataccgtcggggacgtaacctcttctttagcaggggtggtataggtggatttgatcgcggctaactgagaatccttacccatcatatggtgcgcccacgatcttccttgatgaccggatgacacttatccgtgctcagataagtgccttgtccgtatggtggaattgtcgtacaagcgaggtatcgattggtacggcagacctatccgaatgggccatctagcagcatgagtcaaaagttaaccattcctagagcggtagagtgtttcaaaacgggcaaaggcgtaaggtagagaatctgcgtttgtcgggtccgctcggtatcgcccttaggcctcg
+======================================================================
+114) 550147:
+tgctagcgacgtatcgactgagggtcctcctaagtacccttcctatcaatactaacggtgagggccgttattcactagctacctttaaaaaggccagaactctgaacatactatagatgctcacattattactgcacttacaaaacgcgtcgatgcaaccagatcaagcttggtgtatgccagtattgaagtcccatgattagtgcctccgacgaggcggtgttttgttggtgaacgggacggcgcaccaatattaagaaaggtagatagatgttaaccatcaccatggagtgttcacgcccatgacgacactctgcttgtcccacgacgaaggcatctgatcgcgcaaagtctagaagcccatcgcttcgagctgaacggccctcaactagtcggacatagccaagggcactatcagcctatgtatgcttacgcaaaacgtcttgcggtgagcagcagggagtggccaagtcactgataaaactttccgcgctatgggcggtacgtgatatgcgcagttagctacgatgatcacctgagggaaacc
+======================================================================
+115) 551784:
+tgcccaaaacatcggcgatcaatcagcgagtttgaatgtagattcttttgccgcgtcaacgtgaaagattactgtctcgctgcttaaccctccagaaatctggaacagcatgaaaaaggccttacgcacggcgcttcaccctcgatggttatgatcgcctccagtgtatgtggacgccgactccgccaccgcttctagttaaccacgccacggcgctgggacctggacactgggatgtcttcgcttttttagaggaatctttgtttatgccctagagttcaatagcaaagcccacgccagtctgccatcggccagcaattggaagttctgatccggctctgactcagaatcggccggccgctcgcttctacttaacgatccataaccccggatattcagatgttgagctatcgcagattctgtaacctgtggcgaacgagaactctgggtacccacggacataacttcttccctttcgcgtaaccgatagtgattaatagatgcgtggggggcagccgagtgtaacaaaactagggtgcgatccgcggtgttcgacgtgagaactttaaccgtactaagtctgctgc
+======================================================================
+116) 552179:
+aaaaggccagaactctgaacatactatagatgctcacattattactgcacttacaaaacgcgtcgatgcaaccagatcaagcttggtgtatgccagtattgaagtcccatgattagtgcctccgacgaggcggtgttttgttggtgaacgggacggcgcaccaatattaagaaaggtagatagatgttaaccatcaccatggagtgttcacgcccatgacgacactctgcttgtcccacgacgaaggcatctgatcgcgcaaagtctagaagcccatcgcttcgagctgaacggccctcaactagtcggacatagccaagggcactatcagcctatgtatgcttacgcaaaacgtcttgcggtgagcagcagggagtggccaagtcactgataaaactttccgcgctatgggcggtacgtgatatgcgcagttagctacgatgatcacctgagggaaacctgccaaaaaggtgacgtctactttggtagggaaggacgagctgagcaaggtcagtcgcaagagaggtccgcggtcctttatatatgagtatttggatt
+======================================================================
+117) 552871:
+tttctgttcacattctttcattcgatgttcttcgcggacaagataatactggatctatcttaagatccgagcgtgtcactacggtcacggacgagtcagccgcgttaaccacaatgaagaaattgtatggctgctttcctgcaactcctgggaccagttccccccttcgggttcagttcaacacacgcgggcaatggggtagtaacatgatctgcattaagagacagtgttgccttccgggggt
+======================================================================
+118) 553860:
+ttcattcgatgttcttcgcggacaagataatactggatctatcttaagatccgagcgtgtcactacggtcacggacgagtcagccgcgttaaccacaatgaagaaattgtatggctgctttcctgcaactcctgggaccagttccccccttcgggttcagttcaacacacgcgggcaatggggtagtaacatgatctgcattaagagacagtgttgccttccgggggtac
+======================================================================
+119) 556845:
+agataagtgccttgtccgtatggtggaattgtcgtacaagcgaggtatcgattggtacggcagacctatccgaatgggccatctagcagcatgagtcaaaagttaaccattcctagagcggtagagtgtttcaaaacgggcaaaggcgtaaggtagagaatctgcgtttgtcgggtccgctcggtatcgcccttaggcctcgtggacattccgacacgggcttccattgcaaacgcaatcagccggtgatacttaatctagcttccagtggctttccgagaacgggggtcacggtggggcatgtgagctggtaacgttcaccgggtggtgtgttcctcgcggtaccctgtaatcgtccttggacaccgtgacctgtttagggttaatactggccttggcggcgctcatgtgtctggttgcagacgaggtcgcacgcctaagcatcggtcccgtgactgctctttaaactggggacatcgagtttgggtccgtcaaatgtcccgctccatcgtgacaagtgtctattcacctggcccctcccctgaccgttgcttaatattggagtggtatacctaacggtcctgtttgaaccgatgctgcaagtgtccggactttaaagcttttcattgataatatcggaacagcgctgtataagtgcatgttcgacagtatgacatgctctgttacggctatcggagcacagctttcagtaactcatcccatctcgctgagcgcggcttcgagcatcgaagttagaacatttgatagattctttcgcgtttatagggactctgcaattgccgtacccaactccattagttgggcgtcgggacgccatagtatccgcgcgtattactaatgtgcaggtcggcggcgtcgtgtgctcacgtataggccgaccgtatcgagttagagggatggatctagcggatcggaaggaatcaccttctaagtggacttccaccgtgg
+======================================================================
+120) 561141:
+gttggtgccgaaaacatcacataccgtcggggacgtaacctcttctttagcaggggtggtataggtggatttgatcgcggctaactgagaatccttacccatcatatggtgcgcccacgatcttccttgatgaccggatgacacttatccgtgctcagataagtgccttgtccgtatggtggaattgtcgtacaagcgaggtatcgattggtacggcagacctatccgaatgggccatctagcagcatgagtcaaaagttaaccattcctagagcggtagagtgtttcaaaacgggcaaaggcgtaaggtagagaatctgcgtttgtcgggtccgctcggtatcgcccttaggcctcgtggacattccgacacgggcttccattgcaaacgcaatcagccggtgatacttaatctagcttccagtggctttccgagaacgggggtcacggtggggcatgtgagctggtaacgttcaccgggtggtgtgttcctcgcggtaccctgtaatcgtccttggacaccgtgacctgtttagggttaatactggccttggcggcgctcatgtgtctggttgcagacgaggtcgcacgcctaagcatcggtcccgtgactgctctttaaactggggacatcgagtttgggtccgtcaaatgtcccgctccatcgtgacaagtgtctattcacctggcccctcccctgaccgttgcttaata
+======================================================================
+121) 569365:
+caagataggagccactcttgcacctgcgactgtgaatagacaactacaccgacgctgttgctgaagatgggagaaatgagagcgccgtgatgttttacttcaggaccgcccatcttcttgataatctgttgcacttttatctctaacacccgggtgcacgcaaatgactgcaagacccgtgtacggtagcgggtgcgtgtactaatcaacttgcttgtccaaggggatcaaggctttgcttttagtggacccccagctcgcatacgagttttactttatattgaaaatttggaagacatagcatccgttgtaggcgaataacgaactgtttctgttcacattctttcattcgatgttcttcgcggacaagataatactggatctatcttaagatccgagcgtgtcactacggtcacggacgagtcagccgcgttaaccacaatgaagaaattgtatggctgctttcctgcaactcctgggaccagttccccccttcgggttcagttcaacacacgcgggcaatggggtagtaacatgatctgcattaagagacagtgttgccttccgggggtaccaaaaacttctgtgtgtactggcattactttgtacccgcgaagaccgtgtctcatagggactacaactccgagggtcatctttgagatcacacgactcacacggagtgtctcgtcaggcgaagcgactccggtggatactggatatccatgcagatcgctcttcgcgggaaattatctccccttctggctgcaattacgtgtagcgccattagccggggcttgcgggaggtcgaccccccgacc
+======================================================================
+122) 569471:
+gaatctagacaagttgacacggcactccgccgtttcagtgatgacattgtacatggtccacgggtccattcagggagtgatttcgaatgtgggcctggtcgcacagttgaaggtgaactccgcacgttagctctaatgggttaaccatgcgtgggctaaagaggaacgaagtgttgtggaacggataggctgggggtcgccgaaagacacaggcgatctcataaggtaggtttctctgataaccactattaattcgacttctcatcaaaatttccggcatagttactagggacaagacgtaaagcccaccgtgttaaccggtccaattcttgggtggacataatctccgtccggtatatgacatcccgtgaagttagccccgtccacctctaaatatgggggtgagtatagcttaatctggaaacaactcctagggtctgctaatgtaacacgacgtcgacgtagaagctagctagctgaaacggattgggtccacgccaagcccagaccgctcctctgcgcactcttgcgttatgtgcatggccccgcgcttatttaacattaggccgagctattgacgcccgcattcaatgctgaaatcaaacaaaggaacacaacctcgtgtctctgaggaatcgtgctgtcggaagcttgactagggtacacgcagaaagatcctggcggataaggctcaccttcgatagcagactctaaca
+======================================================================
+123) 571652:
+gagattaactgctactatctcggtatacaacgtccctggaatctagacaagttgacacggcactccgccgtttcagtgatgacattgtacatggtccacgggtccattcagggagtgatttcgaatgtgggcctggtcgcacagttgaaggtgaactccgcacgttagctctaatgggttaaccatgcgtgggctaaagaggaacgaagtgttgtggaacggataggctgggggtcgccgaaagacacaggcgatctcataaggtaggtttctctgataaccactattaattcgacttctcatcaaaatttccggcatagttactagggacaagacgtaaagcccaccgtgttaaccggtccaattcttgggtggacataatctccgtccggtatatgacatcccgtgaagttagccccgtccacctctaaatatgggggtgagtatagcttaatctggaaacaactcctagggtctgctaatgtaacacgacgtcgacgtagaagctagctagctgaaacggattgggtccacgccaagcccagaccgctcctctgcgcactcttgcgttatgtgcatggccccgcgcttatttaacattaggccgagctattgacgcccgcattcaatgctgaaatcaaacaaaggaacacaacctcgtgtctctgaggaatcgtgctgtcggaagcttgactagggtacacgcagaaagatcctggcggataaggctcaccttcga
+======================================================================
+124) 581864:
+aggcgtacactggtttgacctgtaacactcatgacggcccggcttttactcaaggcatacgaggcagctctattcattcgcttcaacaacgacaggagtgtacgttgattgcgaccccatggcaatcgcgacacatgtcctccgatggacacatcatagaggattcgaatcggtgttagcctagatgaccctactgtactaggtccccggggtaacttcaattttcctgcccaaaacatcggcgatcaatcagcgagtttgaatgtagattcttttgccgcgtcaacgtgaaagattactgtctcgctgcttaaccctccagaaatctggaacagcatgaaaaaggccttacgcacggcgcttcaccctcgatggttatgatcgcctccagtgtatgtggacgccgactccgccaccgcttctagttaaccacgccacggcgctgggacctggacactgggatgtcttcgcttttttagaggaatctttgtttatgccctagagttcaatagcaaagcccacgccagtctgccatcggccagcaattggaagttctgatccggctctgactcagaatcggccggccgctcgcttctacttaacgatccataaccccggatattcagatgttgagctatcgcagattctgtaacctgtggcgaacgagaactctgggtacccacggacataacttcttccctttcgcgtaaccgatagtgattaatagatgcgtggggggcagcc
+======================================================================
+125) 584703:
+tcacattctttcattcgatgttcttcgcggacaagataatactggatctatcttaagatccgagcgtgtcactacggtcacggacgagtcagccgcgttaaccacaatgaagaaattgtatggctgctttcctgcaactcctgggaccagttccccccttcgggttcagttcaacacacgcgggcaatggggtagtaacatgatctgcattaagagacagtgttgccttccgggggtaccaaaaacttctgtgtgtactggcattactttgtacccgcgaagaccgtgtctcatagggactacaactccgagggtcatctttgagatcacacgactcacacggagtgtctcgtcaggcgaagcgactccggtggatactggatatccatgcagatcgctcttcgcgggaaattatctccccttctggctgcaattacgtgtagcgccattagccggggcttgcgggaggtcgaccccccgacctggaattgttaggacatctgtttctatgtggctaaggtatagtccgggacatcctccctcgtgagacacatctacggcgaagattctgggagtccggctgcctttcccgagaaccagaaaagactttgatatctatcgtgatatacgacattagggggagttgccagtcgtcctgctggcctttccgataaacaaggtcaggcccttccctccataataatatcgggtaacgacctttgctc
+======================================================================
+126) 588443:
+gtgatgttttacttcaggaccgcccatcttcttgataatctgttgcacttttatctctaacacccgggtgcacgcaaatgactgcaagacccgtgtacggtagcgggtgcgtgtactaatcaacttgcttgtccaaggggatcaaggctttgcttttagtggacccccagctcgcatacgagttttactttatattgaaaatttggaagacatagcatccgttgtaggcgaataacgaactgtttctgttcacattctttcattcgatgttcttcgcggacaagataatactggatctatcttaagatccgagcgtgtcactacggtcacggacgagtcagccgcgttaaccacaatgaagaaattgtatggctgctttcctgcaactcctgggaccagttccccccttcgggttcagttcaacacacgcgggcaatggggtagtaacatgatctgcattaagagacagtgttgccttccgggggtaccaaaaacttctgtgtgtactggcattactttgtacccgcgaagaccgtgtctcatagggactacaactccgagggtcatctttgagatcacacgactcacacggagtgtctcgtcaggcgaagcgactccggtggatactggatatccatgcagatcgctcttcgcgggaaattatctccccttctggctgcaattacgtgtagcgccattagccggggcttgcgggaggtcgaccccccgacctggaattgttaggacatctgtttctatgtggctaaggtatagtccgggacatcctccctcgtgagacacatctacggcgaagattctgggagtccggctgcctttcccgagaaccagaa
+======================================================================
+127) 593932:
+gacctcccactgtagcgccgctgcgatttttcagacgctatgcttccgcgcgtagttagcggagattaactgctactatctcggtatacaacgtccctggaatctagacaagttgacacggcactccgccgtttcagtgatgacattgtacatggtccacgggtccattcagggagtgatttcgaatgtgggcctggtcgcacagttgaaggtgaactccgcacgttagctctaatgggttaaccatgcgtgggctaaagaggaacgaagtgttgtggaacggataggctgggggtcgccgaaagacacaggcgatctcataaggtaggtttctctgataaccactattaattcgacttctcatcaaaatttccggcatagttactagggacaagacgtaaagcccaccgtgttaaccggtccaattcttgggtggacataatctccgtccggtatatgacatcccgtgaagttagccccgtccacctctaaatatgggggtgagtatagcttaatctggaaacaactcctagggtctgctaatgtaacacgacgtcgacgtagaagctagctagctgaaacggattgggtccacgccaagcccagaccgctcctctgcgcactcttgcgttatgtgcatggccccgcgcttatttaacattaggccgagctattgacgcccgcattcaatgctgaaatcaaacaaaggaacacaacctcgtgtctctgaggaatcgtgctgtcggaagcttgactagggtacacgcagaaagatcctggcggataaggctcaccttcgatagcagactctaacagtgtatagccgatcctggtcggttccagaagcgattcggtagacactttaaaccatctttacagctgtcatcttgcgctgcgataaacgagtgttgcaaaagaagactcgacgtgtcgatgggcccacagccgccagaatcattcgttggatgttcaatactagtacgcaacttaac
+======================================================================
+128) 609483:
+actctgaacatactatagatgctcacattattactgcacttacaaaacgcgtcgatgcaaccagatcaagcttggtgtatgccagtattgaagtcccatgattagtgcctccgacgaggcggtgttttgttggtgaacgggacggcgcaccaatattaagaaaggtagatagatgttaaccatcaccatggagtgttcacgcccatgacgacactctgcttgtcccacgacgaaggcatctgatcgcgcaaagtctagaagcccatcgcttcgagctgaacggccctcaactagtcggacatagccaagggcactatcagcctatgtatgcttacgcaaaacgtcttgcggtgagcagcagggagtggccaagtcactgataaaactttccgcgctatgggcggtacgtgatatgcgcagttagctacgatgatcacctgagggaaacctgccaaaaaggtgacgtctactttggtagggaaggacgagctgagcaaggtcagtcgcaagagaggtccgcggtcctttatatatgagtatttggattctacacaggcgagtgtcacatcaccgcaggtgattcctgatacccatttggcatcgcaatctagtccaatccgtggactagctttttgcgccccagaagcccac
+======================================================================
+129) 612590:
+ttggtgtatgccagtattgaagtcccatgattagtgcctccgacgaggcggtgttttgttggtgaacgggacggcgcaccaatattaagaaaggtagatagatgttaaccatcaccatggagtgttcacgcccatgacgacactctgcttgtcccacgacgaaggcatctgatcgcgcaaagtctagaagcccatcgcttcgagctgaacggccctcaactagtcggacatagccaagggcactatcagcctatgtatgcttacgcaaaacgtcttgcggtgagcagcagggagtggccaagtcactgataaaactttccgcgctatgggcggtacgtgatatgcgcagttagctacgatgatcacctgagggaaacctgccaaaaaggtgacgtctactttggtagggaaggacgagctgagcaaggtcagtcgcaagagaggtccgcggtcctttatatatgagtatttggattctacacaggcgagtgtcacatcaccgcaggtgattcctgatacccatttggcatcgcaatctagtccaatccgtggactagctttttgcgccccagaagcccacagcaggcgggtatgcatattaagacatttttacaacaacctagtgatgacggtttttttaaggtagctgta
+======================================================================
+130) 629554:
+agatgcgtaatgtatatacacgtagggagcgtctgtgtaaccgtggttgttacaagctgtgtgatttcacacaccccgatggtgactgagggttggtgccgaaaacatcacataccgtcggggacgtaacctcttctttagcaggggtggtataggtggatttgatcgcggctaactgagaatccttacccatcatatggtgcgcccacgatcttccttgatgaccggatgacacttatccgtgctcagataagtgccttgtccgtatggtggaattgtcgtacaagcgaggtatcgattggtacggcagacctatccgaatgggccatctagcagcatgagtcaaaagttaaccattcctagagcggtagagtgtttcaaaacgggcaaaggcgtaaggtagagaatctgcgtttgtcgggtccgctcggtatcgcccttaggcctcgtggacattccgacacgggcttccattgcaaacgcaatcagccggtgatacttaatctagcttccagtggctttccgagaacgggggtcacggtggggcatgtgagctggtaacgttcaccgggtggtgtgttcctcgcggtaccctgtaatcgtccttggacaccgtgacctgtttagggttaatactggccttggcggcgctcatgtgtctggttgcagacgaggtcgcacgcctaagcatcggtcc
+======================================================================
+131) 663690:
+tctaccacattaataaaccctaactcgctgtgtgatagatgcgtaatgtatatacacgtagggagcgtctgtgtaaccgtggttgttacaagctgtgtgatttcacacaccccgatggtgactgagggttggtgccgaaaacatcacataccgtcggggacgtaacctcttctttagcaggggtggtataggtggatttgatcgcggctaactgagaatccttacccatcatatggtgcgcccacgatcttccttgatgaccggatgacacttatccgtgctcagataagtgccttgtccgtatggtggaattgtcgtacaagcgaggtatcgattggtacggcagacctatccgaatgggccatctagcagcatgagtcaaaagttaaccattcctagagcggtagagtgtttcaaaacgggcaaaggcgtaaggtagagaatctgcgtttgtcgggtccgctcggtatcgcccttaggcctcgtggacattccgacacgggcttccattgcaaacgcaatcagccggtgatacttaatctagcttccagtggctttccgagaacgggggtcacggtggggcatgtgagctggtaacgttcaccgggtggtgtgttcctcgcggtaccctgtaatcgtccttggacaccgtgacctgtttagggttaatactggccttggcggcgctcatgtgtctggttgcagacgaggtcgcacgcctaagcatcggtcccgtgactgctctttaaactggggacatcgagtttgggtccgtcaaatgtcccgctccatcgtgacaagtgtctattcacctggcccctcccctgaccgttgctta
+======================================================================
+132) 666976:
+ccgccgtttcagtgatgacattgtacatggtccacgggtccattcagggagtgatttcgaatgtgggcctggtcgcacagttgaaggtgaactccgcacgttagctctaatgggttaaccatgcgtgggctaaagaggaacgaagtgttgtggaacggataggctgggggtcgccgaaagacacaggcgatctcataaggtaggtttctctgataaccactattaattcgacttctcatcaaaatttccggcatagttactagggacaagacgtaaagcccaccgtgttaaccggtccaattcttgggtggacataatctccgtccggtatatgacatcccgtgaagttagccccgtccacctctaaatatgggggtgagtatagcttaatctggaaacaactcctagggtctgctaatgtaacacgacgtcgacgtagaagctagctagctgaaacggattgggtccacgccaagcccagaccgctcctctgcgcactcttgcgttatgtgcatggccccgcgcttatttaacattaggccgagctattgacgcccgcattcaatgctgaaatcaaacaaaggaacacaacctcgtgtctctgaggaatcgtgctgtcggaagcttgactagggtacacgcagaaagatcctggcggataaggctcaccttcgatagcagactctaacagtgtatagccgatcctggtcggttccagaagcgattcggtagacactttaaaccatctttacagctgtcatcttgcgctgcgataaacgagtgttgcaaaagaagactcgacgtgtcgatgggcccacagccgccagaatcattcgttgga
+======================================================================
+Enter a DNA squence (max 100 chars)
+> gttaaccaa
+No match found!
+Enter a DNA squence (max 100 chars)
+> !
+DNA Search Program Closed.
+==73752== 
+==73752== HEAP SUMMARY:
+==73752==     in use at exit: 50,400 bytes in 1 blocks
+==73752==   total heap usage: 282 allocs, 290 frees, 1,191,681 bytes allocated
+==73752== 
+==73752== LEAK SUMMARY:
+==73752==    definitely lost: 0 bytes in 0 blocks
+==73752==    indirectly lost: 0 bytes in 0 blocks
+==73752==      possibly lost: 0 bytes in 0 blocks
+==73752==    still reachable: 50,400 bytes in 1 blocks
+==73752==         suppressed: 0 bytes in 0 blocks
+==73752== Reachable blocks (those to which a pointer was found) are not shown.
+==73752== To see them, rerun with: --leak-check=full --show-leak-kinds=all
+==73752== 
+==73752== ERROR SUMMARY: 10000000 errors from 19 contexts (suppressed: 0 from 0)
+==73752== 
+==73752== 8 errors in context 1 of 19:
+==73752== Invalid free() / delete / delete[] / realloc()
+==73752==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==73752==    by 0x401A82: sdds::read(char const*) (DNA.cpp:73)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Address 0x5b17190 is 0 bytes inside a block of size 60,480 free'd
+==73752==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==73752==    by 0x401AAB: sdds::read(char const*) (DNA.cpp:76)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Block was alloc'd at
+==73752==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==73752==    by 0x401990: sdds::read(char const*) (DNA.cpp:67)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752== 
+==73752== 
+==73752== 82 errors in context 2 of 19:
+==73752== Invalid write of size 1
+==73752==    at 0x40152B: sdds::strCpy(char*, char const*) (cStrTools.cpp:66)
+==73752==    by 0x401BB9: sdds::read(char const*) (DNA.cpp:86)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Address 0x5b239e3 is 51,283 bytes inside a block of size 60,480 free'd
+==73752==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==73752==    by 0x401AAB: sdds::read(char const*) (DNA.cpp:76)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Block was alloc'd at
+==73752==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==73752==    by 0x401990: sdds::read(char const*) (DNA.cpp:67)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752== 
+==73752== 
+==73752== 82 errors in context 3 of 19:
+==73752== Invalid write of size 4
+==73752==    at 0x401B72: sdds::read(char const*) (DNA.cpp:85)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Address 0x5b23670 is 50,400 bytes inside a block of size 60,480 free'd
+==73752==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==73752==    by 0x401AAB: sdds::read(char const*) (DNA.cpp:76)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Block was alloc'd at
+==73752==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==73752==    by 0x401990: sdds::read(char const*) (DNA.cpp:67)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752== 
+==73752== 
+==73752== 2415 errors in context 4 of 19:
+==73752== Invalid write of size 4
+==73752==    at 0x401E71: sdds::sort() (DNA.cpp:114)
+==73752==    by 0x4022FE: main (main_prof.cpp:38)
+==73752==  Address 0x5be4fd0 is 4,032 bytes inside a block of size 141,120 free'd
+==73752==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==73752==    by 0x401AAB: sdds::read(char const*) (DNA.cpp:76)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Block was alloc'd at
+==73752==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==73752==    by 0x401990: sdds::read(char const*) (DNA.cpp:67)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752== 
+==73752== 
+==73752== 2415 errors in context 5 of 19:
+==73752== Invalid write of size 1
+==73752==    at 0x40152B: sdds::strCpy(char*, char const*) (cStrTools.cpp:66)
+==73752==    by 0x401E4D: sdds::sort() (DNA.cpp:113)
+==73752==    by 0x4022FE: main (main_prof.cpp:38)
+==73752==  Address 0x5be5053 is 4,163 bytes inside a block of size 141,120 free'd
+==73752==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==73752==    by 0x401AAB: sdds::read(char const*) (DNA.cpp:76)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Block was alloc'd at
+==73752==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==73752==    by 0x401990: sdds::read(char const*) (DNA.cpp:67)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752== 
+==73752== 
+==73752== 2415 errors in context 6 of 19:
+==73752== Invalid write of size 1
+==73752==    at 0x40152B: sdds::strCpy(char*, char const*) (cStrTools.cpp:66)
+==73752==    by 0x401E17: sdds::sort() (DNA.cpp:112)
+==73752==    by 0x4022FE: main (main_prof.cpp:38)
+==73752==  Address 0x5be429f is 655 bytes inside a block of size 141,120 free'd
+==73752==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==73752==    by 0x401AAB: sdds::read(char const*) (DNA.cpp:76)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Block was alloc'd at
+==73752==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==73752==    by 0x401990: sdds::read(char const*) (DNA.cpp:67)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752== 
+==73752== 
+==73752== 2415 errors in context 7 of 19:
+==73752== Invalid write of size 4
+==73752==    at 0x401DC3: sdds::sort() (DNA.cpp:111)
+==73752==    by 0x4022FE: main (main_prof.cpp:38)
+==73752==  Address 0x5be4010 is 0 bytes inside a block of size 141,120 free'd
+==73752==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==73752==    by 0x401AAB: sdds::read(char const*) (DNA.cpp:76)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Block was alloc'd at
+==73752==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==73752==    by 0x401990: sdds::read(char const*) (DNA.cpp:67)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752== 
+==73752== 
+==73752== 2415 errors in context 8 of 19:
+==73752== Invalid read of size 4
+==73752==    at 0x401DC1: sdds::sort() (DNA.cpp:111)
+==73752==    by 0x4022FE: main (main_prof.cpp:38)
+==73752==  Address 0x5be4fd0 is 4,032 bytes inside a block of size 141,120 free'd
+==73752==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==73752==    by 0x401AAB: sdds::read(char const*) (DNA.cpp:76)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Block was alloc'd at
+==73752==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==73752==    by 0x401990: sdds::read(char const*) (DNA.cpp:67)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752== 
+==73752== 
+==73752== 2416 errors in context 9 of 19:
+==73752== Invalid read of size 4
+==73752==    at 0x401D46: sdds::sort() (DNA.cpp:109)
+==73752==    by 0x4022FE: main (main_prof.cpp:38)
+==73752==  Address 0x5be4010 is 0 bytes inside a block of size 141,120 free'd
+==73752==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==73752==    by 0x401AAB: sdds::read(char const*) (DNA.cpp:76)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Block was alloc'd at
+==73752==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==73752==    by 0x401990: sdds::read(char const*) (DNA.cpp:67)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752== 
+==73752== 
+==73752== 6243 errors in context 10 of 19:
+==73752== Invalid read of size 4
+==73752==    at 0x401D1C: sdds::sort() (DNA.cpp:107)
+==73752==    by 0x4022FE: main (main_prof.cpp:38)
+==73752==  Address 0x5be4010 is 0 bytes inside a block of size 141,120 free'd
+==73752==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==73752==    by 0x401AAB: sdds::read(char const*) (DNA.cpp:76)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Block was alloc'd at
+==73752==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==73752==    by 0x401990: sdds::read(char const*) (DNA.cpp:67)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752== 
+==73752== 
+==73752== 6243 errors in context 11 of 19:
+==73752== Invalid read of size 4
+==73752==    at 0x401CFA: sdds::sort() (DNA.cpp:107)
+==73752==    by 0x4022FE: main (main_prof.cpp:38)
+==73752==  Address 0x5be4010 is 0 bytes inside a block of size 141,120 free'd
+==73752==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==73752==    by 0x401AAB: sdds::read(char const*) (DNA.cpp:76)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Block was alloc'd at
+==73752==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==73752==    by 0x401990: sdds::read(char const*) (DNA.cpp:67)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752== 
+==73752== 
+==73752== 58660 errors in context 12 of 19:
+==73752== Invalid write of size 1
+==73752==    at 0x401504: sdds::strCpy(char*, char const*) (cStrTools.cpp:65)
+==73752==    by 0x401BB9: sdds::read(char const*) (DNA.cpp:86)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Address 0x5b23674 is 50,404 bytes inside a block of size 60,480 free'd
+==73752==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==73752==    by 0x401AAB: sdds::read(char const*) (DNA.cpp:76)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Block was alloc'd at
+==73752==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==73752==    by 0x401990: sdds::read(char const*) (DNA.cpp:67)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752== 
+==73752== 
+==73752== 95760 errors in context 13 of 19:
+==73752== Invalid read of size 8
+==73752==    at 0x401A11: sdds::read(char const*) (DNA.cpp:71)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Address 0x5b17190 is 0 bytes inside a block of size 60,480 free'd
+==73752==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==73752==    by 0x401AAB: sdds::read(char const*) (DNA.cpp:76)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Block was alloc'd at
+==73752==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==73752==    by 0x401990: sdds::read(char const*) (DNA.cpp:67)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752== 
+==73752== 
+==73752== 1631627 errors in context 14 of 19:
+==73752== Invalid write of size 1
+==73752==    at 0x401504: sdds::strCpy(char*, char const*) (cStrTools.cpp:65)
+==73752==    by 0x401E17: sdds::sort() (DNA.cpp:112)
+==73752==    by 0x4022FE: main (main_prof.cpp:38)
+==73752==  Address 0x5be4014 is 4 bytes inside a block of size 141,120 free'd
+==73752==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==73752==    by 0x401AAB: sdds::read(char const*) (DNA.cpp:76)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Block was alloc'd at
+==73752==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==73752==    by 0x401990: sdds::read(char const*) (DNA.cpp:67)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752== 
+==73752== 
+==73752== 1631627 errors in context 15 of 19:
+==73752== Invalid read of size 1
+==73752==    at 0x401501: sdds::strCpy(char*, char const*) (cStrTools.cpp:65)
+==73752==    by 0x401E17: sdds::sort() (DNA.cpp:112)
+==73752==    by 0x4022FE: main (main_prof.cpp:38)
+==73752==  Address 0x5be4fd4 is 4,036 bytes inside a block of size 141,120 free'd
+==73752==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==73752==    by 0x401AAB: sdds::read(char const*) (DNA.cpp:76)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Block was alloc'd at
+==73752==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==73752==    by 0x401990: sdds::read(char const*) (DNA.cpp:67)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752== 
+==73752== 
+==73752== 1634042 errors in context 16 of 19:
+==73752== Invalid read of size 1
+==73752==    at 0x401517: sdds::strCpy(char*, char const*) (cStrTools.cpp:65)
+==73752==    by 0x401E17: sdds::sort() (DNA.cpp:112)
+==73752==    by 0x4022FE: main (main_prof.cpp:38)
+==73752==  Address 0x5be4fd4 is 4,036 bytes inside a block of size 141,120 free'd
+==73752==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==73752==    by 0x401AAB: sdds::read(char const*) (DNA.cpp:76)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Block was alloc'd at
+==73752==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==73752==    by 0x401990: sdds::read(char const*) (DNA.cpp:67)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752== 
+==73752== 
+==73752== 1639416 errors in context 17 of 19:
+==73752== Invalid write of size 1
+==73752==    at 0x401504: sdds::strCpy(char*, char const*) (cStrTools.cpp:65)
+==73752==    by 0x401E4D: sdds::sort() (DNA.cpp:113)
+==73752==    by 0x4022FE: main (main_prof.cpp:38)
+==73752==  Address 0x5be4fd4 is 4,036 bytes inside a block of size 141,120 free'd
+==73752==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==73752==    by 0x401AAB: sdds::read(char const*) (DNA.cpp:76)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Block was alloc'd at
+==73752==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==73752==    by 0x401990: sdds::read(char const*) (DNA.cpp:67)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752== 
+==73752== 
+==73752== 1639652 errors in context 18 of 19:
+==73752== Invalid read of size 1
+==73752==    at 0x401501: sdds::strCpy(char*, char const*) (cStrTools.cpp:65)
+==73752==    by 0x401D80: sdds::sort() (DNA.cpp:110)
+==73752==    by 0x4022FE: main (main_prof.cpp:38)
+==73752==  Address 0x5be4014 is 4 bytes inside a block of size 141,120 free'd
+==73752==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==73752==    by 0x401AAB: sdds::read(char const*) (DNA.cpp:76)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Block was alloc'd at
+==73752==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==73752==    by 0x401990: sdds::read(char const*) (DNA.cpp:67)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752== 
+==73752== 
+==73752== 1642067 errors in context 19 of 19:
+==73752== Invalid read of size 1
+==73752==    at 0x401517: sdds::strCpy(char*, char const*) (cStrTools.cpp:65)
+==73752==    by 0x401D80: sdds::sort() (DNA.cpp:110)
+==73752==    by 0x4022FE: main (main_prof.cpp:38)
+==73752==  Address 0x5be4014 is 4 bytes inside a block of size 141,120 free'd
+==73752==    at 0x4C2BB8F: operator delete[](void*) (vg_replace_malloc.c:651)
+==73752==    by 0x401AAB: sdds::read(char const*) (DNA.cpp:76)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752==  Block was alloc'd at
+==73752==    at 0x4C2AC38: operator new[](unsigned long) (vg_replace_malloc.c:433)
+==73752==    by 0x401990: sdds::read(char const*) (DNA.cpp:67)
+==73752==    by 0x4022F5: main (main_prof.cpp:37)
+==73752== 
+==73752== ERROR SUMMARY: 10000000 errors from 19 contexts (suppressed: 0 from 0)
+
+Script done on Sat 29 Jan 2022 01:54:19 PM EST
