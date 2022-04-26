@@ -1,0 +1,22 @@
+/* Workshop #8 Part #2
+Full name		: Yunus Gumus
+Student ID number	: 150331197
+Seneca email address	: ygumus@myseneca.ca
+Section code		: NCC
+When I Start to WS  	: 2022-03-21
+When I finish P1	: 2022-03-22
+When I finish P2	: 2022-03-27
+*/
+
+
+In this workshop i learned how to create classes that inherits from one another and what is the role of virtual functions in between these classes.
+I also learn about pure virtual functions which doesnt have any implementation but just have declaration so other classes can inherit from it.
+
+For example Shape Interface's draw and getSpecs functions. Because all of the member functions in the Shape module are virtual, an object cannot be created just from that module and must be derived from an inherited class. The LblShape class implements the getSpecs function but not the draw function, making it an abstract class as previously indicated.
+
+Because all of the member functions in the Line and Rectangle modules are implemented and not virtual, they are both concrete classes.
+
+Working on this session was fun since it helped me better understand how interfaces are used and solidified my understanding of virtual functions, abstract and concrete classes. It wasn't too difficult or time-consuming.
+
+
+

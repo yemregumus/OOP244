@@ -1,0 +1,11 @@
+Rectangle.cpp: In constructor ‘sdds::Rectangle::Rectangle(const char*, char, char)’:
+Rectangle.cpp:31:53: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (m_height < 3 || m_width < (strlen(label() + 2)))
+                                                     ^
+/tmp/cc4cEVAZ.o: In function `sdds::LblShape::LblShape(char const*)':
+/home/ygumus/OOP244/Workshops/ws8/p1/LblShape.cpp:28: undefined reference to `sdds::ut'
+/home/ygumus/OOP244/Workshops/ws8/p1/LblShape.cpp:28: undefined reference to `sdds::Utils::alocpy(char*&, char const*, int)'
+/tmp/cc4cEVAZ.o: In function `sdds::LblShape::getSpecs(std::istream&)':
+/home/ygumus/OOP244/Workshops/ws8/p1/LblShape.cpp:43: undefined reference to `sdds::ut'
+/home/ygumus/OOP244/Workshops/ws8/p1/LblShape.cpp:43: undefined reference to `sdds::Utils::alocpy(char*&, char const*, int)'
+collect2: error: ld returned 1 exit status
