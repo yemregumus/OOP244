@@ -1,0 +1,134 @@
+Script started on Fri 04 Mar 2022 05:37:34 PM EST
+==115773== Memcheck, a memory error detector
+==115773== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==115773== Using Valgrind-3.15.0 and LibVEX; rerun with -h for copyright info
+==115773== Command: ws
+==115773== 
+Names;
+First (Middle) Last
+Homer
+Homer Simpson
+Homer Jay Simpson
+Bad Name
+Enter the follwing:
+> Homer Jay Simpson Adams
+> Homer Jay Simpson Adams
+Bad Name entry!!!
+Enter the follwing:
+> Homer Jay Simpson
+> Homer Jay Simpson
+Name: Homer Jay Simpson
+Short: Homer J. Simpson
+Enter the follwing:
+> Homer Simpson
+> Homer Simpson
+Name: Homer Simpson
+Short: Homer Simpson
+Enter the follwing:
+> Homer
+> Homer
+Name: Homer
+Short: Homer
+Milhouse+= "": Milhouse
+Milhouse+= "    ": Milhouse
+Milhouse Van+= Van: Milhouse Van
+Milhouse Van Houten+= Houten: Milhouse Van Houten
+Bad Name+= Adams: Bad Name
+Fred+= Fred: Fred
+An assigned name: Homer Jay Simpson
+A self assigned name: Homer Jay Simpson
+
+Names in the file in short form:
+-------------------------------
+Abraham Simpson
+Agnes Skinner
+Akira Kurosawa
+Alice Glick
+Allison Taylor
+Apu Nahasapeemapetilon
+Artie Ziff
+Baby Gerald
+Barney Gumble
+Bart Simpson
+Bernice Hibbert
+Brandine Spuckler
+Bumblebee Man
+Carl Carlson
+Chazz Busby
+Cletus Spuckler
+Comic B. Guy
+Dewey Largo
+Disco Stu
+Dolph Starbeam
+Drederick Tatum
+Edna Krabappel
+--------------Bad record!!!
+Grounds k. Willie
+Hans Moleman
+Helen Lovejoy
+Herman Hermann
+Homer J. Simpson
+Jacqueline Bouvier
+--------------Bad record!!!
+Jimbo Jones
+Johnny Tightlips
+Judge R. Snyder
+Kearney Zzyzwicz
+Kent Brockman
+Kirk V. Houten
+Krusty T. Clown
+Kumiko Albertson
+Lenny Leonard
+Lindsey Naegle
+Ling Bouvier
+Lionel Hutz
+Lisa Simpson
+Luann V. Houten
+Luigi D. Risotto
+Lunchlady Doris
+Maggie Simpson
+Manjula Nahasapeemapetilon
+Marge Simpson
+Martin Prince
+Maude Flanders[D]
+Mayor J. Quimby
+Milhouse V. Houten
+Miss Springfield
+Moe Szyslak
+Mona Simpson
+Ned Flanders
+Nelson Muntz
+Old J. Man
+Patty Bouvier
+Rabbi H. Krustofsky
+Rainier Wolfcastle
+Ralph Wiggum
+Rod Flanders
+Roger M. Jr.
+Ruth Powers
+Sarah Wiggum
+Sea Captain
+Selma Bouvier
+Seymour Skinner
+Shauna Chalmers
+Sideshow Mel
+Snake Jailbird
+Squeaky V. Teen
+Surly Duff
+The R. Texan
+Todd Flanders
+Troy McClure
+Uter Zorker
+Waylon Smithers
+Wendell Borton
+Wise Guy
+==115773== 
+==115773== HEAP SUMMARY:
+==115773==     in use at exit: 0 bytes in 0 blocks
+==115773==   total heap usage: 675 allocs, 675 frees, 93,454 bytes allocated
+==115773== 
+==115773== All heap blocks were freed -- no leaks are possible
+==115773== 
+==115773== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+
+Script done on Fri 04 Mar 2022 05:37:47 PM EST

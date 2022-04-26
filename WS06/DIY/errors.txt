@@ -1,0 +1,3 @@
+Utils.cpp:1:1: error: ‘as’ does not name a type
+ as
+ ^

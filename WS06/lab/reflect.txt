@@ -1,0 +1,20 @@
+/* Workshop #6 Part #1
+Full name		: Yunus Gumus
+Student ID number	: 150331197
+Seneca email address	: ygumus@myseneca.ca
+Section code		: NCC
+When I Start to WS  	: 2022-03-01
+When I finish P1	: 2022-03-03
+When I finish P2	: TBD */
+
+In this workshop, I learned how to implement a class without a default constructor and with two other different constructors without constructor overloading(we don't do overloading, but in the background compiler does). For example, I have a copy constructor which takes only one parameter and a default constructor which takes four parameters. I didn't know that I could implement a constructor which does two constructors work. My default constructor with four parameters can work even without those parameters. If I don't give any parameters, it has its default parameters to create an empty object in a safe state. 
+
+Also, I overloaded IO operators to read and write on the screen and to files. When it does that, with my overloaded IO operators, it fills the objects with incoming data. 
+
+I also consolidate my knowledge about memory allocation deep copy/shallow copy while implementing the copy constructor and the assignment operator. 
+
+Rule of Three made me think about c++ a lot because I believe this language is always an evolving language. Rule three states that if a type ever needs to have a user-defined copy constructor, copy assignment operator, or destructor, then it must have all three. I also learned that this rule of three would be the rule of five in oop345 by adding a move constructor and the move assignment operator. I don't have strong knowledge about the rule of five at the moment, but I learned the rule of three with this workshop.
+
+
+
+

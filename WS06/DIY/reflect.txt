@@ -1,0 +1,18 @@
+/* Workshop #6 Part #2
+Full name		        : Yunus Gumus
+Student ID number	    : 150331197
+Seneca email address	: ygumus@myseneca.ca
+Section code		    : NCC
+When I Start to WS  	: 2022-03-01
+When I finish P1	    : 2022-03-03
+When I finish P2	    : 2022-03-05 */
+
+In this workshop, part 2, I consolidated my knowledge of defining and implementing multiple constructors, implementing rule of three components, reading data using istream, writing formatted data using ostream and overload extraction and insertion operators for I/O using iostream.
+
+I struggled a lot with main.cpp`s (in my opinion) glitchy structure was using ignore() function in nameTester and in main.cpp when it's reading from file for some reason, and I had to implement a flag inside my extraction operator to escape ignore() because it was causing faulty output. To do that, I used the putback() function from istream. I had a tough time understanding how to escape that, I tried to use seekg() and move bits back and forth, but it didn't give me the same result. In the end, I researched istream functions and found the putback() function to take back the newline character, so I can get the proper output after ---Bad record!!! output. This part of the workshop was compelling and annoying at the same time.
+
+In other functions, I didn't have a hard time, I followed the almost same structure that I used in part 1. I didn't need a read function because I split up the string using the delimiter with the string object. I also had to implement validation a bit different than part1, because in part2, we have to consider a string with only whitespaces as an empty string. For that, I used isspace() from cstring library.
+
+I also figured out that I could convert the c++ style string object to a c style string with c_str(). That way, I could transfer my split name strings inside my private variables inside the name object.
+
+Even if it was hard to comprehend, I enjoyed working on this workshop; I have to say thank you to all my professors. 
