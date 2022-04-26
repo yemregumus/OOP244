@@ -1,0 +1,7 @@
+﻿  Container.cpp
+D:\school stuff\2nd Semester\OOP244\ws7\lab\Container.cpp(146,10): warning C4101: 'enter': unreferenced local variable
+  Pack.cpp
+  Utils.cpp
+  main.cpp
+  Generating Code...
+  WS07.vcxproj -> D:\school stuff\2nd Semester\OOP244\ws7\lab\x64\Debug\WS07.exe

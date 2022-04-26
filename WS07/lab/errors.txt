@@ -1,0 +1,17 @@
+/tmp/ccKFDpJn.o: In function `sdds::Container::Container(char const*, int, int)':
+/home/ygumus/OOP244/Workshops/ws7/p1/Container.cpp:30: undefined reference to `sdds::ut'
+/home/ygumus/OOP244/Workshops/ws7/p1/Container.cpp:30: undefined reference to `sdds::Utils::alocpy(char*&, char const*, int)'
+/home/ygumus/OOP244/Workshops/ws7/p1/Container.cpp:34: undefined reference to `sdds::ut'
+/home/ygumus/OOP244/Workshops/ws7/p1/Container.cpp:34: undefined reference to `sdds::Utils::alocpy(char*&, char const*, int)'
+/tmp/ccKFDpJn.o: In function `sdds::Container::clear(int, char const*)':
+/home/ygumus/OOP244/Workshops/ws7/p1/Container.cpp:117: undefined reference to `sdds::ut'
+/home/ygumus/OOP244/Workshops/ws7/p1/Container.cpp:117: undefined reference to `sdds::Utils::alocpy(char*&, char const*, int)'
+/home/ygumus/OOP244/Workshops/ws7/p1/Container.cpp:121: undefined reference to `sdds::ut'
+/home/ygumus/OOP244/Workshops/ws7/p1/Container.cpp:121: undefined reference to `sdds::Utils::alocpy(char*&, char const*, int)'
+/tmp/ccKFDpJn.o: In function `sdds::Container::read(std::istream&)':
+/home/ygumus/OOP244/Workshops/ws7/p1/Container.cpp:159: undefined reference to `sdds::ut'
+/home/ygumus/OOP244/Workshops/ws7/p1/Container.cpp:159: undefined reference to `sdds::Utils::getint(int, int, char const*, char const*)'
+/tmp/ccTRLW8v.o: In function `sdds::Pack::read(std::istream&)':
+/home/ygumus/OOP244/Workshops/ws7/p1/Pack.cpp:110: undefined reference to `sdds::ut'
+/home/ygumus/OOP244/Workshops/ws7/p1/Pack.cpp:110: undefined reference to `sdds::Utils::getint(int, int, char const*, char const*)'
+collect2: error: ld returned 1 exit status

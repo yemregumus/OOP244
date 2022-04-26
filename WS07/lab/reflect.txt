@@ -1,0 +1,14 @@
+/* Workshop #7 Part #1
+Full name		: Yunus Gumus
+Student ID number	: 150331197
+Seneca email address	: ygumus@myseneca.ca
+Section code		: NCC
+When I Start to WS  	: 2022-03-14
+When I finish P1	: 2022-03-17
+When I finish P2	: 2022-03-19*/
+
+In this workshop, I learned and experienced how to inherit a derived class from the base class. The syntax and logic were not easy to comprehend at first but when I check course notes I realized it's not that hard. In fact, it makes things easier because when we inherit a derived class from a base class we don't have to redefine the things that we need from the base class. It felt like I created something alive from scratch because the program is like a living thing that can be a parent and have children.
+
+I also experience how to shadow base class member functions with the derived class member functions. The coolest thing is not that we can use the same identifier but, we can also call the base class function from the derived classes function. This is very useful when they do things for each other and when they do almost the same thing.
+
+The workshop's design was not the easiest one to understand but I enjoy working and struggling on it. I should be thankful to my professor for what I got from this workshop, which is an introduction to how things work in c++ when it comes to inheritance.
